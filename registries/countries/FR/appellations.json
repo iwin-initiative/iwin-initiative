@@ -220,4 +220,165 @@
   "148": { "official_name": "Vosne-Romanée AOC", "region_assignment": "BRG", "category": "AOP" },
   "149": { "official_name": "Vougeot AOC", "region_assignment": "BRG", "category": "AOP" },
   "150": { "official_name": "Yonne IGP", "region_assignment": "BRG", "category": "IGP" },
+  "151": { 
+    "official_name": "Charentais IGP", 
+    "region_assignment": "CGN", 
+    "category": "IGP" 
+  },
+  "152": { 
+    "official_name": "Pineau des Charentes AOC", 
+    "region_assignment": "CGN", 
+    "category": "AOP",
+    "notes": "Fortified wine / Vin de Liqueur." 
+  },
+  "153": { 
+    "official_name": "Champagne AOC", 
+    "region_assignment": "CHA", 
+    "category": "AOP",
+    "notes": "Sparkling wines only."
+  },
+  "154": { 
+    "official_name": "Coteaux Champenois AOC", 
+    "region_assignment": "CHA", 
+    "category": "AOP",
+    "notes": "Still wines produced within the Champagne boundary."
+  },
+  "155": { 
+    "official_name": "Haute-Marne IGP", 
+    "region_assignment": "CHA", 
+    "category": "IGP"
+  },
+  "156": { 
+    "official_name": "Rosé des Riceys AOC", 
+    "region_assignment": "CHA", 
+    "category": "AOP",
+    "notes": "Rare still rosé wines from Les Riceys municipality."
+  },
+  "157": { 
+    "official_name": "Seine-et-Marne IGP", 
+    "region_assignment": "CHA", 
+    "category": "IGP"
+  },
+  "158": { 
+    "official_name": "Ajaccio AOC", 
+    "region_assignment": "COR", 
+    "category": "AOP" 
+  },
+  "159": { 
+    "official_name": "Corse AOC", 
+    "region_assignment": "COR", 
+    "category": "AOP",
+    "notes": "Parent code for all local village designations (Calvi, Figari, Sartène, Porto-Vecchio, Coteaux du Cap Corse) partitioned via Block 7."
+  },
+  "160": { 
+    "official_name": "Île de Beauté IGP", 
+    "region_assignment": "COR", 
+    "category": "IGP" 
+  },
+  "161": { 
+    "official_name": "Muscat du Cap Corse AOC", 
+    "region_assignment": "COR", 
+    "category": "AOP",
+    "notes": "Natural sweet wine / Vin Doux Naturel."
+  },
+  "162": { 
+    "official_name": "Patrimonio AOC", 
+    "region_assignment": "COR", 
+    "category": "AOP" 
+  },
+  "163": { 
+    "official_name": "Île-de-France IGP", 
+    "region_assignment": "IDF", 
+    "category": "IGP",
+    "notes": "Covers still and sparkling wines produced in the Île-de-France geographical area."
+  },
+  "164": { 
+    "official_name": "Arbois AOC", 
+    "region_assignment": "JUR", 
+    "category": "AOP",
+    "notes": "Parent code for Arbois and Arbois-Pupillin, partitioned via Block 7."
+  },
+  "165": { 
+    "official_name": "Château-Chalon AOC", 
+    "region_assignment": "JUR", 
+    "category": "AOP",
+    "notes": "Exclusively for Vin Jaune production."
+  },
+  "166": { 
+    "official_name": "Côtes du Jura AOC", 
+    "region_assignment": "JUR", 
+    "category": "AOP" 
+  },
+  "167": { 
+    "official_name": "Crémant du Jura AOC", 
+    "region_assignment": "JUR", 
+    "category": "AOP",
+    "notes": "Sparkling wines."
+  },
+  "168": { 
+    "official_name": "L'Étoile AOC", 
+    "region_assignment": "JUR", 
+    "category": "AOP" 
+  },
+  "169": { 
+    "official_name": "Franche-Comté IGP", 
+    "region_assignment": "JUR", 
+    "category": "IGP",
+    "notes": "Parent code for all departmental and zone suffixes (Doubs, Haute-Saône, Gy, Champlitte, etc.) partitioned via Block 7."
+  },
+  "170": { 
+    "official_name": "Macvin du Jura AOC", 
+    "region_assignment": "JUR", 
+    "category": "AOP",
+    "notes": "Fortified wine / Mistelle." 
+  },
+  "171": { "official_name": "Aude IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Parent code for all Aude geographical descriptors (Hauterive, Cucugnan, Val de Cesse, etc.) partitioned via Block 7." },
+  "172": { "official_name": "Blanquette de Limoux AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Sparkling wines." },
+  "173": { "official_name": "Méthode Ancestrale AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Covers Blaquette Méthode Ancestrale sparkling wines." },
+  "174": { "official_name": "Cabardès AOC", "region_assignment": "LGD", "category": "AOP" },
+  "175": { "official_name": "Cité de Carcassonne IGP", "region_assignment": "LGD", "category": "IGP" },
+  "176": { "official_name": "Clairette de Bellegarde AOC", "region_assignment": "LGD", "category": "AOP" },
+  "177": { "official_name": "Clairette du Languedoc AOC", "region_assignment": "LGD", "category": "AOP" },
+  "178": { "official_name": "Corbières AOC", "region_assignment": "LGD", "category": "AOP" },
+  "179": { "official_name": "Corbières-Boutenac AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
+  "180": { "official_name": "Costières de Nîmes AOC", "region_assignment": "LGD", "category": "AOP" },
+  "181": { "official_name": "Coteaux de Béziers IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Covers historical Coteaux du Libron." },
+  "182": { "official_name": "Coteaux de Narbonne IGP", "region_assignment": "LGD", "category": "IGP" },
+  "183": { "official_name": "Coteaux de Peyriac IGP", "region_assignment": "LGD", "category": "IGP" },
+  "184": { "official_name": "Coteaux d'Ensérune IGP", "region_assignment": "LGD", "category": "IGP" },
+  "185": { "official_name": "Coteaux du Pont du Gard IGP", "region_assignment": "LGD", "category": "IGP" },
+  "186": { "official_name": "Côtes de Pérignan IGP", "region_assignment": "LGD", "category": "IGP" },
+  "187": { "official_name": "Côtes de Thau IGP", "region_assignment": "LGD", "category": "IGP" },
+  "188": { "official_name": "Côtes de Thongue IGP", "region_assignment": "LGD", "category": "IGP" },
+  "189": { "official_name": "Crémant de Limoux AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Sparkling wines." },
+  "190": { "official_name": "Faugères AOC", "region_assignment": "LGD", "category": "AOP" },
+  "191": { "official_name": "Fitou AOC", "region_assignment": "LGD", "category": "AOP" },
+  "192": { "official_name": "Gard IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Parent code for Gard, Coteaux Flaviens, and Vistrenque, partitioned via Block 7." },
+  "193": { "official_name": "Haute Vallée de l'Aude IGP", "region_assignment": "LGD", "category": "IGP" },
+  "194": { "official_name": "Haute Vallée de l'Orb IGP", "region_assignment": "LGD", "category": "IGP" },
+  "195": { "official_name": "Hauts de Badens IGP", "region_assignment": "LGD", "category": "IGP" },
+  "196": { "official_name": "La Clape AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
+  "197": { "official_name": "Languedoc AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Parent code for all regional Languedoc terroir designations (Cabrières, Grès de Montpellier, Pézenas, etc.) partitioned via Block 7." },
+  "198": { "official_name": "Le Pays Cathare IGP", "region_assignment": "LGD", "category": "IGP" },
+  "199": { "official_name": "Limoux AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Covers both Limoux Blanc and Limoux Rouge, color distinction is resolved via Block 5." },
+  "200": { "official_name": "Malepère AOC", "region_assignment": "LGD", "category": "AOP" },
+  "201": { "official_name": "Minervois AOC", "region_assignment": "LGD", "category": "AOP" },
+  "202": { "official_name": "Minervois-La Livinière AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
+  "203": { "official_name": "Muscat de Frontignan AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." },
+  "204": { "official_name": "Muscat de Lunel AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." },
+  "205": { "official_name": "Muscat de Mireval AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." },
+  "206": { "official_name": "Muscat de Saint-Jean-de-Minervois AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." }
+
+  "208": { "official_name": "Pays d'Hérault IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Parent code for all Hérault geographical descriptors (Bénovie, Mont Baudile, Salagou, etc.) partitioned via Block 7." },
+  "209": { "official_name": "Pays d'Oc IGP", "region_assignment": "LGD", "category": "IGP", "notes": "The largest varietal wine designation in France." },
+  "210": { "official_name": "Pic Saint-Loup AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
+  "211": { "official_name": "Picpoul de Pinet AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Standalone white wine appellation since 2013." },
+  "212": { "official_name": "Sable de Camargue IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Covers historical Sables du Golfe du Lion designation." },
+  "213": { "official_name": "Saint-Chinian AOC", "region_assignment": "LGD", "category": "AOP" },
+  "214": { "official_name": "Saint-Guilhem-le-Désert IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Parent code for Saint-Guilhem and Val de Montferrand, partitioned via Block 7." },
+  "215": { "official_name": "Terrasses du Larzac AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
+  "216": { "official_name": "Terres du Midi IGP", "region_assignment": "LGD", "category": "IGP" },
+  "217": { "official_name": "Vallée du Paradis IGP", "region_assignment": "LGD", "category": "IGP" },
+  "218": { "official_name": "Vallée du Torgan IGP", "region_assignment": "LGD", "category": "IGP" },
+  "219": { "official_name": "Vicomté d'Aumelas IGP", "region_assignment": "LGD", "category": "IGP" },
 }
