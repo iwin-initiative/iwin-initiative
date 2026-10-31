@@ -69,3 +69,24 @@ Block 7 isolates the geographical village identity:
 * **`VE`** = Verzé.
 
 *This sub-mapping configuration compresses over 60 structural entities into just 2 core Appellation keys, maximizing local database execution speed while preserving micro-terroir precision for the consumer.*
+
+
+---
+
+## 4. France: Languedoc Viticultural Framework & Historical Resolution
+
+The Languedoc region contains massive structural data points due to its historical shift from mass volume production to micro-terroir partitioning and the presence of heavily sub-divided IGP (Indication Géographique Protégée) designations.
+
+### 4.1 Chronological Resolution Rule: Coteaux du Languedoc vs. Languedoc AOC (Code `197`)
+The parent regional appellation *Coteaux du Languedoc AOC* was officially updated and modified by regulatory decree into *Languedoc AOC* in 2007.
+* **Database Encoding:** All vintages from this overarching regional footprint strictly map to the persistent numeric code `197`.
+* **UI Render Rule:** Applications reading an IWIN string containing `LGD-197` must apply a temporal branch test based on Block 2 (Vintage):
+  * If **Block 2 (Vintage) < 2007**, the interface MUST display: **"Coteaux du Languedoc AOC"**.
+  * If **Block 2 (Vintage) >= 2007**, the interface MUST display: **"Languedoc AOC"**.
+
+### 4.2 IGP Sub-Zone De-duplication (Codes `171`, `192`, `208`)
+To prevent dictionary inflation across the major departmental IGPs (Aude, Gard, and Hérault), localized sub-descriptors and community zones are virtualized into **Block 7 (Cuvée / Blend)**. The parent 3-digit numeric code handles core database indexing, while Block 7 isolates the micro-geography sémantically:
+
+* **Aude IGP (Code `171`):** Sub-zones like *Coteaux de la Cabrerisse* or *Val de Cesse* use code `171`. Block 7 assigns two-letter anchors (e.g., `CC`, `VC`).
+* **Gard IGP (Code `192`):** Sub-zones like *Coteaux Flaviens* or *Vistrenque* map to code `192`.
+* **Pays d'Hérault IGP (Code `208`):** The 16 regional descriptors (e.g., *Mont Baudile*, *Coteaux du Salagou*, *Côtes du Brian*) map strictly to code `208`. An IWIN string matching `LGD-208-X-XXXXXX-SA` resolves locally to *Pays d'Hérault - Coteaux du Salagou IGP*.
