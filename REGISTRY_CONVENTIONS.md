@@ -89,4 +89,39 @@ To prevent dictionary inflation across the major departmental IGPs (Aude, Gard, 
 
 * **Aude IGP (Code `171`):** Sub-zones like *Coteaux de la Cabrerisse* or *Val de Cesse* use code `171`. Block 7 assigns two-letter anchors (e.g., `CC`, `VC`).
 * **Gard IGP (Code `192`):** Sub-zones like *Coteaux Flaviens* or *Vistrenque* map to code `192`.
-* **Pays d'Hérault IGP (Code `208`):** The 16 regional descriptors (e.g., *Mont Baudile*, *Coteaux du Salagou*, *Côtes du Brian*) map strictly to code `208`. An IWIN string matching `LGD-208-X-XXXXXX-SA` resolves locally to *Pays d'Hérault - Coteaux du Salagou IGP*.
+* **Pays d'Hérault IGP (Code `207`):** The 16 regional descriptors (e.g., *Mont Baudile*, *Coteaux du Salagou*, *Côtes du Brian*) map strictly to code `208`. An IWIN string matching `LGD-208-X-XXXXXX-SA` resolves locally to *Pays d'Hérault - Coteaux du Salagou IGP*.
+
+
+---
+
+## 5. France: Loire Valley Viticultural Framework & Multi-Departmental Mapping
+
+The Loire Valley spans a massive geographical footprint. To avoid dictionary bloat within Block 4 (Appellation), the IWIN standard groups regional networks and communal sub-designations into centralized operational parent keys.
+
+### 5.1 Val de Loire IGP (Code `281`) Departmental Resolution
+All 14 departmental and sub-regional suffixes attached to the global *Val de Loire IGP* template strictly use the parent Appellation code `281`. Block 7 (Cuvée / Blend) isolates the specific political or cultural sub-zone locally via a 2-letter alpha indicator:
+* **`NV`** = Nièvre (e.g., `FR-2024-LRE-281-W-100254-NV-00750` resolves locally to *Val de Loire - Nièvre IGP*).
+* **`LA`** = Loire-Atlantique.
+* **`VD`** = Vendée.
+* **`CH`** = Cher.
+
+### 5.2 Communal AOP Compressors (Codes `242` and `250`)
+Communal-level sub-mentions attached to regional volcanic or coastal appellations are similarly virtualized within Block 7:
+* **Côtes d'Auvergne AOC (Code `242`):** Sub-zones like *Boudes, Corent, or Châteaugay* use code `242`. Block 7 assigns two-letter anchors (e.g., `BO` for Boudes, `CO` for Corent).
+* **Fiefs Vendéens AOC (Code `250`):** Sub-zones like *Brem, Mareuil, Pissotte, or Vix* map to code `250`. An IWIN string matching `LRE-250-X-XXXXXX-MA` resolves locally to *Fiefs Vendéens - Mareuil AOC*.
+
+---
+
+## 6. France: Rhone Valley Viticultural Framework & Communal Sub-mapping
+
+The Rhone Valley relies on a multi-tiered hierarchy. To protect Block 4 from containing dozens of individual keys for communal sub-designations, the IWIN standard groups all 22 named villages under a single parent operational identity.
+
+### 6.1 Côtes du Rhône-Villages with Geographical Names (Code `321`)
+Wineries producing village-specific Côtes du Rhône-Villages (e.g., *Plan de Dieu, Sablet, Séguret, Visan, Laudun*) must utilize the unique parent Appellation code `321`. 
+The application-level translation engine determines the specific geographic commune locally through a 2-letter alpha indicator mapped inside **Block 7 (Cuvée / Blend)**:
+* **`PD`** = Plan de Dieu (e.g., `FR-2024-RHO-321-R-100452-PD-00750` resolves locally to *Côtes du Rhône-Villages Plan de Dieu AOC*).
+* **`SA`** = Sablet.
+* **`SE`** = Séguret.
+* **`VI`** = Visan.
+* **`LA`** = Laudun.
+* **`CH`** = Chusclan.
