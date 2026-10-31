@@ -178,3 +178,18 @@ The local application parser extracts the specific terroir using a 2-letter alph
 Similarly, single-vineyard crus for the Altesse grape map to code `406`:
 * **`MA`** = Marestel.
 * **`FR`** = Frangy.
+
+
+---
+
+## 10. France: Interregional IGP Architecture & Dynamic Routing
+
+To support large-scale geographical blending while preserving local logistics precision, the IWIN standard leverages dynamic array routing for cross-regional designations.
+
+### 10.1 Multi-Region Validation Matrix (Codes `410` and `411`)
+The interregional entities *Atlantique IGP* and *Méditerranée IGP* do not lock down a single macro-region token inside Block 3. Instead, the baseline code adapts strictly to the specific coordinate or country sector of the bottling estate:
+
+* **Atlantique IGP (Code `410`):** Legally permitted to route through **`BOR`** (Bordeaux), **`SUD`** (South-West), or **`CGN`** (Charentes-Cognac) based on production origin.
+* **Méditerranée IGP (Code `411`):** Legally permitted to route through **`PRV`** (Provence), **`LGD`** (Languedoc), **`RHO`** (Rhone), or **`COR`** (Corsica).
+
+*Application parsers encountering these keys must validate the dynamic region assignments locally against this matrix to prevent cross-regional data corruptions.*
