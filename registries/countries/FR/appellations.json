@@ -517,4 +517,17 @@
   "339": { "official_name": "Vaucluse IGP", "region_assignment": "RHO", "category": "IGP", "notes": "Parent code for Vaucluse, Aigues, and Principauté d'Orange, partitioned via Block 7." },
   "340": { "official_name": "Ventoux AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Formerly Côtes du Ventoux." },
   "341": { "official_name": "Vinsobres AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Cru level designation." },
+  "342": { "official_name": "Banyuls AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Fortified wine / Vin Doux Naturel." },
+  "343": { "official_name": "Banyuls Grand Cru AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Premium fortified wine with extended barrel aging." },
+  "344": { "official_name": "Collioure AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Still wines produced on the Banyuls terraced slopes." },
+  "345": { "official_name": "Côte Vermeille IGP", "region_assignment": "ROU", "category": "IGP" },
+  "346": { "official_name": "Côtes Catalanes IGP", "region_assignment": "ROU", "category": "IGP", "notes": "Covers Pyrénées-Orientales descriptor." },
+  "347": { "official_name": "Côtes du Roussillon AOC", "region_assignment": "ROU", "category": "AOP" },
+  "348": { "official_name": "Côtes du Roussillon-Villages AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Generic villages blend without geographic name." },
+  "349": { "official_name": "Côtes du Roussillon-Villages Nom de Commune AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Parent code for communal sub-designations (Caramany, Latour de France, Les Aspres, Lesquerde, Tautavel) partitioned via Block 7." },
+  "350": { "official_name": "Grand Roussillon AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Transversal regional VDN designation." },
+  "351": { "official_name": "Maury AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Covers both still dry red wines and fortified Vin Doux Naturel." },
+  "352": { "official_name": "Muscat de Rivesaltes AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Fortified natural sweet wine." },
+  "353": { "official_name": "Rivesaltes AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Fortified natural sweet wine." },
+
 }
