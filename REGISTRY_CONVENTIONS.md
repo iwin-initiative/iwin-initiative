@@ -28,3 +28,19 @@ Wineries and developers must map single-varietal products and traditional region
 The 51 legally protected Grand Cru lieux-dits do not receive individual 3-digit numeric codes in Block 4. They all share the global parent Appellation code `002`. 
 
 The specific micro-geography of the Grand Cru is mapped entirely via Block 7, combining the vineyard identity and the grape variety. The IWIN Central Registry maintains the sequential allocation from `AA` to `ZZ` for each certified estate (e.g., a producer making a Riesling on the *Rangen* grand cru will be allocated `RA`, while their Gewurztraminer on the same plot will be allocated `RB`).
+
+
+---
+
+## 2. France: Bordeaux Historical Mergers & Chronological Resolution
+
+To prevent data inflation and avoid maintaining ghost codes for historically absorbed appellations, the IWIN standard uses a **Chronological Resolution Rule** driven by application-level logic based on Block 2 (Vintage).
+
+### 2.1 The Néac / Lalande-de-Pomerol Case (Code `040`)
+The appellation *Néac AOC* was legally absorbed into *Lalande-de-Pomerol AOC* in 1954. No commercial wines have been produced under the Néac name since that date.
+* **Database Encoding:** All bottles from this terroir—regardless of age—must strictly use the active Appellation code `040`.
+* **UI Resolution Rule:** Applications reading an IWIN string containing `BOR-040` must execute a temporal condition check:
+  * If **Block 2 (Vintage) < 1954**, the interface MUST display the historical designation: **"Néac AOC"**.
+  * If **Block 2 (Vintage) >= 1954**, the interface MUST display the active designation: **"Lalande-de-Pomerol AOC"**.
+
+*This approach preserves structural data consistency for cross-referencing while ensuring absolute authenticity for historical cellar assets.*
