@@ -44,3 +44,28 @@ The appellation *Néac AOC* was legally absorbed into *Lalande-de-Pomerol AOC* i
   * If **Block 2 (Vintage) >= 1954**, the interface MUST display the active designation: **"Lalande-de-Pomerol AOC"**.
 
 *This approach preserves structural data consistency for cross-referencing while ensuring absolute authenticity for historical cellar assets.*
+
+
+---
+
+## 3. France: Burgundy Viticultural Framework & DGC Virtualization
+
+Burgundy is the most fragmented wine region globally. To avoid schema inflation within Block 4 (Appellation), the IWIN standard virtualizes **Dénominations Géographiques Complémentaires (DGC)** (geographic village sub-mentions) by anchoring them to their legal parent generic appellation and partitioning the specific municipality via **Block 7 (Cuvée / Blend)**.
+
+### 3.1 Regional Bourgogne AOC (Code `069`) Village Mapping
+All regional designations that append a specific village name (e.g., *Bourgogne Chitry*, *Bourgogne Épineuil*, *Bourgogne Côte d'Or*, *Bourgogne Sainte-Marie-la-Blanche*) strictly use the parent Appellation code `069`. 
+The application-level parser resolves the specific village sémantically using a 2-letter alpha code in Block 7 managed by the IWIN Central Registry:
+* **`CH`** = Chitry (e.g., `FR-2022-BRG-069-W-100245-CH-00750` resolves locally to *Bourgogne Chitry AOC*).
+* **`EP`** = Épineuil.
+* **`TO`** = Tonnerre.
+* **`CO`** = Côte d'Or.
+* **`SM`** = Sainte-Marie-la-Blanche.
+
+### 3.2 Mâcon AOC (Code `112`) Geographic Village Mapping
+Similarly, the 26 specific village designations authorized to append their name to the Mâcon template (e.g., *Mâcon-Azé*, *Mâcon-Lugny*, *Mâcon-Verzé*) do not receive individual 3-digit numeric codes in Block 4. They all share the parent Appellation code `112`.
+Block 7 isolates the geographical village identity:
+* **`AZ`** = Azé (e.g., `FR-2024-BRG-112-W-100452-AZ-00750` resolves locally to *Mâcon-Azé AOC*).
+* **`LU`** = Lugny.
+* **`VE`** = Verzé.
+
+*This sub-mapping configuration compresses over 60 structural entities into just 2 core Appellation keys, maximizing local database execution speed while preserving micro-terroir precision for the consumer.*
