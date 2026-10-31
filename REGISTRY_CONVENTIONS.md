@@ -158,3 +158,23 @@ The application-level translation schema isolates the micro-origin via a 2-lette
 * **`SO`** = Sables de l'Océan.
 * **`SF`** = Sables fauves.
 
+
+---
+
+## 9. France: Savoie and Bugey Viticultural Framework & Cru Virtualization
+
+The Alpine regions feature highly fragmented single-commune crus anchored to regional identities. To prevent database index inflation, all cru extensions use root operational identity schemas.
+
+### 9.1 Vin de Savoie AOC Cru Mapping (Code `409`)
+All 16 historically recognized crus (e.g., *Apremont, Abymes, Chignin, Chignin-Bergeron, Arbin*) map strictly to the parent Appellation code `409`. 
+The local application parser extracts the specific terroir using a 2-letter alpha identifier in **Block 7 (Cuvée / Blend)**:
+* **`AP`** = Apremont (e.g., `FR-2025-SVB-409-W-100254-AP-00750` resolves locally to *Vin de Savoie Apremont AOC*).
+* **`AB`** = Abymes.
+* **`CH`** = Chignin.
+* **`CB`** = Chignin-Bergeron (Exclusively from Chignin Bergeron / Roussanne grape).
+* **`AR`** = Arbin (Exclusively red Mondouse).
+
+### 9.2 Roussette de Savoie AOC Cru Mapping (Code `406`)
+Similarly, single-vineyard crus for the Altesse grape map to code `406`:
+* **`MA`** = Marestel.
+* **`FR`** = Frangy.
