@@ -17,4 +17,74 @@
     "category": "AOP",
     "notes": "Sparkling wines produced under traditional method guidelines in the Alsace region."
   }
+    "004": {
+    "official_name": "Beaujolais AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "005": {
+    "official_name": "Beaujolais Supérieur AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "006": {
+    "official_name": "Beaujolais-Villages AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "007": {
+    "official_name": "Brouilly AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "008": {
+    "official_name": "Chénas AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "009": {
+    "official_name": "Chiroubles AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "010": {
+    "official_name": "Coteaux du Lyonnais AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "011": {
+    "official_name": "Côte de Brouilly AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "012": {
+    "official_name": "Fleurie AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "013": {
+    "official_name": "Juliénas AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "014": {
+    "official_name": "Morgon AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "015": {
+    "official_name": "Moulin-à-Vent AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "016": {
+    "official_name": "Régnié AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  },
+  "017": {
+    "official_name": "Saint-Amour AOC",
+    "region_assignment": "BJL",
+    "category": "AOP"
+  }
 }
