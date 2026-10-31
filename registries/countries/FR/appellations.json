@@ -577,5 +577,13 @@
   "399": { "official_name": "Thézac-Perricard IGP", "region_assignment": "SUD", "category": "IGP" },
   "400": { "official_name": "Tursan AOC", "region_assignment": "SUD", "category": "AOP" },
   "401": { "official_name": "Vins de la Corrèze AOC", "region_assignment": "SUD", "category": "AOP" },
+  "402": { "official_name": "Bugey AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for Bugey, Manicle, and Montagnieu descriptors, partitioned via Block 7." },
+  "403": { "official_name": "Crémant de Savoie AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Sparkling wines established in 2015." },
+  "404": { "official_name": "Coteaux de l'Ain IGP", "region_assignment": "SVB", "category": "IGP", "notes": "Parent code for all Ain sub-zones (Pays de Gex, Revermont, Val de Saône, Valmorey) partitioned via Block 7." },
+  "405": { "official_name": "Roussette du Bugey AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for Roussette du Bugey, Montagnieu, and Virieu-le-Grand, partitioned via Block 7." },
+  "406": { "official_name": "Roussette de Savoie AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for all single-crus (Marestel, Frangy, Monterminod, Monthoux) partitioned via Block 7." },
+  "407": { "official_name": "Seyssel AOC", "region_assignment": "SVB", "category": "AOP" },
+  "408": { "official_name": "Vin des Allobroges IGP", "region_assignment": "SVB", "category": "IGP", "notes": "Overarching regional Alpine IGP." },
+  "409": { "official_name": "Vin de Savoie AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for all 16 historical crus (Apremont, Abymes, Chignin, Chignin-Bergeron, Arbin, etc.) partitioned via Block 7." },
 
 }
