@@ -1,0 +1,20 @@
+{
+  "001": {
+    "official_name": "Alsace AOC",
+    "region_assignment": "ALS",
+    "category": "AOP",
+    "notes": "Includes all single-varietal mentions (Riesling, Pinot, Gewurztraminer) and traditional blends (Edelzwicker, Gentil) encoded via Block 7."
+  },
+  "002": {
+    "official_name": "Alsace Grand Cru AOC",
+    "region_assignment": "ALS",
+    "category": "AOP",
+    "notes": "Covers the 51 specific grand cru terroirs/lieux-dits, partitioned via Block 7."
+  },
+  "003": {
+    "official_name": "Crémant d'Alsace AOC",
+    "region_assignment": "ALS",
+    "category": "AOP",
+    "notes": "Sparkling wines produced under traditional method guidelines in the Alsace region."
+  }
+}
