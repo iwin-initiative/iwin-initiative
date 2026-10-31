@@ -9,6 +9,7 @@
     "CHA": { "name_en": "Champagne", "name_local": "Champagne" },
     "CGN": { "name_en": "Charentes and Cognac", "name_local": "Charentes et Cognac" },
     "COR": { "name_en": "Corsica", "name_local": "Corse" },
+    "IDF": { "name_en": "Ile-de-France", "name_local": "Île-de-France" },
     "JUR": { "name_en": "Jura", "name_local": "Jura" },
     "LGD": { "name_en": "Languedoc", "name_local": "Languedoc" },
     "LRE": { "name_en": "Loire Valley", "name_local": "Vallée de la Loire" },
