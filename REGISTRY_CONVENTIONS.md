@@ -1,0 +1,30 @@
+# IWIN Registry Coding Conventions
+
+To maintain a strict 31-character fixed-width structural integrity across diverse global wine laws, the IWIN standard applies specific contextual rules to **Block 7 (Cuvée / Blend)** for certain wine regions. 
+
+This document tracks active regional matrix assignments managed by the IWIN Central Registry.
+
+---
+
+## 1. France: Alsace Viticultural Framework
+
+Because the Alsace regulatory framework heavily relies on single-varietal labeling and specific single-vineyard terroirs (Lieux-dits) rather than heavily splintered geographic appellations, the IWIN standard utilizes standardized **Letter Ranges** inside **Block 7** to preserve schema uniformity.
+
+### 1.1 Alsace AOC (Code `001`) Varietal Allocation Mapping
+Wineries and developers must map single-varietal products and traditional regional blends within the `AA` to `ZZ` sequence using the following standardized alpha anchors for the first letter of Block 7:
+
+* **`AA` to `AM`:** Reserved for **Riesling** cuvées (e.g., `AA` for Tradition, `AB` for Vieilles Vignes).
+* **`GA` to `GM`:** Reserved for **Gewurztraminer** cuvées.
+* **`PA` to `PM`:** Reserved for **Pinot Gris** cuvées.
+* **`BA` to `BM`:** Reserved for **Pinot Blanc / Auxerrois** cuvées.
+* **`NA` to `NM`:** Reserved for **Pinot Noir** cuvées (Red and Rosé vinifications).
+* **`SA` to `SM`:** Reserved for **Sylvaner** cuvées.
+* **`MA` to `MM`:** Reserved for **Muscat** cuvées.
+* **`EA` to `EM`:** Reserved for Traditional Blends (**Edelzwicker / Gentil**).
+
+*Applications reading an IWIN string containing `ALS-001` will seamlessly resolve the primary grape variety locally by referencing these strict boundary envelopes.*
+
+### 1.2 Alsace Grand Cru AOC (Code `002`) Terroir Resolution
+The 51 legally protected Grand Cru lieux-dits do not receive individual 3-digit numeric codes in Block 4. They all share the global parent Appellation code `002`. 
+
+The specific micro-geography of the Grand Cru is mapped entirely via Block 7, combining the vineyard identity and the grape variety. The IWIN Central Registry maintains the sequential allocation from `AA` to `ZZ` for each certified estate (e.g., a producer making a Riesling on the *Rangen* grand cru will be allocated `RA`, while their Gewurztraminer on the same plot will be allocated `RB`).
