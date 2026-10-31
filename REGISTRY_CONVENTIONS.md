@@ -144,3 +144,17 @@ The localized commune identity is determined through a 2-letter alpha indicator 
 * **`TA`** = Tautavel.
 
 
+---
+
+## 8. France: South-West Viticultural Framework & IGP Sub-zoning
+
+The South-West region is geographically fragmented and relies on high-volume varietal network maps. To clean database indexes, multi-descriptor regional frameworks are virtualized.
+
+### 8.1 Landes IGP (Code `384`) Territory Resolution
+All territorial sub-descriptors attached to the overarching *Landes IGP* framework (e.g., *Coteaux de Chalosse, Côtes de l'Adour, Sables de l'Océan, Sables fauves*) strictly use the core parent Appellation code `384`. 
+The application-level translation schema isolates the micro-origin via a 2-letter alpha token mapped inside **Block 7 (Cuvée / Blend)**:
+* **`CC`** = Coteaux de Chalosse (e.g., `FR-2025-SUD-384-W-100254-CC-00750` resolves locally to *Landes - Coteaux de Chalosse IGP*).
+* **`CA`** = Côtes de l'Adour.
+* **`SO`** = Sables de l'Océan.
+* **`SF`** = Sables fauves.
+
