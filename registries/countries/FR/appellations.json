@@ -585,5 +585,18 @@
   "407": { "official_name": "Seyssel AOC", "region_assignment": "SVB", "category": "AOP" },
   "408": { "official_name": "Vin des Allobroges IGP", "region_assignment": "SVB", "category": "IGP", "notes": "Overarching regional Alpine IGP." },
   "409": { "official_name": "Vin de Savoie AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for all 16 historical crus (Apremont, Abymes, Chignin, Chignin-Bergeron, Arbin, etc.) partitioned via Block 7." },
+  "410": {
+    "official_name": "Atlantique IGP",
+    "region_assignment": ["BOR", "SUD", "CGN"],
+    "category": "IGP",
+    "notes": "Interregional IGP. Block 3 must resolve locally to the production estate's macro-region."
+  },
+  "411": {
+    "official_name": "Méditerranée IGP",
+    "region_assignment": ["PRV", "LGD", "RHO", "COR"],
+    "category": "IGP",
+    "notes": "Interregional IGP. Block 3 must resolve locally to the production estate's macro-region."
+  }
+}
 
 }
