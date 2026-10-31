@@ -110,6 +110,7 @@ Communal-level sub-mentions attached to regional volcanic or coastal appellation
 * **Côtes d'Auvergne AOC (Code `242`):** Sub-zones like *Boudes, Corent, or Châteaugay* use code `242`. Block 7 assigns two-letter anchors (e.g., `BO` for Boudes, `CO` for Corent).
 * **Fiefs Vendéens AOC (Code `250`):** Sub-zones like *Brem, Mareuil, Pissotte, or Vix* map to code `250`. An IWIN string matching `LRE-250-X-XXXXXX-MA` resolves locally to *Fiefs Vendéens - Mareuil AOC*.
 
+
 ---
 
 ## 6. France: Rhone Valley Viticultural Framework & Communal Sub-mapping
@@ -125,3 +126,21 @@ The application-level translation engine determines the specific geographic comm
 * **`VI`** = Visan.
 * **`LA`** = Laudun.
 * **`CH`** = Chusclan.
+
+
+---
+
+## 7. France: Roussillon Viticultural Framework & Communal Sub-mapping
+
+The Roussillon region relies on premium dry red crus and historical fortified VDN frameworks. To optimize Block 4, communal sub-designations are centralized into automated operational parent identifiers.
+
+### 7.1 Côtes du Roussillon-Villages with Geographical Names (Code `349`)
+Wineries producing village-specific red blends (e.g., *Caramany, Latour de France, Les Aspres, Lesquerde, Tautavel*) must utilize the unique parent Appellation code `349`. 
+The localized commune identity is determined through a 2-letter alpha indicator mapped inside **Block 7 (Cuvée / Blend)**:
+* **`CA`** = Caramany (e.g., `FR-2024-ROU-349-R-100452-CA-00750` resolves locally to *Côtes du Roussillon-Villages Caramany AOC*).
+* **`LT`** = Latour de France.
+* **`AS`** = Les Aspres.
+* **`LE`** = Lesquerde.
+* **`TA`** = Tautavel.
+
+
