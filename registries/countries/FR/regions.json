@@ -1,0 +1,22 @@
+{
+  "country_code": "FR",
+  "entity_type": "Wine Regions",
+  "mappings": {
+    "ALS": { "name_en": "Alsace", "name_local": "Alsace" },
+    "BJL": { "name_en": "Beaujolais and Lyonnais", "name_local": "Beaujolais et Lyonnais" },
+    "BOR": { "name_en": "Bordeaux", "name_local": "Bordeaux" },
+    "BRG": { "name_en": "Burgundy", "name_local": "Bourgogne" },
+    "CHA": { "name_en": "Champagne", "name_local": "Champagne" },
+    "CGN": { "name_en": "Charentes and Cognac", "name_local": "Charentes et Cognac" },
+    "COR": { "name_en": "Corsica", "name_local": "Corse" },
+    "JUR": { "name_en": "Jura", "name_local": "Jura" },
+    "LGD": { "name_en": "Languedoc", "name_local": "Languedoc" },
+    "LRE": { "name_en": "Loire Valley", "name_local": "Vallée de la Loire" },
+    "LRN": { "name_en": "Lorraine", "name_local": "Lorraine" },
+    "PRV": { "name_en": "Provence", "name_local": "Provence" },
+    "RHO": { "name_en": "Rhone Valley", "name_local": "Vallée du Rhône" },
+    "ROU": { "name_en": "Roussillon", "name_local": "Roussillon" },
+    "SVB": { "name_en": "Savoie and Bugey", "name_local": "Savoie et Bugey" },
+    "SUD": { "name_en": "South-West France", "name_local": "Sud-Ouest" }
+  }
+}
