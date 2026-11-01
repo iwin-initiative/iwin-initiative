@@ -117,7 +117,7 @@
   "045": { "official_name": "Médoc AOC", "region_assignment": "BOR", "category": "AOP" },
   "046": { "official_name": "Montagne-Saint-Émilion AOC", "region_assignment": "BOR", "category": "AOP" },
   "047": { "official_name": "Moulis AOC", "region_assignment": "BOR", "category": "AOP", "notes": "Covers Moulis-en-Médoc." },
-  "041": { "official_name": "Pauillac AOC", "region_assignment": "BOR", "category": "AOP" },
+  "048": { "official_name": "Pauillac AOC", "region_assignment": "BOR", "category": "AOP" },
   "049": { "official_name": "Pessac-Léognan AOC", "region_assignment": "BOR", "category": "AOP" },
   "050": { "official_name": "Pomerol AOC", "region_assignment": "BOR", "category": "AOP" },
   "051": { "official_name": "Premières Côtes de Blaye AOC", "region_assignment": "BOR", "category": "AOP", "notes": "Historical designation, mostly merged into Blaye-Côtes de Bordeaux." },
@@ -599,4 +599,3 @@
   }
 }
 
-}
