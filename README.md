@@ -59,3 +59,9 @@ To maintain absolute backward compatibility, the IWIN Central Registry enforces 
 
 #### 5.2 Decoupling Marketing Content from Identity
 The IWIN standard strictly separates physical and geographic identity from commercial classifications and marketing designations (e.g., *Grand Cru Classé*, *Riserva*, *Organic Certified*). These volatile or region-specific attributes are classified as downstream metadata tags. They must be resolved via application-level dictionaries mapped to the persistent IWIN-Core string, ensuring the identifier remains permanent and unaffected by regulatory disputes or branding updates.
+
+---
+
+### 6. Intellectual Property, Trademark & Governance
+* **Trademark:** The name **"IWIN"**, the acronym **"International Wine Identification Number"**, and its official branding are protected legal trademarks. Unauthorized commercial use of the brand name to label software, APIs, or database services as "IWIN-Certified" or "IWIN-Compatible" without written consent is strictly prohibited.
+* **Dual-Licensing Framework:** This project operates on a dual-license model to balance rapid community adoption with commercial sustainability. Non-commercial and open-source applications may use the standard freely under the **GNU GPLv3** license. Proprietary, commercial, and closed-source enterprise systems must secure a commercial agreement.
