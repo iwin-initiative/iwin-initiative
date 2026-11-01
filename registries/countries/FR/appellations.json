@@ -1,1148 +1,250 @@
 {
-  "country"     : "FR",
-  "macro_region": "ALS",
-  "version"     : "1.3.0",
+  "country": "FR",
+  "version": "1.4.0",
   "last_updated": "2026-11-01",
   "appellations": {
-    "0001": {
-      "name"          : "Alsace (AOC)",
-      "type"          : "AOC Regional",
-      "allowed_colors": ["W", "R", "P"]
-    },
-    "0002": {
-      "name"          : "Alsace - Bergheim (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W", "R"]
-    },
-    "0003": {
-      "name"          : "Alsace - Blienschwiller (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0004": {
-      "name"          : "Alsace - Côte de Rouffach (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0005": {
-      "name": "Alsace - Coteaux du Haut-Koenigsbourg / Orschwiller (DGC)",
-      "type": "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0006": {
-      "name"          : "Alsace - Côtes de Barr (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0007": {
-      "name"          : "Alsace - Klevener de Heiligenstein (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0008": {
-      "name"          : "Alsace - Ottrott (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["R"]
-    },
-    "0009": {
-      "name"          : "Alsace - Rodern (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["R"]
-    },
-    "0010": {
-      "name"          : "Alsace - Saint-Hippolyte (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["R"]
-    },
-    "0011": {
-      "name"          : "Alsace - Scherwiller (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0012": {
-      "name"          : "Alsace - Val Saint-Grégoire / Wihr-Au-Val (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0013": {
-      "name"          : "Alsace - Vallée Noble (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0014": {
-      "name"          : "Alsace - Wolxheim (DGC)",
-      "type"          : "AOC Regional DGC",
-      "allowed_colors": ["W"]
-    },
-    "0015": {
-      "name"          : "Alsace - Affenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0016": {
-      "name"          : "Alsace - Altenbourg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0017": {
-      "name"          : "Alsace - Altengarten (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0018": {
-      "name"          : "Alsace - Altitude 333 (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0019": {
-      "name"          : "Alsace - Belzbrunnen (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0020": {
-      "name"          : "Alsace - Bergweingarten (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0021": {
-      "name"          : "Alsace - Bildstoeckle (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0022": {
-      "name"          : "Alsace - Blettig (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0023": {
-      "name"          : "Alsace - Blosenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0024": {
-      "name"          : "Alsace - Bollenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W", "R"]
-    },
-    "0025": {
-      "name"          : "Alsace - Bouxreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0026": {
-      "name"          : "Alsace - Brandhof (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0027": {
-      "name"          : "Alsace - Brandluft (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0028": {
-      "name"          : "Alsace - Bruchwegeben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0029": {
-      "name"          : "Alsace - Bülh (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0030": {
-      "name"          : "Alsace - Burgreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0031": {
-      "name"          : "Alsace - Clos du Sonnenbach (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0032": {
-      "name"          : "Alsace - Clos du Zahnacker (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0033": {
-      "name"          : "Alsace - Clos Feyel (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0034": {
-      "name"          : "Alsace - Clos Ribeaupierre (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0035": {
-      "name"          : "Alsace - Clos Rosalys (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0036": {
-      "name"          : "Alsace - Clos Sony (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0037": {
-      "name"          : "Alsace - Clos St-Guingallois (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0038": {
-      "name"          : "Alsace - Clos Ste Hune (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0039": {
-      "name"          : "Alsace - Clos Windsbuhl (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0040": {
-      "name"          : "Alsace - Cormier (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0041": {
-      "name"          : "Alsace - Coteaux de la Mossig (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0042": {
-      "name"          : "Alsace - Côtes d'Ammerschwihr (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0043": {
-      "name"          : "Alsace - Côtes d'Eguisheim (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0044": {
-      "name"          : "Alsace - Côtes de Kaysersberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0045": {
-      "name"          : "Alsace - Côtes de Niedermorschwihr (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0046": {
-      "name"          : "Alsace - Côtes de Ribeauville (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0047": {
-      "name"          : "Alsace - Côtes de Rouffach Bergweingarten (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0048": {
-      "name"          : "Alsace - Côtes du Florimont (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0049": {
-      "name"          : "Alsace - Côtes du Val St Grégoire (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0050": {
-      "name"          : "Alsace - Degis (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0051": {
-      "name"          : "Alsace - Dorenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0052": {
-      "name"          : "Alsace - Dorfschatz (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0053": {
-      "name"          : "Alsace - Duttenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0054": {
-      "name"          : "Alsace - Eich (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0055": {
-      "name"          : "Alsace - Engelgarten (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0056": {
-      "name"          : "Alsace - Ferme Boemstein (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0057": {
-      "name"          : "Alsace - Finkenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0058": {
-      "name"          : "Alsace - Frauengut (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0059": {
-      "name"          : "Alsace - Fronenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0060": {
-      "name"          : "Alsace - Fronholz (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0061": {
-      "name"          : "Alsace - Fruehmess (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0062": {
-      "name"          : "Alsace - Furstentum (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0063": {
-      "name"          : "Alsace - Gaensbroennel (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0064": {
-      "name"          : "Alsace - Gaentzbrunnen (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0065": {
-      "name"          : "Alsace - Geierstein (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0066": {
-      "name"          : "Alsace - Geissberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0067": {
-      "name"          : "Alsace - Glintzberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0068": {
-      "name"          : "Alsace - Graffenreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0069": {
-      "name"          : "Alsace - Grafreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0070": {
-      "name"          : "Alsace - Grasberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0071": {
-      "name"          : "Alsace - Gyspgrube (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0072": {
-      "name"          : "Alsace - Hagelberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0073": {
-      "name"          : "Alsace - Hagenschlauf (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0074": {
-      "name"          : "Alsace - Hahnenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0075": {
-      "name"          : "Alsace - Haidi (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0076": {
-      "name"          : "Alsace - Hannesacker (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0077": {
-      "name"          : "Alsace - Hardt (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0078": {
-      "name"          : "Alsace - Heimburg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0079": {
-      "name"          : "Alsace - Heissenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0080": {
-      "name"          : "Alsace - Herrenreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0081": {
-      "name"          : "Alsace - Herrenweg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0082": {
-      "name"          : "Alsace - Hertenstein (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0083": {
-      "name"          : "Alsace - Hinterburg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0084": {
-      "name"          : "Alsace - Holder (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0085": {
-      "name"          : "Alsace - Horn (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0086": {
-      "name"          : "Alsace - Huettgasse (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0087": {
-      "name"          : "Alsace - Hungerfeld (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0088": {
-      "name"          : "Alsace - Husaren (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0089": {
-      "name"          : "Alsace - Im Berg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0090": {
-      "name"          : "Alsace - Im Schloss (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0091": {
-      "name"          : "Alsace - Kaefferkopf (LD - Version Historique)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0092": {
-      "name"          : "Alsace - Kaklgrube (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0093": {
-      "name"          : "Alsace - Kanzelberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0094": {
-      "name"          : "Alsace - Katzenstegel (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0095": {
-      "name"          : "Alsace - Kefferberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0096": {
-      "name"          : "Alsace - Keimberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0097": {
-      "name"          : "Alsace - Kieshuebel (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0098": {
-      "name"          : "Alsace - Kleinfels (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0099": {
-      "name"          : "Alsace - Kreut (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0100": {
-      "name"          : "Alsace - Kritt (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0101": {
-      "name"          : "Alsace - Kronenbourg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0102": {
-      "name"          : "Alsace - Kugelberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0103": {
-      "name"          : "Alsace - La Limite (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0104": {
-      "name"          : "Alsace - Lerchenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0105": {
-      "name"          : "Alsace - Les Pierrets (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0106": {
-      "name"          : "Alsace - Letzenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0107": {
-      "name"          : "Alsace - Liebenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0108": {
-      "name"          : "Alsace - Linsenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0109": {
-      "name"          : "Alsace - Mittel-Aue (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0110": {
-      "name"          : "Alsace - Mittellaeng (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0111": {
-      "name"          : "Alsace - Moenchreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0112": {
-      "name"          : "Alsace - Muehlforst / Muhlforst (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0113": {
-      "name"          : "Alsace - Muschelkalck (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0114": {
-      "name"          : "Alsace - Oberberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0115": {
-      "name"          : "Alsace - Oberhagel (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0116": {
-      "name"          : "Alsace - Ortel (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0117": {
-      "name"          : "Alsace - Ortenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0118": {
-      "name"          : "Alsace - Osthoffen (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0119": {
-      "name"          : "Alsace - Pfaenzerreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0120": {
-      "name"          : "Alsace - Pflintz (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0121": {
-      "name"          : "Alsace - Pfoeller Niedermorschwihr (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0122": {
-      "name"          : "Alsace - Rangenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0123": {
-      "name"          : "Alsace - Rebgarten (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0124": {
-      "name"          : "Alsace - Reichfeld (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0125": {
-      "name"          : "Alsace - Reifenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0126": {
-      "name"          : "Alsace - Rimelsberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0127": {
-      "name"          : "Alsace - Rittersberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0128": {
-      "name"          : "Alsace - Roemerberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0129": {
-      "name"          : "Alsace - Rosenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0130": {
-      "name"          : "Alsace - Rosenbourg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0131": {
-      "name"          : "Alsace - Rote-Lohe (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0132": {
-      "name"          : "Alsace - Rothstein (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0133": {
-      "name"          : "Alsace - Rotland (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0134": {
-      "name"          : "Alsace - Rouge d'Ottrott (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0135": {
-      "name"          : "Alsace - Rouge de Barr (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0136": {
-      "name"          : "Alsace - Rouge de Blienshwiller (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0137": {
-      "name"          : "Alsace - Rouge de Marlenheim (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0138": {
-      "name"          : "Alsace - Rouge de Mittelbergheim (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0139": {
-      "name"          : "Alsace - Rouge de Nothalten (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0140": {
-      "name"          : "Alsace - Rouge de St-Hippolyte (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0141": {
-      "name"          : "Alsace - Rouge de Zellenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0142": {
-      "name"          : "Alsace - Rouge de Zellwiller (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["R"]
-    },
-    "0143": {
-      "name"          : "Alsace - Saint-André (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0144": {
-      "name"          : "Alsace - Schenkenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0145": {
-      "name"          : "Alsace - Schieferberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0146": {
-      "name"          : "Alsace - Schimberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0147": {
-      "name"          : "Alsace - Schloesselreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0148": {
-      "name"          : "Alsace - Schlossreben (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0149": {
-      "name"          : "Alsace - Schneeberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0150": {
-      "name"          : "Alsace - Schwarzberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0151": {
-      "name"          : "Alsace - Schwendehiesel (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0152": {
-      "name"          : "Alsace - Silberberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0153": {
-      "name"          : "Alsace - Silbergrub (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0154": {
-      "name"          : "Alsace - Sohlenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0155": {
-      "name"          : "Alsace - Sonnenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0156": {
-      "name"          : "Alsace - Stein (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0157": {
-      "name"          : "Alsace - Steinacker (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0158": {
-      "name"          : "Alsace - Steinweg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0159": {
-      "name"          : "Alsace - Stierkopf (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0160": {
-      "name"          : "Alsace - Strangenberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0161": {
-      "name"          : "Alsace - Streng (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0162": {
-      "name"          : "Alsace - Stribicher (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0163": {
-      "name"          : "Alsace - Sunngass (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0164": {
-      "name"          : "Alsace - Sylvaner de Mittelbergheim (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0165": {
-      "name"          : "Alsace - Trottacker (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0166": {
-      "name"          : "Alsace - Kirrenbourg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0167": {
-      "name"          : "Alsace - Vorlauf (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0168": {
-      "name"          : "Alsace - Waldweg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0169": {
-      "name"          : "Alsace - Weinberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0170": {
-      "name"          : "Alsace - Weingartern / Bergweingarten (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0171": {
-      "name"          : "Alsace - Westerberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0172": {
-      "name"          : "Alsace - Westerweingarten (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0173": {
-      "name"          : "Alsace - Wolfsgrube (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0174": {
-      "name"          : "Alsace - Zellberg (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0175": {
-      "name"          : "Alsace - Zellwiller (LD)",
-      "type"          : "AOC Regional Lieu-dit",
-      "allowed_colors": ["W"]
-    },
-    "0176": {
-      "name"          : "Alsace Grand Cru (Générique) (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0177": {
-      "name"          : "Alsace Grand Cru Altenberg de Bergbieten (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0178": {
-      "name"          : "Alsace Grand Cru Altenberg de Bergheim (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W", "R"]
-    },
-    "0179": {
-      "name"          : "Alsace Grand Cru Altenberg de Wolxheim (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0180": {
-      "name"          : "Alsace Grand Cru Brand (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0181": {
-      "name"          : "Alsace Grand Cru Bruderthal (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0182": {
-      "name"          : "Alsace Grand Cru Eichberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0183": {
-      "name"          : "Alsace Grand Cru Engelberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0184": {
-      "name"          : "Alsace Grand Cru Florimont (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0185": {
-      "name"          : "Alsace Grand Cru Frankstein (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0186": {
-      "name"          : "Alsace Grand Cru Froehn (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0187": {
-      "name"          : "Alsace Grand Cru Furstentum (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0188": {
-      "name"          : "Alsace Grand Cru Geisberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0189": {
-      "name"          : "Alsace Grand Cru Gloeckelberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0190": {
-      "name"          : "Alsace Grand Cru Goldert (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0191": {
-      "name"          : "Alsace Grand Cru Hatschbourg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0192": {
-      "name"          : "Alsace Grand Cru Hengst (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W", "R"]
-    },
-    "0193": {
-      "name"          : "Alsace Grand Cru Kaefferkopf (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0194": {
-      "name"          : "Alsace Grand Cru Kanzlerberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0195": {
-      "name"          : "Alsace Grand Cru Kastelberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0196": {
-      "name"          : "Alsace Grand Cru Kessler (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0197": {
-      "name"          : "Alsace Grand Cru Kirchberg de Barr (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0198": {
-      "name"          : "Alsace Grand Cru Kirchberg de Ribeauvillé (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0199": {
-      "name"          : "Alsace Grand Cru Kitterlé (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0200": {
-      "name"          : "Alsace Grand Cru Mambourg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0201": {
-      "name"          : "Alsace Grand Cru Mandelberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0202": {
-      "name"          : "Alsace Grand Cru Marckrain (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0203": {
-      "name"          : "Alsace Grand Cru Moenchberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0204": {
-      "name"          : "Alsace Grand Cru Muenchberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0205": {
-      "name"          : "Alsace Grand Cru Ollwiller (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0206": {
-      "name"          : "Alsace Grand Cru Osterberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0207": {
-      "name"          : "Alsace Grand Cru Pfersigberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0208": {
-      "name"          : "Alsace Grand Cru Pfingstberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0209": {
-      "name"          : "Alsace Grand Cru Praelatenberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0210": {
-      "name"          : "Alsace Grand Cru Rangen (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0211": {
-      "name"          : "Alsace Grand Cru Rosacker (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0212": {
-      "name"          : "Alsace Grand Cru Saering (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0213": {
-      "name"          : "Alsace Grand Cru Schlossberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0214": {
-      "name"          : "Alsace Grand Cru Schoenenbourg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0215": {
-      "name"          : "Alsace Grand Cru Sommerberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0216": {
-      "name"          : "Alsace Grand Cru Sonnenglanz (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0217": {
-      "name"          : "Alsace Grand Cru Spiegel (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0218": {
-      "name"          : "Alsace Grand Cru Sporen (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0219": {
-      "name"          : "Alsace Grand Cru Steinert (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0220": {
-      "name"          : "Alsace Grand Cru Steingrubler (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0221": {
-      "name"          : "Alsace Grand Cru Steinklotz (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0222": {
-      "name"          : "Alsace Grand Cru Vorbourg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0223": {
-      "name"          : "Alsace Grand Cru Wiebelsberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0224": {
-      "name"          : "Alsace Grand Cru Wineck-Schlossberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0225": {
-      "name"          : "Alsace Grand Cru Winzenberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0226": {
-      "name"          : "Alsace Grand Cru Zinnkoepflé (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0227": {
-      "name"          : "Alsace Grand Cru Zotzenberg (AOC)",
-      "type"          : "AOC Grand Cru",
-      "allowed_colors": ["W"]
-    },
-    "0228": {
-      "name"          : "Crémant d'Alsace (AOC)",
-      "type"          : "AOC Sparkling",
-      "allowed_colors": ["W", "P"]
-    }
+    "0001": { "macro_region": "ALS", "name": "Alsace (AOC)", "type": "AOC Regional", "allowed_colors": ["W", "R", "P"] },
+    "0002": { "macro_region": "ALS", "name": "Alsace - Bergheim (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W", "R"] },
+    "0003": { "macro_region": "ALS", "name": "Alsace - Blienschwiller (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0004": { "macro_region": "ALS", "name": "Alsace - Côte de Rouffach (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0005": { "macro_region": "ALS", "name": "Alsace - Coteaux du Haut-Koenigsbourg / Orschwiller (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0006": { "macro_region": "ALS", "name": "Alsace - Côtes de Barr (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0007": { "macro_region": "ALS", "name": "Alsace - Klevener de Heiligenstein (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0008": { "macro_region": "ALS", "name": "Alsace - Ottrott (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["R"] },
+    "0009": { "macro_region": "ALS", "name": "Alsace - Rodern (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["R"] },
+    "0010": { "macro_region": "ALS", "name": "Alsace - Saint-Hippolyte (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["R"] },
+    "0011": { "macro_region": "ALS", "name": "Alsace - Scherwiller (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0012": { "macro_region": "ALS", "name": "Alsace - Val Saint-Grégoire / Wihr-Au-Val (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0013": { "macro_region": "ALS", "name": "Alsace - Vallée Noble (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0014": { "macro_region": "ALS", "name": "Alsace - Wolxheim (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
+    "0015": { "macro_region": "ALS", "name": "Alsace - Affenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0016": { "macro_region": "ALS", "name": "Alsace - Altenbourg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0017": { "macro_region": "ALS", "name": "Alsace - Altengarten (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0018": { "macro_region": "ALS", "name": "Alsace - Altitude 333 (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0019": { "macro_region": "ALS", "name": "Alsace - Belzbrunnen (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0020": { "macro_region": "ALS", "name": "Alsace - Bergweingarten (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0021": { "macro_region": "ALS", "name": "Alsace - Bildstoeckle (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0022": { "macro_region": "ALS", "name": "Alsace - Blettig (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0023": { "macro_region": "ALS", "name": "Alsace - Blosenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0024": { "macro_region": "ALS", "name": "Alsace - Bollenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W", "R"] },
+    "0025": { "macro_region": "ALS", "name": "Alsace - Bouxreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0026": { "macro_region": "ALS", "name": "Alsace - Brandhof (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0027": { "macro_region": "ALS", "name": "Alsace - Brandluft (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0028": { "macro_region": "ALS", "name": "Alsace - Bruchwegeben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0029": { "macro_region": "ALS", "name": "Alsace - Bülh (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0030": { "macro_region": "ALS", "name": "Alsace - Burgreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0031": { "macro_region": "ALS", "name": "Alsace - Clos du Sonnenbach (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0032": { "macro_region": "ALS", "name": "Alsace - Clos du Zahnacker (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0033": { "macro_region": "ALS", "name": "Alsace - Clos Feyel (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0034": { "macro_region": "ALS", "name": "Alsace - Clos Ribeaupierre (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0035": { "macro_region": "ALS", "name": "Alsace - Clos Rosalys (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0036": { "macro_region": "ALS", "name": "Alsace - Clos Sony (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0037": { "macro_region": "ALS", "name": "Alsace - Clos St-Guingallois (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0038": { "macro_region": "ALS", "name": "Alsace - Clos Ste Hune (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0039": { "macro_region": "ALS", "name": "Alsace - Clos Windsbuhl (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0040": { "macro_region": "ALS", "name": "Alsace - Cormier (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0041": { "macro_region": "ALS", "name": "Alsace - Coteaux de la Mossig (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0042": { "macro_region": "ALS", "name": "Alsace - Côtes d'Ammerschwihr (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0043": { "macro_region": "ALS", "name": "Alsace - Côtes d'Eguisheim (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0044": { "macro_region": "ALS", "name": "Alsace - Côtes de Kaysersberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0045": { "macro_region": "ALS", "name": "Alsace - Côtes de Niedermorschwihr (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0046": { "macro_region": "ALS", "name": "Alsace - Côtes de Ribeauville (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0047": { "macro_region": "ALS", "name": "Alsace - Côtes de Rouffach Bergweingarten (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0048": { "macro_region": "ALS", "name": "Alsace - Côtes du Florimont (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0049": { "macro_region": "ALS", "name": "Alsace - Côtes du Val St Grégoire (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0050": { "macro_region": "ALS", "name": "Alsace - Degis (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0051": { "macro_region": "ALS", "name": "Alsace - Dorenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0052": { "macro_region": "ALS", "name": "Alsace - Dorfschatz (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0053": { "macro_region": "ALS", "name": "Alsace - Duttenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0054": { "macro_region": "ALS", "name": "Alsace - Eich (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0055": { "macro_region": "ALS", "name": "Alsace - Engelgarten (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0056": { "macro_region": "ALS", "name": "Alsace - Ferme Boemstein (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0057": { "macro_region": "ALS", "name": "Alsace - Finkenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0058": { "macro_region": "ALS", "name": "Alsace - Frauengut (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0059": { "macro_region": "ALS", "name": "Alsace - Fronenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0060": { "macro_region": "ALS", "name": "Alsace - Fronholz (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0061": { "macro_region": "ALS", "name": "Alsace - Fruehmess (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0062": { "macro_region": "ALS", "name": "Alsace - Furstentum (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0063": { "macro_region": "ALS", "name": "Alsace - Gaensbroennel (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0064": { "macro_region": "ALS", "name": "Alsace - Gaentzbrunnen (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0065": { "macro_region": "ALS", "name": "Alsace - Geierstein (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0066": { "macro_region": "ALS", "name": "Alsace - Geissberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0067": { "macro_region": "ALS", "name": "Alsace - Glintzberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0068": { "macro_region": "ALS", "name": "Alsace - Graffenreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0069": { "macro_region": "ALS", "name": "Alsace - Grafreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0070": { "macro_region": "ALS", "name": "Alsace - Grasberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0071": { "macro_region": "ALS", "name": "Alsace - Gyspgrube (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0072": { "macro_region": "ALS", "name": "Alsace - Hagelberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0073": { "macro_region": "ALS", "name": "Alsace - Hagenschlauf (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0074": { "macro_region": "ALS", "name": "Alsace - Hahnenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0075": { "macro_region": "ALS", "name": "Alsace - Haidi (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0076": { "macro_region": "ALS", "name": "Alsace - Hannesacker (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0077": { "macro_region": "ALS", "name": "Alsace - Hardt (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0078": { "macro_region": "ALS", "name": "Alsace - Heimburg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0079": { "macro_region": "ALS", "name": "Alsace - Heissenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0080": { "macro_region": "ALS", "name": "Alsace - Herrenreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0081": { "macro_region": "ALS", "name": "Alsace - Herrenweg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0082": { "macro_region": "ALS", "name": "Alsace - Hertenstein (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0083": { "macro_region": "ALS", "name": "Alsace - Hinterburg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0084": { "macro_region": "ALS", "name": "Alsace - Holder (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0085": { "macro_region": "ALS", "name": "Alsace - Horn (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0086": { "macro_region": "ALS", "name": "Alsace - Huettgasse (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0087": { "macro_region": "ALS", "name": "Alsace - Hungerfeld (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0088": { "macro_region": "ALS", "name": "Alsace - Husaren (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0089": { "macro_region": "ALS", "name": "Alsace - Im Berg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0090": { "macro_region": "ALS", "name": "Alsace - Im Schloss (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0091": { "macro_region": "ALS", "name": "Alsace - Kaefferkopf (LD - Version Historique)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0092": { "macro_region": "ALS", "name": "Alsace - Kaklgrube (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0093": { "macro_region": "ALS", "name": "Alsace - Kanzelberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0094": { "macro_region": "ALS", "name": "Alsace - Katzenstegel (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0095": { "macro_region": "ALS", "name": "Alsace - Kefferberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0096": { "macro_region": "ALS", "name": "Alsace - Keimberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0097": { "macro_region": "ALS", "name": "Alsace - Kieshuebel (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0098": { "macro_region": "ALS", "name": "Alsace - Kleinfels (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0099": { "macro_region": "ALS", "name": "Alsace - Kreut (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0100": { "macro_region": "ALS", "name": "Alsace - Kritt (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0101": { "macro_region": "ALS", "name": "Alsace - Kronenbourg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0102": { "macro_region": "ALS", "name": "Alsace - Kugelberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0103": { "macro_region": "ALS", "name": "Alsace - La Limite (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0104": { "macro_region": "ALS", "name": "Alsace - Lerchenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0105": { "macro_region": "ALS", "name": "Alsace - Les Pierrets (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0106": { "macro_region": "ALS", "name": "Alsace - Letzenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0107": { "macro_region": "ALS", "name": "Alsace - Liebenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0108": { "macro_region": "ALS", "name": "Alsace - Linsenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0109": { "macro_region": "ALS", "name": "Alsace - Mittel-Aue (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0110": { "macro_region": "ALS", "name": "Alsace - Mittellaeng (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0111": { "macro_region": "ALS", "name": "Alsace - Moenchreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0112": { "macro_region": "ALS", "name": "Alsace - Muehlforst / Muhlforst (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0113": { "macro_region": "ALS", "name": "Alsace - Muschelkalck (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0114": { "macro_region": "ALS", "name": "Alsace - Oberberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0115": { "macro_region": "ALS", "name": "Alsace - Oberhagel (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0116": { "macro_region": "ALS", "name": "Alsace - Ortel (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0117": { "macro_region": "ALS", "name": "Alsace - Ortenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0118": { "macro_region": "ALS", "name": "Alsace - Osthoffen (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0119": { "macro_region": "ALS", "name": "Alsace - Pfaenzerreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0120": { "macro_region": "ALS", "name": "Alsace - Pflintz (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0121": { "macro_region": "ALS", "name": "Alsace - Pfoeller Niedermorschwihr (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0122": { "macro_region": "ALS", "name": "Alsace - Rangenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0123": { "macro_region": "ALS", "name": "Alsace - Rebgarten (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0124": { "macro_region": "ALS", "name": "Alsace - Reichfeld (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0125": { "macro_region": "ALS", "name": "Alsace - Reifenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0126": { "macro_region": "ALS", "name": "Alsace - Rimelsberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0127": { "macro_region": "ALS", "name": "Alsace - Rittersberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0128": { "macro_region": "ALS", "name": "Alsace - Roemerberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0129": { "macro_region": "ALS", "name": "Alsace - Rosenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0130": { "macro_region": "ALS", "name": "Alsace - Rosenbourg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0131": { "macro_region": "ALS", "name": "Alsace - Rote-Lohe (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0132": { "macro_region": "ALS", "name": "Alsace - Rothstein (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0133": { "macro_region": "ALS", "name": "Alsace - Rotland (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0134": { "macro_region": "ALS", "name": "Alsace - Rouge d'Ottrott (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0135": { "macro_region": "ALS", "name": "Alsace - Rouge de Barr (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0136": { "macro_region": "ALS", "name": "Alsace - Rouge de Blienshwiller (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0137": { "macro_region": "ALS", "name": "Alsace - Rouge de Marlenheim (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0138": { "macro_region": "ALS", "name": "Alsace - Rouge de Mittelbergheim (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0139": { "macro_region": "ALS", "name": "Alsace - Rouge de Nothalten (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0140": { "macro_region": "ALS", "name": "Alsace - Rouge de St-Hippolyte (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0141": { "macro_region": "ALS", "name": "Alsace - Rouge de Zellenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0142": { "macro_region": "ALS", "name": "Alsace - Rouge de Zellwiller (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["R"] },
+    "0143": { "macro_region": "ALS", "name": "Alsace - Saint-André (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0144": { "macro_region": "ALS", "name": "Alsace - Schenkenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0145": { "macro_region": "ALS", "name": "Alsace - Schieferberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0146": { "macro_region": "ALS", "name": "Alsace - Schimberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0147": { "macro_region": "ALS", "name": "Alsace - Schloesselreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0148": { "macro_region": "ALS", "name": "Alsace - Schlossreben (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0149": { "macro_region": "ALS", "name": "Alsace - Schneeberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0150": { "macro_region": "ALS", "name": "Alsace - Schwarzberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0151": { "macro_region": "ALS", "name": "Alsace - Schwendehiesel (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0152": { "macro_region": "ALS", "name": "Alsace - Silberberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0153": { "macro_region": "ALS", "name": "Alsace - Silbergrub (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0154": { "macro_region": "ALS", "name": "Alsace - Sohlenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0155": { "macro_region": "ALS", "name": "Alsace - Sonnenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0156": { "macro_region": "ALS", "name": "Alsace - Stein (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0157": { "macro_region": "ALS", "name": "Alsace - Steinacker (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0158": { "macro_region": "ALS", "name": "Alsace - Steinweg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0159": { "macro_region": "ALS", "name": "Alsace - Stierkopf (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0160": { "macro_region": "ALS", "name": "Alsace - Strangenberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0161": { "macro_region": "ALS", "name": "Alsace - Streng (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0162": { "macro_region": "ALS", "name": "Alsace - Stribicher (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0163": { "macro_region": "ALS", "name": "Alsace - Sunngass (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0164": { "macro_region": "ALS", "name": "Alsace - Sylvaner de Mittelbergheim (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0165": { "macro_region": "ALS", "name": "Alsace - Trottacker (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0166": { "macro_region": "ALS", "name": "Alsace - Kirrenbourg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0167": { "macro_region": "ALS", "name": "Alsace - Vorlauf (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0168": { "macro_region": "ALS", "name": "Alsace - Waldweg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0169": { "macro_region": "ALS", "name": "Alsace - Weinberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0170": { "macro_region": "ALS", "name": "Alsace - Weingartern / Bergweingarten (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0171": { "macro_region": "ALS", "name": "Alsace - Westerberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0172": { "macro_region": "ALS", "name": "Alsace - Westerweingarten (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0173": { "macro_region": "ALS", "name": "Alsace - Wolfsgrube (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0174": { "macro_region": "ALS", "name": "Alsace - Zellberg (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0175": { "macro_region": "ALS", "name": "Alsace - Zellwiller (LD)", "type": "AOC Regional Lieu-dit", "allowed_colors": ["W"] },
+    "0176": { "macro_region": "ALS", "name": "Alsace Grand Cru (Générique) (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0177": { "macro_region": "ALS", "name": "Alsace Grand Cru Altenberg de Bergbieten (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0178": { "macro_region": "ALS", "name": "Alsace Grand Cru Altenberg de Bergheim (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W", "R"] },
+    "0179": { "macro_region": "ALS", "name": "Alsace Grand Cru Altenberg de Wolxheim (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0180": { "macro_region": "ALS", "name": "Alsace Grand Cru Brand (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0181": { "macro_region": "ALS", "name": "Alsace Grand Cru Bruderthal (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0182": { "macro_region": "ALS", "name": "Alsace Grand Cru Eichberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0183": { "macro_region": "ALS", "name": "Alsace Grand Cru Engelberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0184": { "macro_region": "ALS", "name": "Alsace Grand Cru Florimont (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0185": { "macro_region": "ALS", "name": "Alsace Grand Cru Frankstein (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0186": { "macro_region": "ALS", "name": "Alsace Grand Cru Froehn (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0187": { "macro_region": "ALS", "name": "Alsace Grand Cru Furstentum (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0188": { "macro_region": "ALS", "name": "Alsace Grand Cru Geisberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0189": { "macro_region": "ALS", "name": "Alsace Grand Cru Gloeckelberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0190": { "macro_region": "ALS", "name": "Alsace Grand Cru Goldert (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0191": { "macro_region": "ALS", "name": "Alsace Grand Cru Hatschbourg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0192": { "macro_region": "ALS", "name": "Alsace Grand Cru Hengst (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W", "R"] },
+    "0193": { "macro_region": "ALS", "name": "Alsace Grand Cru Kaefferkopf (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0194": { "macro_region": "ALS", "name": "Alsace Grand Cru Kanzlerberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0195": { "macro_region": "ALS", "name": "Alsace Grand Cru Kastelberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0196": { "macro_region": "ALS", "name": "Alsace Grand Cru Kessler (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0197": { "macro_region": "ALS", "name": "Alsace Grand Cru Kirchberg de Barr (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0198": { "macro_region": "ALS", "name": "Alsace Grand Cru Kirchberg de Ribeauvillé (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0199": { "macro_region": "ALS", "name": "Alsace Grand Cru Kitterlé (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0200": { "macro_region": "ALS", "name": "Alsace Grand Cru Mambourg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0201": { "macro_region": "ALS", "name": "Alsace Grand Cru Mandelberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0202": { "macro_region": "ALS", "name": "Alsace Grand Cru Marckrain (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0203": { "macro_region": "ALS", "name": "Alsace Grand Cru Moenchberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0204": { "macro_region": "ALS", "name": "Alsace Grand Cru Muenchberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0205": { "macro_region": "ALS", "name": "Alsace Grand Cru Ollwiller (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0206": { "macro_region": "ALS", "name": "Alsace Grand Cru Osterberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0207": { "macro_region": "ALS", "name": "Alsace Grand Cru Pfersigberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0208": { "macro_region": "ALS", "name": "Alsace Grand Cru Pfingstberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0209": { "macro_region": "ALS", "name": "Alsace Grand Cru Praelatenberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0210": { "macro_region": "ALS", "name": "Alsace Grand Cru Rangen (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0211": { "macro_region": "ALS", "name": "Alsace Grand Cru Rosacker (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0212": { "macro_region": "ALS", "name": "Alsace Grand Cru Saering (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0213": { "macro_region": "ALS", "name": "Alsace Grand Cru Schlossberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0214": { "macro_region": "ALS", "name": "Alsace Grand Cru Schoenenbourg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0215": { "macro_region": "ALS", "name": "Alsace Grand Cru Sommerberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0216": { "macro_region": "ALS", "name": "Alsace Grand Cru Sonnenglanz (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0217": { "macro_region": "ALS", "name": "Alsace Grand Cru Spiegel (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0218": { "macro_region": "ALS", "name": "Alsace Grand Cru Sporen (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0219": { "macro_region": "ALS", "name": "Alsace Grand Cru Steinert (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0220": { "macro_region": "ALS", "name": "Alsace Grand Cru Steingrubler (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0221": { "macro_region": "ALS", "name": "Alsace Grand Cru Steinklotz (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0222": { "macro_region": "ALS", "name": "Alsace Grand Cru Vorbourg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0223": { "macro_region": "ALS", "name": "Alsace Grand Cru Wiebelsberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0224": { "macro_region": "ALS", "name": "Alsace Grand Cru Wineck-Schlossberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0225": { "macro_region": "ALS", "name": "Alsace Grand Cru Winzenberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0226": { "macro_region": "ALS", "name": "Alsace Grand Cru Zinnkoepflé (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0227": { "macro_region": "ALS", "name": "Alsace Grand Cru Zotzenberg (AOC)", "type": "AOC Grand Cru", "allowed_colors": ["W"] },
+    "0228": { "macro_region": "ALS", "name": "Crémant d'Alsace (AOC)", "type": "AOC Sparkling", "allowed_colors": ["W", "P"] },
+    
+    "0229": { "macro_region": "BJL", "name": "Beaujolais (AOC)", "type": "AOC Regional", "allowed_colors": ["R", "P", "W"] },
+    "0230": { "macro_region": "BJL", "name": "Beaujolais Supérieur (AOC)", "type": "AOC Regional", "allowed_colors": ["R"] },
+    "0231": { "macro_region": "BJL", "name": "Beaujolais-Villages (AOC)", "type": "AOC Regional Villages", "allowed_colors": ["R", "P", "W"] },
+    "0232": { "macro_region": "BJL", "name": "Brouilly (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0233": { "macro_region": "BJL", "name": "Chénas (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0234": { "macro_region": "BJL", "name": "Chiroubles (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0235": { "macro_region": "BJL", "name": "Côte de Brouilly (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0236": { "macro_region": "BJL", "name": "Fleurie (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0237": { "macro_region": "BJL", "name": "Juliénas (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0238": { "macro_region": "BJL", "name": "Morgon (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0239": { "macro_region": "BJL", "name": "Moulin-à-Vent (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0240": { "macro_region": "BJL", "name": "Régnié (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0241": { "macro_region": "BJL", "name": "Saint-Amour (CRU)", "type": "AOC Communal Cru", "allowed_colors": ["R"] },
+    "0242": { "macro_region": "BJL", "name": "Coteaux du Lyonnais (AOC)", "type": "AOC Regional", "allowed_colors": ["R", "P", "W"] }
   }
 }
