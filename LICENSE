@@ -1,0 +1,14 @@
+IWIN STANDARD - DUAL LICENSING POLICY
+
+This repository and the IWIN standard specification are distributed under a dual-licensing model:
+
+1. NON-COMMERCIAL & OPEN SOURCE USE (GNU GPLv3)
+For open-source projects, community developers, and non-commercial educational use, this project is licensed under the GNU General Public License v3 (GPLv3). Any derivative work, parser, or database integration deployed under this license must also be made fully Open Source under the same GPLv3 terms. 
+The full text of the GPLv3 license can be found in the accompanying 'LICENSE-GPL.txt' file in this repository.
+
+2. COMMERCIAL & PROPRIETARY INTEGRATION
+For proprietary software, closed-source applications, commercial cellar management systems, or corporate hardware manufacturers who wish to embed the IWIN standard without disclosing their private source code, a paid Commercial License is strictly REQUIRED.
+
+Unauthorized commercial utilization of this specification or the "IWIN" trademark for profit-making applications without a valid commercial agreement constitutes a violation of the terms of this repository.
+
+To secure a commercial license, corporate partnership, or dedicated vendor code assignments, please contact the repository owner directly.
