@@ -1,601 +1,1148 @@
 {
-  "001": {
-    "official_name": "Alsace AOC",
-    "region_assignment": "ALS",
-    "category": "AOP",
-    "notes": "Includes all single-varietal mentions (Riesling, Pinot, Gewurztraminer) and traditional blends (Edelzwicker, Gentil) encoded via Block 7."
-  },
-  "002": {
-    "official_name": "Alsace Grand Cru AOC",
-    "region_assignment": "ALS",
-    "category": "AOP",
-    "notes": "Covers the 51 specific grand cru terroirs/lieux-dits, partitioned via Block 7."
-  },
-  "003": {
-    "official_name": "Crémant d'Alsace AOC",
-    "region_assignment": "ALS",
-    "category": "AOP",
-    "notes": "Sparkling wines produced under traditional method guidelines in the Alsace region."
-  },
-  "004": {
-    "official_name": "Beaujolais AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "005": {
-    "official_name": "Beaujolais Supérieur AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "006": {
-    "official_name": "Beaujolais-Villages AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "007": {
-    "official_name": "Brouilly AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "008": {
-    "official_name": "Chénas AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "009": {
-    "official_name": "Chiroubles AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "010": {
-    "official_name": "Coteaux du Lyonnais AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "011": {
-    "official_name": "Côte de Brouilly AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "012": {
-    "official_name": "Fleurie AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "013": {
-    "official_name": "Juliénas AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "014": {
-    "official_name": "Morgon AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "015": {
-    "official_name": "Moulin-à-Vent AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "016": {
-    "official_name": "Régnié AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "017": {
-    "official_name": "Saint-Amour AOC",
-    "region_assignment": "BJL",
-    "category": "AOP"
-  },
-  "018": { "official_name": "Barsac AOC", "region_assignment": "BOR", "category": "AOP" },
-  "019": { "official_name": "Blaye-Côtes de Bordeaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "020": { "official_name": "Bordeaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "021": { "official_name": "Bordeaux Supérieur AOC", "region_assignment": "BOR", "category": "AOP" },
-  "022": { "official_name": "Bordeaux-Haut-Benauge AOC", "region_assignment": "BOR", "category": "AOP" },
-  "023": { "official_name": "Cadillac-Côtes de Bordeaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "024": { "official_name": "Canon-Fronsac AOC", "region_assignment": "BOR", "category": "AOP" },
-  "025": { "official_name": "Castillon-Côtes de Bordeaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "026": { "official_name": "Cérons AOC", "region_assignment": "BOR", "category": "AOP" },
-  "027": { "official_name": "Côtes de Blaye AOC", "region_assignment": "BOR", "category": "AOP" },
-  "028": { "official_name": "Côtes de Bordeaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "029": { "official_name": "Côtes de Bordeaux-Saint-Macaire AOC", "region_assignment": "BOR", "category": "AOP" },
-  "030": { "official_name": "Côtes de Bourg AOC", "region_assignment": "BOR", "category": "AOP", "notes": "Covers Bourg and Bourgeais designations." },
-  "031": { "official_name": "Crémant de Bordeaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "032": { "official_name": "Entre-deux-Mers AOC", "region_assignment": "BOR", "category": "AOP" },
-  "033": { "official_name": "Entre-deux-Mers-Haut-Benauge AOC", "region_assignment": "BOR", "category": "AOP" },
-  "034": { "official_name": "Francs-Côtes de Bordeaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "035": { "official_name": "Fronsac AOC", "region_assignment": "BOR", "category": "AOP" },
-  "036": { "official_name": "Graves AOC", "region_assignment": "BOR", "category": "AOP" },
-  "037": { "official_name": "Graves de Vayres AOC", "region_assignment": "BOR", "category": "AOP" },
-  "038": { "official_name": "Graves Supérieures AOC", "region_assignment": "BOR", "category": "AOP" },
-  "039": { "official_name": "Haut-Médoc AOC", "region_assignment": "BOR", "category": "AOP" },
-  "040": { "official_name": "Lalande-de-Pomerol AOC", "region_assignment": "BOR", "category": "AOP", "notes": "Includes historical Néac production." },
-  "041": { "official_name": "Listrac-Médoc AOC", "region_assignment": "BOR", "category": "AOP" },
-  "042": { "official_name": "Loupiac AOC", "region_assignment": "BOR", "category": "AOP" },
-  "043": { "official_name": "Lussac-Saint-Émilion AOC", "region_assignment": "BOR", "category": "AOP" },
-  "044": { "official_name": "Margaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "045": { "official_name": "Médoc AOC", "region_assignment": "BOR", "category": "AOP" },
-  "046": { "official_name": "Montagne-Saint-Émilion AOC", "region_assignment": "BOR", "category": "AOP" },
-  "047": { "official_name": "Moulis AOC", "region_assignment": "BOR", "category": "AOP", "notes": "Covers Moulis-en-Médoc." },
-  "048": { "official_name": "Pauillac AOC", "region_assignment": "BOR", "category": "AOP" },
-  "049": { "official_name": "Pessac-Léognan AOC", "region_assignment": "BOR", "category": "AOP" },
-  "050": { "official_name": "Pomerol AOC", "region_assignment": "BOR", "category": "AOP" },
-  "051": { "official_name": "Premières Côtes de Blaye AOC", "region_assignment": "BOR", "category": "AOP", "notes": "Historical designation, mostly merged into Blaye-Côtes de Bordeaux." },
-  "052": { "official_name": "Premières Côtes de Bordeaux AOC", "region_assignment": "BOR", "category": "AOP", "notes": "Historical designation, sweet wines only since 2009." },
-  "053": { "official_name": "Puisseguin-Saint-Émilion AOC", "region_assignment": "BOR", "category": "AOP" },
-  "054": { "official_name": "Sainte-Croix-du-Mont AOC", "region_assignment": "BOR", "category": "AOP" },
-  "055": { "official_name": "Sainte-Foy-Bordeaux AOC", "region_assignment": "BOR", "category": "AOP" },
-  "056": { "official_name": "Saint-Émilion AOC", "region_assignment": "BOR", "category": "AOP" },
-  "057": { "official_name": "Saint-Émilion Grand Cru AOC", "region_assignment": "BOR", "category": "AOP" },
-  "058": { "official_name": "Saint-Estèphe AOC", "region_assignment": "BOR", "category": "AOP" },
-  "059": { "official_name": "Saint-Georges-Saint-Émilion AOC", "region_assignment": "BOR", "category": "AOP" },
-  "060": { "official_name": "Saint-Julien AOC", "region_assignment": "BOR", "category": "AOP" },
-  "061": { "official_name": "Sauternes AOC", "region_assignment": "BOR", "category": "AOP" },
-  "062": { "official_name": "Aloxe-Corton AOC", "region_assignment": "BRG", "category": "AOP" },
-  "063": { "official_name": "Auxey-Duresses AOC", "region_assignment": "BRG", "category": "AOP" },
-  "064": { "official_name": "Bâtard-Montrachet Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "065": { "official_name": "Beaune AOC", "region_assignment": "BRG", "category": "AOP" },
-  "066": { "official_name": "Bienvenues-Bâtard-Montrachet Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "067": { "official_name": "Blagny AOC", "region_assignment": "BRG", "category": "AOP" },
-  "068": { "official_name": "Bonnes-Mares Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "069": { "official_name": "Bourgogne AOC", "region_assignment": "BRG", "category": "AOP", "notes": "Parent code for regional designations (Chitry, Épineuil, Tonnerre, Côte d'Or, Hautes-Côtes, etc.) partitioned via Block 7." },
-  "070": { "official_name": "Bourgogne Aligoté AOC", "region_assignment": "BRG", "category": "AOP" },
-  "071": { "official_name": "Bourgogne Mousseux AOC", "region_assignment": "BRG", "category": "AOP" },
-  "072": { "official_name": "Bourgogne Passetoutgrain AOC", "region_assignment": "BRG", "category": "AOP" },
-  "073": { "official_name": "Bouzeron AOC", "region_assignment": "BRG", "category": "AOP" },
-  "074": { "official_name": "Chablis AOC", "region_assignment": "BRG", "category": "AOP" },
-  "075": { "official_name": "Chablis Grand Cru AOC", "region_assignment": "BRG", "category": "AOP", "notes": "Covers the 7 official climates (Les Clos, Vaudésir, Valmur, etc.) partitioned via Block 7." },
-  "076": { "official_name": "Chablis Premier Cru AOC", "region_assignment": "BRG", "category": "AOP", "notes": "Separated for consumer precision and inventory clarity." },
-  "077": { "official_name": "Chambertin Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "078": { "official_name": "Chambertin-Clos de Bèze Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "079": { "official_name": "Chambolle-Musigny AOC", "region_assignment": "BRG", "category": "AOP" },
-  "080": { "official_name": "Chapelle-Chambertin Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "081": { "official_name": "Charlemagne Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "082": { "official_name": "Charmes-Chambertin Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "083": { "official_name": "Chassagne-Montrachet AOC", "region_assignment": "BRG", "category": "AOP" },
-  "084": { "official_name": "Chevalier-Montrachet Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "085": { "official_name": "Chorey-lès-Beaune AOC", "region_assignment": "BRG", "category": "AOP" },
-  "086": { "official_name": "Clos de la Roche Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "087": { "official_name": "Clos de Tart Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "088": { "official_name": "Clos de Vougeot Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "089": { "official_name": "Clos des Lambrays Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "090": { "official_name": "Clos Saint-Denis Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "091": { "official_name": "Corton Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "092": { "official_name": "Corton-Charlemagne Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "093": { "official_name": "Côte de Beaune AOC", "region_assignment": "BRG", "category": "AOP" },
-  "094": { "official_name": "Côte de Beaune-Villages AOC", "region_assignment": "BRG", "category": "AOP" },
-  "095": { "official_name": "Côte de Nuits-Villages AOC", "region_assignment": "BRG", "category": "AOP" },
-  "096": { "official_name": "Coteaux Bourguignons AOC", "region_assignment": "BRG", "category": "AOP" },
-  "097": { "official_name": "Coteaux de l'Auxois IGP", "region_assignment": "BRG", "category": "IGP" },
-  "098": { "official_name": "Crémant de Bourgogne AOC", "region_assignment": "BRG", "category": "AOP" },
-  "099": { "official_name": "Criots-Bâtard-Montrachet Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "100": { "official_name": "Échezeaux Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "101": { "official_name": "Fixin AOC", "region_assignment": "BRG", "category": "AOP" },
-  "102": { "official_name": "Gevrey-Chambertin AOC", "region_assignment": "BRG", "category": "AOP" },
-  "103": { "official_name": "Givry AOC", "region_assignment": "BRG", "category": "AOP" },
-  "104": { "official_name": "Grands Échezeaux Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "105": { "official_name": "Griotte-Chambertin Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "106": { "official_name": "Irancy AOC", "region_assignment": "BRG", "category": "AOP" },
-  "107": { "official_name": "La Grande Rue Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "108": { "official_name": "La Romanée Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "109": { "official_name": "La Tâche Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "110": { "official_name": "Ladoix AOC", "region_assignment": "BRG", "category": "AOP" },
-  "111": { "official_name": "Latricières-Chambertin Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "112": { "official_name": "Mâcon AOC", "region_assignment": "BRG", "category": "AOP", "notes": "Parent code for all Mâcon geographic village designations (e.g., Azé, Lugny, Verzé) partitioned via Block 7." },
-  "113": { "official_name": "Mâcon-Villages AOC", "region_assignment": "BRG", "category": "AOP" },
-  "114": { "official_name": "Maranges AOC", "region_assignment": "BRG", "category": "AOP" },
-  "115": { "official_name": "Marsannay AOC", "region_assignment": "BRG", "category": "AOP" },
-  "116": { "official_name": "Mazis-Chambertin Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "117": { "official_name": "Mazoyères-Chambertin Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "118": { "official_name": "Mercurey AOC", "region_assignment": "BRG", "category": "AOP" },
-  "119": { "official_name": "Meursault AOC", "region_assignment": "BRG", "category": "AOP" },
-  "120": { "official_name": "Montagny AOC", "region_assignment": "BRG", "category": "AOP" },
-  "121": { "official_name": "Monthélie AOC", "region_assignment": "BRG", "category": "AOP" },
-  "122": { "official_name": "Montrachet Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "123": { "official_name": "Morey-Saint-Denis AOC", "region_assignment": "BRG", "category": "AOP" },
-  "124": { "official_name": "Musigny Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "125": { "official_name": "Nuits-Saint-Georges AOC", "region_assignment": "BRG", "category": "AOP" },
-  "126": { "official_name": "Pernand-Vergelesses AOC", "region_assignment": "BRG", "category": "AOP" },
-  "127": { "official_name": "Petit Chablis AOC", "region_assignment": "BRG", "category": "AOP" },
-  "128": { "official_name": "Pommard AOC", "region_assignment": "BRG", "category": "AOP" },
-  "129": { "official_name": "Pouilly-Fuissé AOC", "region_assignment": "BRG", "category": "AOP" },
-  "130": { "official_name": "Pouilly-Loché AOC", "region_assignment": "BRG", "category": "AOP" },
-  "131": { "official_name": "Pouilly-Vinzelles AOC", "region_assignment": "BRG", "category": "AOP" },
-  "132": { "official_name": "Puligny-Montrachet AOC", "region_assignment": "BRG", "category": "AOP" },
-  "133": { "official_name": "Richebourg Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "134": { "official_name": "Romanée-Conti Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "135": { "official_name": "Romanée-Saint-Vivant Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "136": { "official_name": "Ruchottes-Chambertin Grand Cru AOC", "region_assignment": "BRG", "category": "AOP" },
-  "137": { "official_name": "Rully AOC", "region_assignment": "BRG", "category": "AOP" },
-  "138": { "official_name": "Saint-Aubin AOC", "region_assignment": "BRG", "category": "AOP" },
-  "139": { "official_name": "Saint-Bris AOC", "region_assignment": "BRG", "category": "AOP", "notes": "The only Sauvignon Blanc appellation in Burgundy." },
-  "140": { "official_name": "Saint-Romain AOC", "region_assignment": "BRG", "category": "AOP" },
-  "141": { "official_name": "Saint-Véran AOC", "region_assignment": "BRG", "category": "AOP" },
-  "142": { "official_name": "Santenay AOC", "region_assignment": "BRG", "category": "AOP" },
-  "143": { "official_name": "Saône-et-Loire IGP", "region_assignment": "BRG", "category": "IGP" },
-  "144": { "official_name": "Savigny-lès-Beaune AOC", "region_assignment": "BRG", "category": "AOP" },
-  "145": { "official_name": "Vézelay AOC", "region_assignment": "BRG", "category": "AOP" },
-  "146": { "official_name": "Viré-Clessé AOC", "region_assignment": "BRG", "category": "AOP" },
-  "147": { "official_name": "Volnay AOC", "region_assignment": "BRG", "category": "AOP" },
-  "148": { "official_name": "Vosne-Romanée AOC", "region_assignment": "BRG", "category": "AOP" },
-  "149": { "official_name": "Vougeot AOC", "region_assignment": "BRG", "category": "AOP" },
-  "150": { "official_name": "Yonne IGP", "region_assignment": "BRG", "category": "IGP" },
-  "151": { 
-    "official_name": "Charentais IGP", 
-    "region_assignment": "CGN", 
-    "category": "IGP" 
-  },
-  "152": { 
-    "official_name": "Pineau des Charentes AOC", 
-    "region_assignment": "CGN", 
-    "category": "AOP",
-    "notes": "Fortified wine / Vin de Liqueur." 
-  },
-  "153": { 
-    "official_name": "Champagne AOC", 
-    "region_assignment": "CHA", 
-    "category": "AOP",
-    "notes": "Sparkling wines only."
-  },
-  "154": { 
-    "official_name": "Coteaux Champenois AOC", 
-    "region_assignment": "CHA", 
-    "category": "AOP",
-    "notes": "Still wines produced within the Champagne boundary."
-  },
-  "155": { 
-    "official_name": "Haute-Marne IGP", 
-    "region_assignment": "CHA", 
-    "category": "IGP"
-  },
-  "156": { 
-    "official_name": "Rosé des Riceys AOC", 
-    "region_assignment": "CHA", 
-    "category": "AOP",
-    "notes": "Rare still rosé wines from Les Riceys municipality."
-  },
-  "157": { 
-    "official_name": "Seine-et-Marne IGP", 
-    "region_assignment": "CHA", 
-    "category": "IGP"
-  },
-  "158": { 
-    "official_name": "Ajaccio AOC", 
-    "region_assignment": "COR", 
-    "category": "AOP" 
-  },
-  "159": { 
-    "official_name": "Corse AOC", 
-    "region_assignment": "COR", 
-    "category": "AOP",
-    "notes": "Parent code for all local village designations (Calvi, Figari, Sartène, Porto-Vecchio, Coteaux du Cap Corse) partitioned via Block 7."
-  },
-  "160": { 
-    "official_name": "Île de Beauté IGP", 
-    "region_assignment": "COR", 
-    "category": "IGP" 
-  },
-  "161": { 
-    "official_name": "Muscat du Cap Corse AOC", 
-    "region_assignment": "COR", 
-    "category": "AOP",
-    "notes": "Natural sweet wine / Vin Doux Naturel."
-  },
-  "162": { 
-    "official_name": "Patrimonio AOC", 
-    "region_assignment": "COR", 
-    "category": "AOP" 
-  },
-  "163": { 
-    "official_name": "Île-de-France IGP", 
-    "region_assignment": "IDF", 
-    "category": "IGP",
-    "notes": "Covers still and sparkling wines produced in the Île-de-France geographical area."
-  },
-  "164": { 
-    "official_name": "Arbois AOC", 
-    "region_assignment": "JUR", 
-    "category": "AOP",
-    "notes": "Parent code for Arbois and Arbois-Pupillin, partitioned via Block 7."
-  },
-  "165": { 
-    "official_name": "Château-Chalon AOC", 
-    "region_assignment": "JUR", 
-    "category": "AOP",
-    "notes": "Exclusively for Vin Jaune production."
-  },
-  "166": { 
-    "official_name": "Côtes du Jura AOC", 
-    "region_assignment": "JUR", 
-    "category": "AOP" 
-  },
-  "167": { 
-    "official_name": "Crémant du Jura AOC", 
-    "region_assignment": "JUR", 
-    "category": "AOP",
-    "notes": "Sparkling wines."
-  },
-  "168": { 
-    "official_name": "L'Étoile AOC", 
-    "region_assignment": "JUR", 
-    "category": "AOP" 
-  },
-  "169": { 
-    "official_name": "Franche-Comté IGP", 
-    "region_assignment": "JUR", 
-    "category": "IGP",
-    "notes": "Parent code for all departmental and zone suffixes (Doubs, Haute-Saône, Gy, Champlitte, etc.) partitioned via Block 7."
-  },
-  "170": { 
-    "official_name": "Macvin du Jura AOC", 
-    "region_assignment": "JUR", 
-    "category": "AOP",
-    "notes": "Fortified wine / Mistelle." 
-  },
-  "171": { "official_name": "Aude IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Parent code for all Aude geographical descriptors (Hauterive, Cucugnan, Val de Cesse, etc.) partitioned via Block 7." },
-  "172": { "official_name": "Blanquette de Limoux AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Sparkling wines." },
-  "173": { "official_name": "Méthode Ancestrale AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Covers Blaquette Méthode Ancestrale sparkling wines." },
-  "174": { "official_name": "Cabardès AOC", "region_assignment": "LGD", "category": "AOP" },
-  "175": { "official_name": "Cité de Carcassonne IGP", "region_assignment": "LGD", "category": "IGP" },
-  "176": { "official_name": "Clairette de Bellegarde AOC", "region_assignment": "LGD", "category": "AOP" },
-  "177": { "official_name": "Clairette du Languedoc AOC", "region_assignment": "LGD", "category": "AOP" },
-  "178": { "official_name": "Corbières AOC", "region_assignment": "LGD", "category": "AOP" },
-  "179": { "official_name": "Corbières-Boutenac AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
-  "180": { "official_name": "Costières de Nîmes AOC", "region_assignment": "LGD", "category": "AOP" },
-  "181": { "official_name": "Coteaux de Béziers IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Covers historical Coteaux du Libron." },
-  "182": { "official_name": "Coteaux de Narbonne IGP", "region_assignment": "LGD", "category": "IGP" },
-  "183": { "official_name": "Coteaux de Peyriac IGP", "region_assignment": "LGD", "category": "IGP" },
-  "184": { "official_name": "Coteaux d'Ensérune IGP", "region_assignment": "LGD", "category": "IGP" },
-  "185": { "official_name": "Coteaux du Pont du Gard IGP", "region_assignment": "LGD", "category": "IGP" },
-  "186": { "official_name": "Côtes de Pérignan IGP", "region_assignment": "LGD", "category": "IGP" },
-  "187": { "official_name": "Côtes de Thau IGP", "region_assignment": "LGD", "category": "IGP" },
-  "188": { "official_name": "Côtes de Thongue IGP", "region_assignment": "LGD", "category": "IGP" },
-  "189": { "official_name": "Crémant de Limoux AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Sparkling wines." },
-  "190": { "official_name": "Faugères AOC", "region_assignment": "LGD", "category": "AOP" },
-  "191": { "official_name": "Fitou AOC", "region_assignment": "LGD", "category": "AOP" },
-  "192": { "official_name": "Gard IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Parent code for Gard, Coteaux Flaviens, and Vistrenque, partitioned via Block 7." },
-  "193": { "official_name": "Haute Vallée de l'Aude IGP", "region_assignment": "LGD", "category": "IGP" },
-  "194": { "official_name": "Haute Vallée de l'Orb IGP", "region_assignment": "LGD", "category": "IGP" },
-  "195": { "official_name": "Hauts de Badens IGP", "region_assignment": "LGD", "category": "IGP" },
-  "196": { "official_name": "La Clape AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
-  "197": { "official_name": "Languedoc AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Parent code for all regional Languedoc terroir designations (Cabrières, Grès de Montpellier, Pézenas, etc.) partitioned via Block 7." },
-  "198": { "official_name": "Le Pays Cathare IGP", "region_assignment": "LGD", "category": "IGP" },
-  "199": { "official_name": "Limoux AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Covers both Limoux Blanc and Limoux Rouge, color distinction is resolved via Block 5." },
-  "200": { "official_name": "Malepère AOC", "region_assignment": "LGD", "category": "AOP" },
-  "201": { "official_name": "Minervois AOC", "region_assignment": "LGD", "category": "AOP" },
-  "202": { "official_name": "Minervois-La Livinière AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
-  "203": { "official_name": "Muscat de Frontignan AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." },
-  "204": { "official_name": "Muscat de Lunel AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." },
-  "205": { "official_name": "Muscat de Mireval AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." },
-  "206": { "official_name": "Muscat de Saint-Jean-de-Minervois AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." },
-  "207": { "official_name": "Pays d'Hérault IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Parent code for all Hérault geographical descriptors (Bénovie, Mont Baudile, Salagou, etc.) partitioned via Block 7." },
-  "208": { "official_name": "Pays d'Oc IGP", "region_assignment": "LGD", "category": "IGP", "notes": "The largest varietal wine designation in France." },
-  "209": { "official_name": "Pic Saint-Loup AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
-  "210": { "official_name": "Picpoul de Pinet AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Standalone white wine appellation since 2013." },
-  "211": { "official_name": "Sable de Camargue IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Covers historical Sables du Golfe du Lion designation." },
-  "212": { "official_name": "Saint-Chinian AOC", "region_assignment": "LGD", "category": "AOP" },
-  "213": { "official_name": "Saint-Guilhem-le-Désert IGP", "region_assignment": "LGD", "category": "IGP", "notes": "Parent code for Saint-Guilhem and Val de Montferrand, partitioned via Block 7." },
-  "214": { "official_name": "Terrasses du Larzac AOC", "region_assignment": "LGD", "category": "AOP", "notes": "Cru level designation." },
-  "215": { "official_name": "Terres du Midi IGP", "region_assignment": "LGD", "category": "IGP" },
-  "216": { "official_name": "Vallée du Paradis IGP", "region_assignment": "LGD", "category": "IGP" },
-  "217": { "official_name": "Vallée du Torgan IGP", "region_assignment": "LGD", "category": "IGP" },
-  "218": { "official_name": "Vicomté d'Aumelas IGP", "region_assignment": "LGD", "category": "IGP" },
-  "219": { "official_name": "Anjou AOC", "region_assignment": "LRE", "category": "AOP" },
-  "220": { "official_name": "Anjou-Coteaux de la Loire AOC", "region_assignment": "LRE", "category": "AOP" },
-  "221": { "official_name": "Anjou-Gamay AOC", "region_assignment": "LRE", "category": "AOP" },
-  "222": { "official_name": "Anjou-Villages AOC", "region_assignment": "LRE", "category": "AOP" },
-  "223": { "official_name": "Anjou-Villages Brissac AOC", "region_assignment": "LRE", "category": "AOP" },
-  "224": { "official_name": "Bonnezeaux AOC", "region_assignment": "LRE", "category": "AOP" },
-  "225": { "official_name": "Bourgueil AOC", "region_assignment": "LRE", "category": "AOP" },
-  "226": { "official_name": "Cabernet d'Anjou AOC", "region_assignment": "LRE", "category": "AOP" },
-  "227": { "official_name": "Cabernet de Saumur AOC", "region_assignment": "LRE", "category": "AOP" },
-  "228": { "official_name": "Châteaumeillant AOC", "region_assignment": "LRE", "category": "AOP" },
-  "229": { "official_name": "Cheverny AOC", "region_assignment": "LRE", "category": "AOP" },
-  "230": { "official_name": "Chinon AOC", "region_assignment": "LRE", "category": "AOP" },
-  "231": { "official_name": "Côte Roannaise AOC", "region_assignment": "LRE", "category": "AOP" },
-  "232": { "official_name": "Coteaux d'Ancenis AOC", "region_assignment": "LRE", "category": "AOP" },
-  "233": { "official_name": "Coteaux de l'Aubance AOC", "region_assignment": "LRE", "category": "AOP" },
-  "234": { "official_name": "Coteaux de Saumur AOC", "region_assignment": "LRE", "category": "AOP" },
-  "235": { "official_name": "Coteaux de Tannay IGP", "region_assignment": "LRE", "category": "IGP" },
-  "236": { "official_name": "Coteaux du Cher et de l'Arnon IGP", "region_assignment": "LRE", "category": "IGP" },
-  "237": { "official_name": "Coteaux du Giennois AOC", "region_assignment": "LRE", "category": "AOP" },
-  "238": { "official_name": "Coteaux du Layon AOC", "region_assignment": "LRE", "category": "AOP" },
-  "239": { "official_name": "Coteaux du Layon 1er cru Chaume AOC", "region_assignment": "LRE", "category": "AOP" },
-  "240": { "official_name": "Coteaux du Loir AOC", "region_assignment": "LRE", "category": "AOP" },
-  "241": { "official_name": "Coteaux du Vendômois AOC", "region_assignment": "LRE", "category": "AOP" },
-  "242": { "official_name": "Côtes d'Auvergne AOC", "region_assignment": "LRE", "category": "AOP", "notes": "Parent code for all Auvergne geographical sub-mentions (Boudes, Chanturgue, etc.) partitioned via Block 7." },
-  "243": { "official_name": "Côtes de la Charité IGP", "region_assignment": "LRE", "category": "IGP" },
-  "244": { "official_name": "Côtes du Forez AOC", "region_assignment": "LRE", "category": "AOP" },
-  "245": { "official_name": "Savennières-Coulée de Serrant AOC", "region_assignment": "LRE", "category": "AOP", "notes": "Standalone monopole appellation." },
-  "246": { "official_name": "Cour-Cheverny AOC", "region_assignment": "LRE", "category": "AOP", "notes": "Exclusively from Romorantin grape." },
-  "247": { "official_name": "Crémant de Loire AOC", "region_assignment": "LRE", "category": "AOP", "notes": "Sparkling wines." },
-  "248": { "official_name": "Creuse IGP", "region_assignment": "LRE", "category": "IGP" },
-  "249": { "official_name": "Deux-Sèvres IGP", "region_assignment": "LRE", "category": "IGP" },
-  "250": { "official_name": "Fiefs Vendéens AOC", "region_assignment": "LRE", "category": "AOP", "notes": "Parent code for geographical sub-mentions (Brem, Mareuil, Pissotte, Vix) partitioned via Block 7." },
-  "251": { "official_name": "Gros Plant du Pays nantais AOC", "region_assignment": "LRE", "category": "AOP" },
-  "252": { "official_name": "Haute-Vienne IGP", "region_assignment": "LRE", "category": "IGP" },
-  "253": { "official_name": "Haut-Poitou AOC", "region_assignment": "LRE", "category": "AOP" },
-  "254": { "official_name": "Jasnières AOC", "region_assignment": "LRE", "category": "AOP" },
-  "255": { "official_name": "Menetou-Salon AOC", "region_assignment": "LRE", "category": "AOP" },
-  "256": { "official_name": "Montlouis-sur-Loire AOC", "region_assignment": "LRE", "category": "AOP" },
-  "257": { "official_name": "Muscadet AOC", "region_assignment": "LRE", "category": "AOP" },
-  "258": { "official_name": "Muscadet-Coteaux de la Loire AOC", "region_assignment": "LRE", "category": "AOP" },
-  "259": { "official_name": "Muscadet-Côtes de Grandlieu AOC", "region_assignment": "LRE", "category": "AOP" },
-  "260": { "official_name": "Muscadet-Sèvre et Maine AOC", "region_assignment": "LRE", "category": "AOP" },
-  "261": { "official_name": "Orléans AOC", "region_assignment": "LRE", "category": "AOP" },
-  "262": { "official_name": "Orléans-Cléry AOC", "region_assignment": "LRE", "category": "AOP" },
-  "263": { "official_name": "Pouilly-Fumé AOC", "region_assignment": "LRE", "category": "AOP", "notes": "Covers Blanc Fumé de Pouilly." },
-  "264": { "official_name": "Pouilly-sur-Loire AOC", "region_assignment": "LRE", "category": "AOP", "notes": "Made from Chasselas grape." },
-  "265": { "official_name": "Puy de Dôme IGP", "region_assignment": "LRE", "category": "IGP" },
-  "266": { "official_name": "Quarts de Chaume Grand Cru AOC", "region_assignment": "LRE", "category": "AOP", "notes": "The only official Grand Cru in the Loire Valley." },
-  "267": { "official_name": "Quincy AOC", "region_assignment": "LRE", "category": "AOP" },
-  "268": { "official_name": "Reuilly AOC", "region_assignment": "LRE", "category": "AOP" },
-  "269": { "official_name": "Rosé d'Anjou AOC", "region_assignment": "LRE", "category": "AOP" },
-  "270": { "official_name": "Rosé de Loire AOC", "region_assignment": "LRE", "category": "AOP" },
-  "271": { "official_name": "Saint-Nicolas-de-Bourgueil AOC", "region_assignment": "LRE", "category": "AOP" },
-  "272": { "official_name": "Saint-Pourçain AOC", "region_assignment": "LRE", "category": "AOP" },
-  "273": { "official_name": "Sancerre AOC", "region_assignment": "LRE", "category": "AOP" },
-  "274": { "official_name": "Saumur AOC", "region_assignment": "LRE", "category": "AOP" },
-  "275": { "official_name": "Saumur Puy-Notre-Dame AOC", "region_assignment": "LRE", "category": "AOP" },
-  "276": { "official_name": "Saumur-Champigny AOC", "region_assignment": "LRE", "category": "AOP" },
-  "277": { "official_name": "Savennières AOC", "region_assignment": "LRE", "category": "AOP" },
-  "278": { "official_name": "Savennières-Roche-aux-Moines AOC", "region_assignment": "LRE", "category": "AOP" },
-  "279": { "official_name": "Touraine AOC", "region_assignment": "LRE", "category": "AOP", "notes": "Includes local varietal and village extensions like Touraine-Noble Joué managed via Block 7." },
-  "280": { "official_name": "Urfé IGP", "region_assignment": "LRE", "category": "IGP" },
-  "281": { "official_name": "Val de Loire IGP", "region_assignment": "LRE", "category": "IGP", "notes": "Parent code for all Val de Loire departmental descriptors (Nièvre, Cher, Vendée, etc.) partitioned via Block 7." },
-  "282": { "official_name": "Valençay AOC", "region_assignment": "LRE", "category": "AOP" },
-  "283": { "official_name": "Vouvray AOC", "region_assignment": "LRE", "category": "AOP" },
-  "284": { 
-    "official_name": "Côtes de Meuse IGP", 
-    "region_assignment": "LRN", 
-    "category": "IGP",
-    "notes": "Covers Meuse designation."
-  },
-  "285": { 
-    "official_name": "Côtes de Toul AOC", 
-    "region_assignment": "LRN", 
-    "category": "AOP",
-    "notes": "Famous for its traditional Vin Gris."
-  },
-  "286": { 
-    "official_name": "Moselle AOC", 
-    "region_assignment": "LRN", 
-    "category": "AOP"
-  },
-  "287": { "official_name": "Alpes-de-Haute-Provence IGP", "region_assignment": "PRV", "category": "IGP" },
-  "288": { "official_name": "Alpes-Maritimes IGP", "region_assignment": "PRV", "category": "IGP" },
-  "289": { "official_name": "Alpilles IGP", "region_assignment": "PRV", "category": "IGP" },
-  "290": { "official_name": "Bandol AOC", "region_assignment": "PRV", "category": "AOP" },
-  "291": { "official_name": "Bellet AOC", "region_assignment": "PRV", "category": "AOP" },
-  "292": { "official_name": "Bouches-du-Rhône IGP", "region_assignment": "PRV", "category": "IGP", "notes": "Parent code for Bouches-du-Rhône and Terre de Camargue, partitioned via Block 7." },
-  "293": { "official_name": "Cassis AOC", "region_assignment": "PRV", "category": "AOP" },
-  "294": { "official_name": "Coteaux d'Aix-en-Provence AOC", "region_assignment": "PRV", "category": "AOP" },
-  "295": { "official_name": "Coteaux Varois en Provence AOC", "region_assignment": "PRV", "category": "AOP" },
-  "296": { "official_name": "Côtes de Provence AOC", "region_assignment": "PRV", "category": "AOP", "notes": "Includes geographical designations (Sainte-Victoire, Fréjus, La Londe, Pierrefeu, Notre-Dame des Anges) managed via Block 7." },
-  "297": { "official_name": "Hautes-Alpes IGP", "region_assignment": "PRV", "category": "IGP" },
-  "298": { "official_name": "Les Baux-de-Provence AOC", "region_assignment": "PRV", "category": "AOP" },
-  "299": { "official_name": "Maures IGP", "region_assignment": "PRV", "category": "IGP" },
-  "300": { "official_name": "Mont Caume IGP", "region_assignment": "PRV", "category": "IGP" },
-  "301": { "official_name": "Palette AOC", "region_assignment": "PRV", "category": "AOP" },
-  "302": { "official_name": "Pierrevert AOC", "region_assignment": "PRV", "category": "AOP" },
-  "303": { "official_name": "Var IGP", "region_assignment": "PRV", "category": "IGP", "notes": "Parent code for Var, Argens, and Coteaux du Verdon descriptors, partitioned via Block 7." },
-  "304": { "official_name": "Ardèche IGP", "region_assignment": "RHO", "category": "IGP", "notes": "Covers historical Coteaux de l'Ardèche designation." },
-  "305": { "official_name": "Beaumes-de-Venise AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Cru level designation for still red wines." },
-  "306": { "official_name": "Cairanne AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Cru level designation since 2016." },
-  "307": { "official_name": "Cévennes IGP", "region_assignment": "RHO", "category": "IGP" },
-  "308": { "official_name": "Château-Grillet AOC", "region_assignment": "RHO", "category": "AOP", "notes": "White wine monopole cru." },
-  "309": { "official_name": "Châteauneuf-du-Pape AOC", "region_assignment": "RHO", "category": "AOP" },
-  "310": { "official_name": "Châtillon-en-Diois AOC", "region_assignment": "RHO", "category": "AOP" },
-  "311": { "official_name": "Clairette de Die AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Sparkling wines." },
-  "312": { "official_name": "Collines Rhodaniennes IGP", "region_assignment": "RHO", "category": "IGP" },
-  "313": { "official_name": "Comtés Rhodaniens IGP", "region_assignment": "RHO", "category": "IGP" },
-  "314": { "official_name": "Condrieu AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Exclusively Viognier." },
-  "315": { "official_name": "Cornas AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Exclusively Syrah." },
-  "316": { "official_name": "Coteaux de Die AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Still white wines." },
-  "317": { "official_name": "Coteaux des Baronnies IGP", "region_assignment": "RHO", "category": "IGP" },
-  "318": { "official_name": "Côte-Rôtie AOC", "region_assignment": "RHO", "category": "AOP" },
-  "319": { "official_name": "Côtes du Rhône AOC", "region_assignment": "RHO", "category": "AOP" },
-  "320": { "official_name": "Côtes du Rhône-Villages AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Generic Villages blend without geographical name." },
-  "321": { "official_name": "Côtes du Rhône-Villages Nom de Commune AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Parent code for all 22 communal designations (Plan de Dieu, Laudun, Chusclan, etc.) partitioned via Block 7." },
-  "322": { "official_name": "Côtes du Vivarais AOC", "region_assignment": "RHO", "category": "AOP" },
-  "323": { "official_name": "Crémant de Die AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Sparkling wines." },
-  "324": { "official_name": "Crozes-Hermitage AOC", "region_assignment": "RHO", "category": "AOP" },
-  "325": { "official_name": "Drôme IGP", "region_assignment": "RHO", "category": "IGP" },
-  "326": { "official_name": "Duché d'Uzès AOC", "region_assignment": "RHO", "category": "AOP" },
-  "327": { "official_name": "Gigondas AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Cru level designation." },
-  "328": { "official_name": "Grignan-les-Adhémar AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Formerly Coteaux du Tricastin." },
-  "329": { "official_name": "Hermitage AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Cru level designation. Also spelled Ermitage." },
-  "330": { "official_name": "Isère IGP", "region_assignment": "RHO", "category": "IGP", "notes": "Parent code for Isère, Balmes Dauphinoises, and Coteaux du Grésivaudan, partitioned via Block 7." },
-  "331": { "official_name": "Lirac AOC", "region_assignment": "RHO", "category": "AOP" },
-  "332": { "official_name": "Luberon AOC", "region_assignment": "RHO", "category": "AOP" },
-  "333": { "official_name": "Muscat de Beaumes-de-Venise AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Natural sweet wine / Vin Doux Naturel." },
-  "334": { "official_name": "Rasteau AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Covers still red wines and fortified Vin Doux Naturel / Rancio." },
-  "335": { "official_name": "Saint-Joseph AOC", "region_assignment": "RHO", "category": "AOP" },
-  "336": { "official_name": "Saint-Péray AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Still and sparkling white wines." },
-  "337": { "official_name": "Tavel AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Exclusively rosé wines." },
-  "338": { "official_name": "Vacqueyras AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Cru level designation." },
-  "339": { "official_name": "Vaucluse IGP", "region_assignment": "RHO", "category": "IGP", "notes": "Parent code for Vaucluse, Aigues, and Principauté d'Orange, partitioned via Block 7." },
-  "340": { "official_name": "Ventoux AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Formerly Côtes du Ventoux." },
-  "341": { "official_name": "Vinsobres AOC", "region_assignment": "RHO", "category": "AOP", "notes": "Cru level designation." },
-  "342": { "official_name": "Banyuls AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Fortified wine / Vin Doux Naturel." },
-  "343": { "official_name": "Banyuls Grand Cru AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Premium fortified wine with extended barrel aging." },
-  "344": { "official_name": "Collioure AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Still wines produced on the Banyuls terraced slopes." },
-  "345": { "official_name": "Côte Vermeille IGP", "region_assignment": "ROU", "category": "IGP" },
-  "346": { "official_name": "Côtes Catalanes IGP", "region_assignment": "ROU", "category": "IGP", "notes": "Covers Pyrénées-Orientales descriptor." },
-  "347": { "official_name": "Côtes du Roussillon AOC", "region_assignment": "ROU", "category": "AOP" },
-  "348": { "official_name": "Côtes du Roussillon-Villages AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Generic villages blend without geographic name." },
-  "349": { "official_name": "Côtes du Roussillon-Villages Nom de Commune AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Parent code for communal sub-designations (Caramany, Latour de France, Les Aspres, Lesquerde, Tautavel) partitioned via Block 7." },
-  "350": { "official_name": "Grand Roussillon AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Transversal regional VDN designation." },
-  "351": { "official_name": "Maury AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Covers both still dry red wines and fortified Vin Doux Naturel." },
-  "352": { "official_name": "Muscat de Rivesaltes AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Fortified natural sweet wine." },
-  "353": { "official_name": "Rivesaltes AOC", "region_assignment": "ROU", "category": "AOP", "notes": "Fortified natural sweet wine." },
-  "354": { "official_name": "Agenais IGP", "region_assignment": "SUD", "category": "IGP" },
-  "355": { "official_name": "Ariège IGP", "region_assignment": "SUD", "category": "IGP", "notes": "Parent code for Ariège, Coteaux de la Lèze, and Plantaurel sub-zones, partitioned via Block 7." },
-  "356": { "official_name": "Aveyron IGP", "region_assignment": "SUD", "category": "IGP" },
-  "357": { "official_name": "Béarn AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Parent code for Béarn and Béarn-Bellocq, partitioned via Block 7." },
-  "358": { "official_name": "Bergerac AOC", "region_assignment": "SUD", "category": "AOP" },
-  "359": { "official_name": "Brulhois AOC", "region_assignment": "SUD", "category": "AOP" },
-  "360": { "official_name": "Buzet AOC", "region_assignment": "SUD", "category": "AOP" },
-  "361": { "official_name": "Cahors AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Exclusively red wines from Malbec (Auxerrois) grape." },
-  "362": { "official_name": "Comté Tolosan IGP", "region_assignment": "SUD", "category": "IGP", "notes": "Parent code for all regional sub-descriptors (Bigorre, Cantal, Haute-Garonne, etc.) partitioned via Block 7." },
-  "363": { "official_name": "Coteaux de Glanes IGP", "region_assignment": "SUD", "category": "IGP" },
-  "364": { "official_name": "Coteaux du Quercy AOC", "region_assignment": "SUD", "category": "AOP" },
-  "365": { "official_name": "Côtes de Bergerac AOC", "region_assignment": "SUD", "category": "AOP" },
-  "366": { "official_name": "Côtes de Duras AOC", "region_assignment": "SUD", "category": "AOP" },
-  "367": { "official_name": "Côtes de Gascogne IGP", "region_assignment": "SUD", "category": "IGP", "notes": "Parent code for Gascogne, Montestruc, and Condmoois sub-zones, partitioned via Block 7." },
-  "368": { "official_name": "Côtes de Millau AOC", "region_assignment": "SUD", "category": "AOP" },
-  "369": { "official_name": "Côtes de Montravel AOC", "region_assignment": "SUD", "category": "AOP" },
-  "370": { "official_name": "Côtes du Lot IGP", "region_assignment": "SUD", "category": "IGP", "notes": "Parent code for Lot and Rocamadour sub-zones, partitioned via Block 7." },
-  "371": { "official_name": "Côtes du Marmandais AOC", "region_assignment": "SUD", "category": "AOP" },
-  "372": { "official_name": "Côtes du Tarn IGP", "region_assignment": "SUD", "category": "IGP" },
-  "373": { "official_name": "Entraygues-le-Fel AOC", "region_assignment": "SUD", "category": "AOP" },
-  "374": { "official_name": "Estaing AOC", "region_assignment": "SUD", "category": "AOP" },
-  "375": { "official_name": "Floc-de-Gascogne AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Fortified wine / Vin de Liqueur." },
-  "376": { "official_name": "Fronton AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Famous for its exclusive Négrette grape." },
-  "377": { "official_name": "Gaillac AOC", "region_assignment": "SUD", "category": "AOP" },
-  "378": { "official_name": "Gaillac Premières Côtes AOC", "region_assignment": "SUD", "category": "AOP", "notes": "White wines only from selected slopes." },
-  "379": { "official_name": "Gers IGP", "region_assignment": "SUD", "category": "IGP" },
-  "380": { "official_name": "Haut-Montravel AOC", "region_assignment": "SUD", "category": "AOP" },
-  "381": { "official_name": "Lot-et-Garonne IGP", "region_assignment": "SUD", "category": "IGP" },
-  "382": { "official_name": "Irouléguy AOC", "region_assignment": "SUD", "category": "AOP", "notes": "The iconic Basque country appellation." },
-  "383": { "official_name": "Jurançon AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Includes dry (Jurançon Sec) and sweet styles resolved via Block 5." },
-  "384": { "official_name": "Landes IGP", "region_assignment": "SUD", "category": "IGP", "notes": "Parent code for Landes, Chalosse, Adour, and Sables sub-zones, partitioned via Block 7." },
-  "385": { "official_name": "Lavilledieu AOC", "region_assignment": "SUD", "category": "AOP" },
-  "386": { "official_name": "Madiran AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Powerful red wines based on Tannat grape." },
-  "387": { "official_name": "Marcillac AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Exclusively based on Fer Servadou (Mansois) grape." },
-  "388": { "official_name": "Monbazillac AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Botrytized sweet wines." },
-  "389": { "official_name": "Montravel AOC", "region_assignment": "SUD", "category": "AOP" },
-  "390": { "official_name": "Pacherenc du Vic-Bilh AOC", "region_assignment": "SUD", "category": "AOP", "notes": "Still dry and sweet white wines produced in the Madiran zone." },
-  "391": { "official_name": "Pays de Brive IGP", "region_assignment": "SUD", "category": "IGP" },
-  "392": { "official_name": "Pécharmant AOC", "region_assignment": "SUD", "category": "AOP" },
-  "393": { "official_name": "Périgord IGP", "region_assignment": "SUD", "category": "IGP" },
-  "394": { "official_name": "Pyrénées-Atlantiques IGP", "region_assignment": "SUD", "category": "IGP" },
-  "395": { "official_name": "Rosette AOC", "region_assignment": "SUD", "category": "AOP" },
-  "396": { "official_name": "Saint-Mont AOC", "region_assignment": "SUD", "category": "AOP" },
-  "397": { "official_name": "Saint-Sardos AOC", "region_assignment": "SUD", "category": "AOP" },
-  "398": { "official_name": "Saussignac AOC", "region_assignment": "SUD", "category": "AOP" },
-  "399": { "official_name": "Thézac-Perricard IGP", "region_assignment": "SUD", "category": "IGP" },
-  "400": { "official_name": "Tursan AOC", "region_assignment": "SUD", "category": "AOP" },
-  "401": { "official_name": "Vins de la Corrèze AOC", "region_assignment": "SUD", "category": "AOP" },
-  "402": { "official_name": "Bugey AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for Bugey, Manicle, and Montagnieu descriptors, partitioned via Block 7." },
-  "403": { "official_name": "Crémant de Savoie AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Sparkling wines established in 2015." },
-  "404": { "official_name": "Coteaux de l'Ain IGP", "region_assignment": "SVB", "category": "IGP", "notes": "Parent code for all Ain sub-zones (Pays de Gex, Revermont, Val de Saône, Valmorey) partitioned via Block 7." },
-  "405": { "official_name": "Roussette du Bugey AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for Roussette du Bugey, Montagnieu, and Virieu-le-Grand, partitioned via Block 7." },
-  "406": { "official_name": "Roussette de Savoie AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for all single-crus (Marestel, Frangy, Monterminod, Monthoux) partitioned via Block 7." },
-  "407": { "official_name": "Seyssel AOC", "region_assignment": "SVB", "category": "AOP" },
-  "408": { "official_name": "Vin des Allobroges IGP", "region_assignment": "SVB", "category": "IGP", "notes": "Overarching regional Alpine IGP." },
-  "409": { "official_name": "Vin de Savoie AOC", "region_assignment": "SVB", "category": "AOP", "notes": "Parent code for all 16 historical crus (Apremont, Abymes, Chignin, Chignin-Bergeron, Arbin, etc.) partitioned via Block 7." },
-  "410": {
-    "official_name": "Atlantique IGP",
-    "region_assignment": ["BOR", "SUD", "CGN"],
-    "category": "IGP",
-    "notes": "Interregional IGP. Block 3 must resolve locally to the production estate's macro-region."
-  },
-  "411": {
-    "official_name": "Méditerranée IGP",
-    "region_assignment": ["PRV", "LGD", "RHO", "COR"],
-    "category": "IGP",
-    "notes": "Interregional IGP. Block 3 must resolve locally to the production estate's macro-region."
+  "country"     : "FR",
+  "macro_region": "ALS",
+  "version"     : "1.3.0",
+  "last_updated": "2026-11-01",
+  "appellations": {
+    "0001": {
+      "name"          : "Alsace (AOC)",
+      "type"          : "AOC Regional",
+      "allowed_colors": ["W", "R", "P"]
+    },
+    "0002": {
+      "name"          : "Alsace - Bergheim (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W", "R"]
+    },
+    "0003": {
+      "name"          : "Alsace - Blienschwiller (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0004": {
+      "name"          : "Alsace - Côte de Rouffach (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0005": {
+      "name": "Alsace - Coteaux du Haut-Koenigsbourg / Orschwiller (DGC)",
+      "type": "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0006": {
+      "name"          : "Alsace - Côtes de Barr (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0007": {
+      "name"          : "Alsace - Klevener de Heiligenstein (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0008": {
+      "name"          : "Alsace - Ottrott (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["R"]
+    },
+    "0009": {
+      "name"          : "Alsace - Rodern (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["R"]
+    },
+    "0010": {
+      "name"          : "Alsace - Saint-Hippolyte (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["R"]
+    },
+    "0011": {
+      "name"          : "Alsace - Scherwiller (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0012": {
+      "name"          : "Alsace - Val Saint-Grégoire / Wihr-Au-Val (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0013": {
+      "name"          : "Alsace - Vallée Noble (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0014": {
+      "name"          : "Alsace - Wolxheim (DGC)",
+      "type"          : "AOC Regional DGC",
+      "allowed_colors": ["W"]
+    },
+    "0015": {
+      "name"          : "Alsace - Affenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0016": {
+      "name"          : "Alsace - Altenbourg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0017": {
+      "name"          : "Alsace - Altengarten (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0018": {
+      "name"          : "Alsace - Altitude 333 (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0019": {
+      "name"          : "Alsace - Belzbrunnen (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0020": {
+      "name"          : "Alsace - Bergweingarten (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0021": {
+      "name"          : "Alsace - Bildstoeckle (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0022": {
+      "name"          : "Alsace - Blettig (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0023": {
+      "name"          : "Alsace - Blosenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0024": {
+      "name"          : "Alsace - Bollenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W", "R"]
+    },
+    "0025": {
+      "name"          : "Alsace - Bouxreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0026": {
+      "name"          : "Alsace - Brandhof (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0027": {
+      "name"          : "Alsace - Brandluft (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0028": {
+      "name"          : "Alsace - Bruchwegeben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0029": {
+      "name"          : "Alsace - Bülh (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0030": {
+      "name"          : "Alsace - Burgreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0031": {
+      "name"          : "Alsace - Clos du Sonnenbach (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0032": {
+      "name"          : "Alsace - Clos du Zahnacker (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0033": {
+      "name"          : "Alsace - Clos Feyel (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0034": {
+      "name"          : "Alsace - Clos Ribeaupierre (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0035": {
+      "name"          : "Alsace - Clos Rosalys (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0036": {
+      "name"          : "Alsace - Clos Sony (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0037": {
+      "name"          : "Alsace - Clos St-Guingallois (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0038": {
+      "name"          : "Alsace - Clos Ste Hune (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0039": {
+      "name"          : "Alsace - Clos Windsbuhl (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0040": {
+      "name"          : "Alsace - Cormier (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0041": {
+      "name"          : "Alsace - Coteaux de la Mossig (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0042": {
+      "name"          : "Alsace - Côtes d'Ammerschwihr (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0043": {
+      "name"          : "Alsace - Côtes d'Eguisheim (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0044": {
+      "name"          : "Alsace - Côtes de Kaysersberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0045": {
+      "name"          : "Alsace - Côtes de Niedermorschwihr (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0046": {
+      "name"          : "Alsace - Côtes de Ribeauville (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0047": {
+      "name"          : "Alsace - Côtes de Rouffach Bergweingarten (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0048": {
+      "name"          : "Alsace - Côtes du Florimont (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0049": {
+      "name"          : "Alsace - Côtes du Val St Grégoire (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0050": {
+      "name"          : "Alsace - Degis (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0051": {
+      "name"          : "Alsace - Dorenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0052": {
+      "name"          : "Alsace - Dorfschatz (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0053": {
+      "name"          : "Alsace - Duttenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0054": {
+      "name"          : "Alsace - Eich (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0055": {
+      "name"          : "Alsace - Engelgarten (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0056": {
+      "name"          : "Alsace - Ferme Boemstein (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0057": {
+      "name"          : "Alsace - Finkenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0058": {
+      "name"          : "Alsace - Frauengut (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0059": {
+      "name"          : "Alsace - Fronenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0060": {
+      "name"          : "Alsace - Fronholz (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0061": {
+      "name"          : "Alsace - Fruehmess (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0062": {
+      "name"          : "Alsace - Furstentum (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0063": {
+      "name"          : "Alsace - Gaensbroennel (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0064": {
+      "name"          : "Alsace - Gaentzbrunnen (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0065": {
+      "name"          : "Alsace - Geierstein (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0066": {
+      "name"          : "Alsace - Geissberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0067": {
+      "name"          : "Alsace - Glintzberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0068": {
+      "name"          : "Alsace - Graffenreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0069": {
+      "name"          : "Alsace - Grafreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0070": {
+      "name"          : "Alsace - Grasberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0071": {
+      "name"          : "Alsace - Gyspgrube (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0072": {
+      "name"          : "Alsace - Hagelberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0073": {
+      "name"          : "Alsace - Hagenschlauf (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0074": {
+      "name"          : "Alsace - Hahnenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0075": {
+      "name"          : "Alsace - Haidi (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0076": {
+      "name"          : "Alsace - Hannesacker (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0077": {
+      "name"          : "Alsace - Hardt (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0078": {
+      "name"          : "Alsace - Heimburg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0079": {
+      "name"          : "Alsace - Heissenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0080": {
+      "name"          : "Alsace - Herrenreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0081": {
+      "name"          : "Alsace - Herrenweg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0082": {
+      "name"          : "Alsace - Hertenstein (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0083": {
+      "name"          : "Alsace - Hinterburg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0084": {
+      "name"          : "Alsace - Holder (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0085": {
+      "name"          : "Alsace - Horn (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0086": {
+      "name"          : "Alsace - Huettgasse (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0087": {
+      "name"          : "Alsace - Hungerfeld (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0088": {
+      "name"          : "Alsace - Husaren (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0089": {
+      "name"          : "Alsace - Im Berg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0090": {
+      "name"          : "Alsace - Im Schloss (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0091": {
+      "name"          : "Alsace - Kaefferkopf (LD - Version Historique)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0092": {
+      "name"          : "Alsace - Kaklgrube (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0093": {
+      "name"          : "Alsace - Kanzelberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0094": {
+      "name"          : "Alsace - Katzenstegel (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0095": {
+      "name"          : "Alsace - Kefferberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0096": {
+      "name"          : "Alsace - Keimberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0097": {
+      "name"          : "Alsace - Kieshuebel (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0098": {
+      "name"          : "Alsace - Kleinfels (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0099": {
+      "name"          : "Alsace - Kreut (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0100": {
+      "name"          : "Alsace - Kritt (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0101": {
+      "name"          : "Alsace - Kronenbourg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0102": {
+      "name"          : "Alsace - Kugelberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0103": {
+      "name"          : "Alsace - La Limite (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0104": {
+      "name"          : "Alsace - Lerchenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0105": {
+      "name"          : "Alsace - Les Pierrets (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0106": {
+      "name"          : "Alsace - Letzenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0107": {
+      "name"          : "Alsace - Liebenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0108": {
+      "name"          : "Alsace - Linsenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0109": {
+      "name"          : "Alsace - Mittel-Aue (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0110": {
+      "name"          : "Alsace - Mittellaeng (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0111": {
+      "name"          : "Alsace - Moenchreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0112": {
+      "name"          : "Alsace - Muehlforst / Muhlforst (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0113": {
+      "name"          : "Alsace - Muschelkalck (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0114": {
+      "name"          : "Alsace - Oberberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0115": {
+      "name"          : "Alsace - Oberhagel (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0116": {
+      "name"          : "Alsace - Ortel (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0117": {
+      "name"          : "Alsace - Ortenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0118": {
+      "name"          : "Alsace - Osthoffen (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0119": {
+      "name"          : "Alsace - Pfaenzerreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0120": {
+      "name"          : "Alsace - Pflintz (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0121": {
+      "name"          : "Alsace - Pfoeller Niedermorschwihr (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0122": {
+      "name"          : "Alsace - Rangenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0123": {
+      "name"          : "Alsace - Rebgarten (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0124": {
+      "name"          : "Alsace - Reichfeld (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0125": {
+      "name"          : "Alsace - Reifenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0126": {
+      "name"          : "Alsace - Rimelsberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0127": {
+      "name"          : "Alsace - Rittersberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0128": {
+      "name"          : "Alsace - Roemerberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0129": {
+      "name"          : "Alsace - Rosenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0130": {
+      "name"          : "Alsace - Rosenbourg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0131": {
+      "name"          : "Alsace - Rote-Lohe (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0132": {
+      "name"          : "Alsace - Rothstein (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0133": {
+      "name"          : "Alsace - Rotland (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0134": {
+      "name"          : "Alsace - Rouge d'Ottrott (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0135": {
+      "name"          : "Alsace - Rouge de Barr (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0136": {
+      "name"          : "Alsace - Rouge de Blienshwiller (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0137": {
+      "name"          : "Alsace - Rouge de Marlenheim (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0138": {
+      "name"          : "Alsace - Rouge de Mittelbergheim (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0139": {
+      "name"          : "Alsace - Rouge de Nothalten (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0140": {
+      "name"          : "Alsace - Rouge de St-Hippolyte (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0141": {
+      "name"          : "Alsace - Rouge de Zellenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0142": {
+      "name"          : "Alsace - Rouge de Zellwiller (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["R"]
+    },
+    "0143": {
+      "name"          : "Alsace - Saint-André (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0144": {
+      "name"          : "Alsace - Schenkenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0145": {
+      "name"          : "Alsace - Schieferberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0146": {
+      "name"          : "Alsace - Schimberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0147": {
+      "name"          : "Alsace - Schloesselreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0148": {
+      "name"          : "Alsace - Schlossreben (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0149": {
+      "name"          : "Alsace - Schneeberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0150": {
+      "name"          : "Alsace - Schwarzberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0151": {
+      "name"          : "Alsace - Schwendehiesel (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0152": {
+      "name"          : "Alsace - Silberberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0153": {
+      "name"          : "Alsace - Silbergrub (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0154": {
+      "name"          : "Alsace - Sohlenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0155": {
+      "name"          : "Alsace - Sonnenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0156": {
+      "name"          : "Alsace - Stein (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0157": {
+      "name"          : "Alsace - Steinacker (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0158": {
+      "name"          : "Alsace - Steinweg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0159": {
+      "name"          : "Alsace - Stierkopf (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0160": {
+      "name"          : "Alsace - Strangenberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0161": {
+      "name"          : "Alsace - Streng (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0162": {
+      "name"          : "Alsace - Stribicher (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0163": {
+      "name"          : "Alsace - Sunngass (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0164": {
+      "name"          : "Alsace - Sylvaner de Mittelbergheim (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0165": {
+      "name"          : "Alsace - Trottacker (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0166": {
+      "name"          : "Alsace - Kirrenbourg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0167": {
+      "name"          : "Alsace - Vorlauf (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0168": {
+      "name"          : "Alsace - Waldweg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0169": {
+      "name"          : "Alsace - Weinberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0170": {
+      "name"          : "Alsace - Weingartern / Bergweingarten (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0171": {
+      "name"          : "Alsace - Westerberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0172": {
+      "name"          : "Alsace - Westerweingarten (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0173": {
+      "name"          : "Alsace - Wolfsgrube (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0174": {
+      "name"          : "Alsace - Zellberg (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0175": {
+      "name"          : "Alsace - Zellwiller (LD)",
+      "type"          : "AOC Regional Lieu-dit",
+      "allowed_colors": ["W"]
+    },
+    "0176": {
+      "name"          : "Alsace Grand Cru (Générique) (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0177": {
+      "name"          : "Alsace Grand Cru Altenberg de Bergbieten (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0178": {
+      "name"          : "Alsace Grand Cru Altenberg de Bergheim (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W", "R"]
+    },
+    "0179": {
+      "name"          : "Alsace Grand Cru Altenberg de Wolxheim (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0180": {
+      "name"          : "Alsace Grand Cru Brand (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0181": {
+      "name"          : "Alsace Grand Cru Bruderthal (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0182": {
+      "name"          : "Alsace Grand Cru Eichberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0183": {
+      "name"          : "Alsace Grand Cru Engelberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0184": {
+      "name"          : "Alsace Grand Cru Florimont (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0185": {
+      "name"          : "Alsace Grand Cru Frankstein (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0186": {
+      "name"          : "Alsace Grand Cru Froehn (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0187": {
+      "name"          : "Alsace Grand Cru Furstentum (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0188": {
+      "name"          : "Alsace Grand Cru Geisberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0189": {
+      "name"          : "Alsace Grand Cru Gloeckelberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0190": {
+      "name"          : "Alsace Grand Cru Goldert (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0191": {
+      "name"          : "Alsace Grand Cru Hatschbourg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0192": {
+      "name"          : "Alsace Grand Cru Hengst (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W", "R"]
+    },
+    "0193": {
+      "name"          : "Alsace Grand Cru Kaefferkopf (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0194": {
+      "name"          : "Alsace Grand Cru Kanzlerberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0195": {
+      "name"          : "Alsace Grand Cru Kastelberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0196": {
+      "name"          : "Alsace Grand Cru Kessler (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0197": {
+      "name"          : "Alsace Grand Cru Kirchberg de Barr (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0198": {
+      "name"          : "Alsace Grand Cru Kirchberg de Ribeauvillé (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0199": {
+      "name"          : "Alsace Grand Cru Kitterlé (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0200": {
+      "name"          : "Alsace Grand Cru Mambourg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0201": {
+      "name"          : "Alsace Grand Cru Mandelberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0202": {
+      "name"          : "Alsace Grand Cru Marckrain (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0203": {
+      "name"          : "Alsace Grand Cru Moenchberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0204": {
+      "name"          : "Alsace Grand Cru Muenchberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0205": {
+      "name"          : "Alsace Grand Cru Ollwiller (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0206": {
+      "name"          : "Alsace Grand Cru Osterberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0207": {
+      "name"          : "Alsace Grand Cru Pfersigberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0208": {
+      "name"          : "Alsace Grand Cru Pfingstberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0209": {
+      "name"          : "Alsace Grand Cru Praelatenberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0210": {
+      "name"          : "Alsace Grand Cru Rangen (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0211": {
+      "name"          : "Alsace Grand Cru Rosacker (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0212": {
+      "name"          : "Alsace Grand Cru Saering (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0213": {
+      "name"          : "Alsace Grand Cru Schlossberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0214": {
+      "name"          : "Alsace Grand Cru Schoenenbourg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0215": {
+      "name"          : "Alsace Grand Cru Sommerberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0216": {
+      "name"          : "Alsace Grand Cru Sonnenglanz (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0217": {
+      "name"          : "Alsace Grand Cru Spiegel (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0218": {
+      "name"          : "Alsace Grand Cru Sporen (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0219": {
+      "name"          : "Alsace Grand Cru Steinert (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0220": {
+      "name"          : "Alsace Grand Cru Steingrubler (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0221": {
+      "name"          : "Alsace Grand Cru Steinklotz (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0222": {
+      "name"          : "Alsace Grand Cru Vorbourg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0223": {
+      "name"          : "Alsace Grand Cru Wiebelsberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0224": {
+      "name"          : "Alsace Grand Cru Wineck-Schlossberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0225": {
+      "name"          : "Alsace Grand Cru Winzenberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0226": {
+      "name"          : "Alsace Grand Cru Zinnkoepflé (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0227": {
+      "name"          : "Alsace Grand Cru Zotzenberg (AOC)",
+      "type"          : "AOC Grand Cru",
+      "allowed_colors": ["W"]
+    },
+    "0228": {
+      "name"          : "Crémant d'Alsace (AOC)",
+      "type"          : "AOC Sparkling",
+      "allowed_colors": ["W", "P"]
+    }
   }
 }
-
