@@ -1,1 +1,70 @@
+{
+  "system": "IWIN",
+  "document": "Global Appellation and Terroir Types Definition",
+  "version": "1.3.0",
+  "last_updated": "2026-11-01",
+  "categories": {
+    "FR": {
+      "AOC Grand Cru": {
+        "short_name": "GC",
+        "full_name": "Appellation d'Origine Contrôlée Grand Cru",
+        "description": "The absolute pinnacle of the French quality pyramid. A unique terroir classified as a fully independent and autonomous appellation."
+      },
+      "AOC Regional": {
+        "short_name": "AOC",
+        "full_name": "Appellation d'Origine Contrôlée Régionale",
+        "description": "The foundational regional tier of a French wine region (e.g., AOC Alsace, AOC Bourgogne)."
+      },
+      "AOC Regional DGC": {
+        "short_name": "DGC",
+        "full_name": "Dénominations Géographiques Complémentaires",
+        "description": "An official municipal or communal subdivision within a regional AOC, subject to stricter production and yield criteria (e.g., Blienschwiller, Chitry)."
+      },
+      "AOC Regional Lieu-dit": {
+        "short_name": "LD",
+        "full_name": "Lieu-dit / Climat",
+        "description": "A historically recognized plot or single vineyard characterized by specific geological attributes, authorized to appear on the label under specific conditions."
+      },
+      "AOC Sparkling": {
+        "short_name": "Crémant",
+        "full_name": "Appellation d'Origine Contrôlée Effervescente",
+        "description": "Sparkling wines produced using the traditional method, featuring a secondary fermentation inside the bottle."
+      },
+      "IGP Regional": {
+        "short_name": "IGP",
+        "full_name": "Indication Géographique Protégée Régionale",
+        "description": "Territorial wines focused on geographic origin, offering higher flexibility in grape varieties and winemaking styles than the AOC tier."
+      },
+      "IGP Regional Sub-zone": {
+        "short_name": "IGP SZ",
+        "full_name": "Indication Géographique Protégée - Mention de sous-zone",
+        "description": "A specific delimited sub-descriptor or community zone embedded within a broader departmental or regional IGP footprint."
+      }
+    },
+    "IT": {
+      "DOCG": {
+        "short_name": "DOCG",
+        "full_name": "Denominazione di Origine Controllata e Garantita",
+        "description": "The highest tier of Italian wine classification, subject to rigorous sensory analysis and protected by a numbered state seal."
+      },
+      "DOCG UGA": {
+        "short_name": "UGA",
+        "full_name": "Unità Geografica Aggiuntiva",
+        "description": "Official municipal or specific sub-zone boundaries within a major DOCG appellation (e.g., specific communes within Chianti Classico or Barolo)."
+      },
+      "IGT": {
+        "short_name": "IGT",
+        "full_name": "Indicazione Geografica Tipica",
+        "description": "Country or territorial wines, equivalent to the French IGP framework, offering higher creative flexibility to winemakers."
+      }
+    },
+    "US": {
+      "AVA": {
+        "short_name": "AVA",
+        "full_name": "American Viticultural Area",
+        "description": "An officially delimited wine-growing region in the United States defined by specific geographic, soil, and climatic features managed by the TTB."
+      }
+    }
+  }
+}
 
