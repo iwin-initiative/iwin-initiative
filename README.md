@@ -62,6 +62,13 @@ The IWIN standard strictly separates physical and geographic identity from comme
 
 ---
 
+### 6. Intellectual Property, Governance & Registry Authority
+* **Open Standard Specification:** The structural mechanics of the IWIN format (positional 27-character Core and 32-character Extended layouts) are published openly to maximize global adoption in the wine-tech industry under the **GNU GPLv3** license for non-commercial software.
+* **Registry & Authority Control:** To prevent data corruption, namespace collisions, and algorithmic parsing errors, the distribution of Producer IDs (Block 6) and official Appellation Sequences (Block 4) is strictly restricted. These sequences are exclusively managed by the official IWIN Central Registry Authority.
+* **Trademark & Commercial Licensing:** While the technical nomenclature is open for public routing, commercial implementation, compliance badges, and automated API resolution services are strictly governed. Commercial operations, closed-source integrations, and certified software labels require an official agreement with the designated registry management company (currently being incorporated in Luxembourg).
+
+---
+
 ### 6. Intellectual Property, Trademark & Governance
 * **Trademark:** The name **"IWIN"**, the acronym **"International Wine Identification Number"**, and its official branding are protected legal trademarks. Unauthorized commercial use of the brand name to label software, APIs, or database services as "IWIN-Certified" or "IWIN-Compatible" without written consent is strictly prohibited.
 * **Dual-Licensing Framework:** This project operates on a dual-license model to balance rapid community adoption with commercial sustainability. Non-commercial and open-source applications may use the standard freely under the **GNU GPLv3** license. Proprietary, commercial, and closed-source enterprise systems must secure a commercial agreement.
