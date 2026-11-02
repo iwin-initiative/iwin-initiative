@@ -35,19 +35,29 @@ The IWIN standard defines two official encodings for these representations:
 
 ---
 
-### 4. Semantic Anatomy Block-by-Block
-The 32-character architecture of the IWIN-Extended string is strictly partitioned into seven mandatory core blocks and one optional logistics block:
+### 4. Semantic Anatomy (Block-by-Block)
 
-| Block | Attribute | Data Type | Fixed Width | Specification & Allowed Values |
-| :--- | :--- | :--- | :---: | :--- |
-| **1** | Country | Alpha | 2 | Official ISO 3166-1 alpha-2 country codes (e.g., `FR`, `IT`, `US`). |
-| **2** | Vintage | Numeric | 4 | 4-digit harvest year. Non-Vintage (NV) products use `0000` as the mandatory fallback. |
-| **3** | Wine Region | Alpha | 3 | Pure viticultural macro-regions mapped by the IWIN Central Registry (e.g., `BOR` for Bordeaux, `ALS` for Alsace). Unique within each country string. |
-| **4** | Appellation / DGC | Numeric | 4 | Chronological sequential designation code from `0001` to `9999` managed by the IWIN Registry. Encapsulates full AOC/AOP levels, including Dénominations Géographiques Communales (DGC) and local Crus. Wines without legal designation default to `0000`. |
-| **5** | Liquid Color | Alpha | 1 | Strictly bounded taxonomy: `R` (Red), `W` (White), `P` (Pink/Rosé), `A` (Amber/Orange), `G` (Gris/Grey). Excludes `O` to prevent OCR confusion with the number `0`. |
-| **6** | Producer ID | Numeric | 6 | Unique structural corporate key from `000001` to `999999` managed by the central ledger. Can be mapped to sequential registrations or regulatory tax keys. |
-| **7** | Cuvée / Blend | Alpha | 2 | Micro-product partition code supporting 676 combinations from `AA` to `ZZ` to isolate single vineyards, second labels, or specific estate blends. **Strictly reserved for producer branding; geographic mentions are prohibited here.** |
-| **8*** | Bottle Volume | Numeric | 5 | *Optional Logistics Extension.* Fixed-width allocation representing capacity in milliliters (ml), spanning from `00188` (Piccolo) up to `30000` (Melchizedek) and beyond. |
+The IWIN string is divided into 8 distinct block attributes, standardizing all key features of a wine product into a fixed 27-character structure (`IWIN-Storage`).
+
+| Block | Character Position | Component | Description / Allowed Values |
+| :---: | :---: | :--- | :--- |
+| **1** | 1 - 2 | Country Code | ISO 3166-1 alpha-2 (e.g., `FR` for France). |
+| **2** | 3 - 6 | Vintage | 4-digit numeric year (e.g., `2019`). `0000` for Non-Vintage (NV). |
+| **3** | 7 - 9 | Region | 3-letter uppercase regional code (e.g., `BOR` for Bordeaux, `CHA` for Champagne). |
+| **4** | 10 - 13 | Appellation | 4-digit sequential numeric registry code (e.g., `0042` for Margaux, `0417` for Champagne AOC). |
+| **5** | 14 | Wine Color | 1-letter uppercase code (`R` = Red, `W` = White, `P` = Pink/Rosé, `O` = Orange). |
+| **6** | 15 - 20 | Producer ID | 6-digit unique identifier for the winery or cooperative. |
+| **7** | 21 - 22 | Label / Packaging | 2-letter uppercase code representing the specific cuvée, label level, or special packaging type. |
+| **8** | 23 - 27 | Volume | 5-digit numeric volume in milliliters, matching the global `volumes_registry.json`. |
+
+#### ⚠️ Critical Rule for Block 7 (Label / Packaging)
+To ensure universal identification of alternative packaging methods without changing the 27-character database constraint, **the letter `Z` is strictly reserved and restricted**:
+* **Standard Glass Bottles (`AA` to `YY`):** Producers can use any 2-letter combination starting from `AA` up to `YY` to identify their standard wine labels or cuvées. **The letter `Z` is completely forbidden** anywhere in these codes (e.g., codes like `AZ`, `ZA`, or `ZZ` cannot be assigned to standard bottles).
+* **Alternative Packaging (`Z[A-Z]`):** Any code where the first character is **`Z`** signals to parsers and users that the wine is not packaged in a traditional glass bottle.
+  * `ZA`: Aluminum Can (Canette)
+  * `ZP`: Flexible Pouch (Poche souple)
+  * `ZK`: Service Keg / KeyKeg (Fût)
+  * `ZX`: Bag-in-Box / Cubitainer
 
 ---
 
