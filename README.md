@@ -49,7 +49,7 @@ The complete IWIN string (`IWIN-Extended-Storage`) is divided into 8 distinct bl
 | **2** | 3 - 6 | Vintage | 4-digit numeric year (e.g., `2019`). `0000` for Non-Vintage (NV). |
 | **3** | 7 - 9 | Region | 3-letter uppercase regional code (e.g., `BOR` for Bordeaux, `CHA` for Champagne). |
 | **4** | 10 - 13 | Appellation | 4-digit sequential numeric registry code (e.g., `0262` for Margaux, `0417` for Champagne AOC). |
-| **5** | 14 | Wine Color | 1-letter uppercase code (`R` = Red, `W` = White, `P` = Pink/Rosé, `O` = Orange). |
+| **5** | 14 | Wine Color | 1-letter uppercase code (`R` = Red, `W` = White, `P` = Pink/Rosé, `A` = Amber). |
 | **6** | 15 - 20 | Producer ID | 6-digit unique identifier for the winery or cooperative. |
 | **7** | 21 - 22 | Label / Packaging | 2-letter uppercase code representing the specific cuvée, label level. Ends the **IWIN-Core (22 char.)**. |
 | **8** | 23 - 27 | Volume | 5-digit numeric volume in milliliters, matching the global `volumes_registry.json`. Completes the **IWIN-Extended (27 char.)**. |
