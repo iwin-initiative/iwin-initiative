@@ -1,0 +1,226 @@
+[
+  {
+    "liters": 0.1875,
+    "iwin_code": "00188",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Piccolo",
+    "name_en": "Piccolo / Split"
+  },
+  {
+    "liters": 0.2,
+    "iwin_code": "00200",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Quart",
+    "name_en": "Quarter"
+  },
+  {
+    "liters": 0.25,
+    "iwin_code": "00250",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Chopine",
+    "name_en": "Chopine"
+  },
+  {
+    "liters": 0.375,
+    "iwin_code": "00375",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Fillette / Demi",
+    "name_en": "Half bottle"
+  },
+  {
+    "liters": 0.378,
+    "iwin_code": "00378",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Dixième (Gallon US)",
+    "name_en": "Tenth (US Gallon)"
+  },
+  {
+    "liters": 0.5,
+    "iwin_code": "00500",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Demi-Litre / Medium",
+    "name_en": "Half-liter / Jennie"
+  },
+  {
+    "liters": 0.62,
+    "iwin_code": "00620",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Clavelin",
+    "name_en": "Clavelin"
+  },
+  {
+    "liters": 0.75,
+    "iwin_code": "00750",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Bouteille Standard",
+    "name_en": "Standard bottle"
+  },
+  {
+    "liters": 0.757,
+    "iwin_code": "00757",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Cinquième (Gallon US)",
+    "name_en": "Fifth (US Gallon)"
+  },
+  {
+    "liters": 1.0,
+    "iwin_code": "01000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Litre",
+    "name_en": "Liter"
+  },
+  {
+    "liters": 1.5,
+    "iwin_code": "01500",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Magnum",
+    "name_en": "Magnum"
+  },
+  {
+    "liters": 2.25,
+    "iwin_code": "02250",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Marie-Jeanne",
+    "name_en": "Marie-Jeanne"
+  },
+  {
+    "liters": 3.0,
+    "iwin_code": "03000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Jéroboam (Champagne/Bourgogne) / Double Magnum (Bordeaux)",
+    "name_en": "Jeroboam (Champagne/Burgundy) / Double Magnum (Bordeaux)"
+  },
+  {
+    "liters": 4.5,
+    "iwin_code": "04500",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Réhoboam",
+    "name_en": "Rehoboam"
+  },
+  {
+    "liters": 5.0,
+    "iwin_code": "05000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "McKenzie",
+    "name_en": "McKenzie"
+  },
+  {
+    "liters": 6.0,
+    "iwin_code": "06000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Mathusalem (Champagne) / Impériale (Bordeaux)",
+    "name_en": "Methuselah (Champagne) / Imperial (Bordeaux)"
+  },
+  {
+    "liters": 9.0,
+    "iwin_code": "09000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Salmanazar",
+    "name_en": "Salmanazar"
+  },
+  {
+    "liters": 12.0,
+    "iwin_code": "12000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Balthazar",
+    "name_en": "Balthazar"
+  },
+  {
+    "liters": 15.0,
+    "iwin_code": "15000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Nabuchodonosor",
+    "name_en": "Nebuchadnezzar"
+  },
+  {
+    "liters": 18.0,
+    "iwin_code": "18000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Melchior",
+    "name_en": "Melchior"
+  },
+  {
+    "liters": 20.0,
+    "iwin_code": "20000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Salomon",
+    "name_en": "Solomon"
+  },
+  {
+    "liters": 26.25,
+    "iwin_code": "26250",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Souverain",
+    "name_en": "Sovereign"
+  },
+  {
+    "liters": 27.0,
+    "iwin_code": "27000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Primat",
+    "name_en": "Primat / Goliath"
+  },
+  {
+    "liters": 30.0,
+    "iwin_code": "30000",
+    "packaging_category": "Glass Bottle",
+    "name_fr": "Melchizédec / Midas",
+    "name_en": "Melchizedek / Midas"
+  },
+  {
+    "liters": 0.1875,
+    "iwin_code": "00188",
+    "packaging_category": "Alternative Packaging",
+    "name_fr": "Canette Aluminium",
+    "name_en": "Aluminum Can"
+  },
+  {
+    "liters": 0.25,
+    "iwin_code": "00250",
+    "packaging_category": "Alternative Packaging",
+    "name_fr": "Canette Aluminium",
+    "name_en": "Aluminum Can"
+  },
+  {
+    "liters": 0.75,
+    "iwin_code": "00750",
+    "packaging_category": "Alternative Packaging",
+    "name_fr": "Poche Souple (Pouch)",
+    "name_en": "Pouch"
+  },
+  {
+    "liters": 1.5,
+    "iwin_code": "01500",
+    "packaging_category": "Alternative Packaging",
+    "name_fr": "Poche Souple (Pouch) / Cubitainer",
+    "name_en": "Pouch / Bag-in-Box"
+  },
+  {
+    "liters": 3.0,
+    "iwin_code": "03000",
+    "packaging_category": "Alternative Packaging",
+    "name_fr": "Cubitainer / Bag-in-Box",
+    "name_en": "Bag-in-Box / Cubitainer"
+  },
+  {
+    "liters": 5.0,
+    "iwin_code": "05000",
+    "packaging_category": "Alternative Packaging",
+    "name_fr": "Cubitainer / Bag-in-Box",
+    "name_en": "Bag-in-Box / Cubitainer"
+  },
+  {
+    "liters": 10.0,
+    "iwin_code": "10000",
+    "packaging_category": "Alternative Packaging",
+    "name_fr": "Cubitainer / Bag-in-Box",
+    "name_en": "Bag-in-Box / Cubitainer"
+  },
+  {
+    "liters": 20.0,
+    "iwin_code": "20000",
+    "packaging_category": "Alternative Packaging",
+    "name_fr": "Fût / KeyKeg",
+    "name_en": "Keg / KeyKeg"
+  }
+]
