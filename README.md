@@ -23,21 +23,25 @@ While global standards exist for trade and retail checkout, they are fundamental
 ### 3. Code Architecture: Positional Alternation & Human-Readable Layouts
 To optimize for both database efficiency and everyday consumer interactions (such as text input, user interface navigation, and smartphone camera OCR scanning), the IWIN standard introduces a dual-layered representation framework:
 
-1. **IWIN-Core (27 Characters):** The immutable cryptographic and biological representation of the wine liquid itself. It ends strictly at the Cuvée identifier.
-2. **IWIN-Extended (32 Characters):** The full logistics and inventory string, adding a 5-digit fixed-width volume indicator in milliliters (ml) to isolate specific commercial physical variants.
+1. **IWIN-Core:** The immutable cryptographic and identity representation of the wine liquid itself. It ends strictly at the Cuvée / Label level (22 characters in storage format).
+2. **IWIN-Extended:** The full commercial and physical product variant string, adding the 5-digit fixed-width volume indicator in milliliters (ml) to isolate specific packaging formats (27 characters in storage format).
 
 #### 3.1 Structural Comparison: Continuous vs. Delimited
 The IWIN standard defines two official encodings for these representations:
-* **IWIN-Storage (Continuous):** An ultra-compact format stripped of all punctuation, optimized for database indexes, NFC/RFID tags, and barcode compilation. 
-  * *Example (Core):* `FR2019BOR0262R104852AA`
+
+* **IWIN-Storage (Continuous):** An ultra-compact format stripped of all punctuation, optimized for database indexes, NFC/RFID tags, and barcode compilation.
+  * *IWIN-Core (22 char.):* `FR2019BOR0262R104852AA`
+  * *IWIN-Extended (27 char.):* `FR2019BOR0262R104852AA00750`
+
 * **IWIN-Display (Delimited):** A human-centric format utilizing a hyphen (`-`) anchor between logical segments. The structural alternation between alphabetical and numerical characters, combined with visual delimiters, dramatically lowers OCR interpretation error rates and prevents character-shifting data corruption.
-  * *Example (Extended):* `FR-2019-BOR-0262-R-104852-AA-01500`
+  * *IWIN-Core (28 char.):* `FR-2019-BOR-0262-R-104852-AA`
+  * *IWIN-Extended (34 char.):* `FR-2019-BOR-0262-R-104852-AA-00750`
 
 ---
 
 ### 4. Semantic Anatomy (Block-by-Block)
 
-The IWIN string is divided into 8 distinct block attributes, standardizing all key features of a wine product into a fixed 27-character structure (`IWIN-Storage`).
+The complete IWIN string (`IWIN-Extended-Storage`) is divided into 8 distinct block attributes spanning a fixed 27-character structure. The first 7 blocks (positions 1 to 22) isolate the liquid identity (`IWIN-Core`), while Block 8 completes the physical commercial variant.
 
 | Block | Character Position | Component | Description / Allowed Values |
 | :---: | :---: | :--- | :--- |
@@ -47,12 +51,12 @@ The IWIN string is divided into 8 distinct block attributes, standardizing all k
 | **4** | 10 - 13 | Appellation | 4-digit sequential numeric registry code (e.g., `0262` for Margaux, `0417` for Champagne AOC). |
 | **5** | 14 | Wine Color | 1-letter uppercase code (`R` = Red, `W` = White, `P` = Pink/Rosé, `O` = Orange). |
 | **6** | 15 - 20 | Producer ID | 6-digit unique identifier for the winery or cooperative. |
-| **7** | 21 - 22 | Label / Packaging | 2-letter uppercase code representing the specific cuvée, label level, or special packaging type. |
-| **8** | 23 - 27 | Volume | 5-digit numeric volume in milliliters, matching the global `volumes_registry.json`. |
+| **7** | 21 - 22 | Label / Packaging | 2-letter uppercase code representing the specific cuvée, label level. Ends the **IWIN-Core (22 char.)**. |
+| **8** | 23 - 27 | Volume | 5-digit numeric volume in milliliters, matching the global `volumes_registry.json`. Completes the **IWIN-Extended (27 char.)**. |
 
 #### ⚠️ Critical Rule for Block 7 (Label / Packaging)
 To ensure universal identification of alternative packaging methods without changing the 27-character database constraint, **the letter `Z` is strictly reserved and restricted**:
-* **Standard Glass Bottles (`AA` to `YY`):** Producers can use any 2-letter combination starting from `AA` up to `YY` to identify their standard wine labels or cuvées. **The letter `Z` is completely forbidden** anywhere in these codes (e.g., codes like `AZ`, `CZ`,`ZA`, or `ZZ` cannot be assigned to standard bottles).
+* **Standard Glass Bottles (`AA` to `YY`):** Producers can use any 2-letter combination starting from `AA` up to `YY` to identify their standard wine labels or cuvées. **The letter `Z` is completely forbidden** anywhere in these codes (e.g., codes like `AZ`, `CZ`, `ZA`, or `ZZ` cannot be assigned to standard bottles).
 * **Alternative Packaging (`Z[A-Z]`):** Any code where the first character is **`Z`** signals to parsers and users that the wine is not packaged in a traditional glass bottle.
   * `ZA`: Aluminum Can (Canette)
   * `ZP`: Flexible Pouch (Poche souple)
