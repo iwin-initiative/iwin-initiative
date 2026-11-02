@@ -429,8 +429,8 @@
     "0420": { "macro_region": "CHA", "name": "Rosé des Riceys (AOC)", "type": "AOC", "allowed_colors": ["P"] },
     "0421": { "macro_region": "CHA", "name": "Seine-et-Marne (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"] },
 
-    "0422": { "macro_region": "CGN", "name": "Charentais (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"] },
-    "0423": { "macro_region": "CGN", "name": "Pineau des Charentes (AOC)", "type": "AOC Vin de Liqueur", "allowed_colors": ["R", "W", "P"] },
+    "0422": { "macro_region": "CHR", "name": "Charentais (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"] },
+    "0423": { "macro_region": "CHR", "name": "Pineau des Charentes (AOC)", "type": "AOC Vin de Liqueur", "allowed_colors": ["R", "W", "P"] }
 
   }
 }
