@@ -39,8 +39,9 @@ This document provides concrete reference examples of the **International Wine I
 * **Attributes:** Amber/Orange, Matured in Amphora, Standard Bottle (750ml)
 * **Anatomy:** Italy (`IT`) - 2015 - Friuli (`FRI`) - Venezia Giulia IGT / IGP (`0089`) - Amber (`A`) - Producer ID (`200561`) - Estate Cuvée (`AA`) - 750ml (`00750`)
 
-* **IWIN-Display:** `IT-2015-FRI-0089-A-200561-AA-00750`
-* **IWIN-Storage:** `IT2015FRI0089A200561AA00750`
+* **IWIN-Core (Storage - 22 char.):** `IT2015FRI0089A200561AA`
+* **IWIN-Extended (Storage - 27 char.):** `IT2015FRI0089A200561AA00750`
+* **IWIN-Extended (Display - 34 char.):** `IT-2015-FRI-0089-A-200561-AA-00750`
 
 ---
 
