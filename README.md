@@ -52,7 +52,7 @@ The IWIN string is divided into 8 distinct block attributes, standardizing all k
 
 #### ⚠️ Critical Rule for Block 7 (Label / Packaging)
 To ensure universal identification of alternative packaging methods without changing the 27-character database constraint, **the letter `Z` is strictly reserved and restricted**:
-* **Standard Glass Bottles (`AA` to `YY`):** Producers can use any 2-letter combination starting from `AA` up to `YY` to identify their standard wine labels or cuvées. **The letter `Z` is completely forbidden** anywhere in these codes (e.g., codes like `AZ`, `ZA`, or `ZZ` cannot be assigned to standard bottles).
+* **Standard Glass Bottles (`AA` to `YY`):** Producers can use any 2-letter combination starting from `AA` up to `YY` to identify their standard wine labels or cuvées. **The letter `Z` is completely forbidden** anywhere in these codes (e.g., codes like `AZ`, `CZ`,`ZA`, or `ZZ` cannot be assigned to standard bottles).
 * **Alternative Packaging (`Z[A-Z]`):** Any code where the first character is **`Z`** signals to parsers and users that the wine is not packaged in a traditional glass bottle.
   * `ZA`: Aluminum Can (Canette)
   * `ZP`: Flexible Pouch (Poche souple)
