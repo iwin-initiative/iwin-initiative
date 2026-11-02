@@ -29,9 +29,9 @@ To optimize for both database efficiency and everyday consumer interactions (suc
 #### 3.1 Structural Comparison: Continuous vs. Delimited
 The IWIN standard defines two official encodings for these representations:
 * **IWIN-Storage (Continuous):** An ultra-compact format stripped of all punctuation, optimized for database indexes, NFC/RFID tags, and barcode compilation. 
-  * *Example (Core):* `FR2019BOR0042R104852AA`
+  * *Example (Core):* `FR2019BOR0262R104852AA`
 * **IWIN-Display (Delimited):** A human-centric format utilizing a hyphen (`-`) anchor between logical segments. The structural alternation between alphabetical and numerical characters, combined with visual delimiters, dramatically lowers OCR interpretation error rates and prevents character-shifting data corruption.
-  * *Example (Extended):* `FR-2019-BOR-0042-R-104852-AA-01500`
+  * *Example (Extended):* `FR-2019-BOR-0262-R-104852-AA-01500`
 
 ---
 
@@ -44,7 +44,7 @@ The IWIN string is divided into 8 distinct block attributes, standardizing all k
 | **1** | 1 - 2 | Country Code | ISO 3166-1 alpha-2 (e.g., `FR` for France). |
 | **2** | 3 - 6 | Vintage | 4-digit numeric year (e.g., `2019`). `0000` for Non-Vintage (NV). |
 | **3** | 7 - 9 | Region | 3-letter uppercase regional code (e.g., `BOR` for Bordeaux, `CHA` for Champagne). |
-| **4** | 10 - 13 | Appellation | 4-digit sequential numeric registry code (e.g., `0042` for Margaux, `0417` for Champagne AOC). |
+| **4** | 10 - 13 | Appellation | 4-digit sequential numeric registry code (e.g., `0262` for Margaux, `0417` for Champagne AOC). |
 | **5** | 14 | Wine Color | 1-letter uppercase code (`R` = Red, `W` = White, `P` = Pink/Rosé, `O` = Orange). |
 | **6** | 15 - 20 | Producer ID | 6-digit unique identifier for the winery or cooperative. |
 | **7** | 21 - 22 | Label / Packaging | 2-letter uppercase code representing the specific cuvée, label level, or special packaging type. |
