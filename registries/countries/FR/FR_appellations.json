@@ -421,6 +421,14 @@
     "0413": { "macro_region": "BRG", "name": "Mâcon - Vinzelles (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W"] },
     "0414": { "macro_region": "BRG", "name": "Coteaux de l'Auxois (IGP)", "type": "IGP Regional", "allowed_colors": ["R", "W", "P"] },
     "0415": { "macro_region": "BRG", "name": "Saône-et-Loire (IGP)", "type": "IGP Regional", "allowed_colors": ["R", "W", "P"] },
-    "0416": { "macro_region": "BRG", "name": "Yonne (IGP)", "type": "IGP Regional", "allowed_colors": ["R", "W", "P"] }
+    "0416": { "macro_region": "BRG", "name": "Yonne (IGP)", "type": "IGP Regional", "allowed_colors": ["R", "W", "P"] },
+
+    "0417": { "macro_region": "CHA", "name": "Champagne (AOC)", "type": "AOC", "allowed_colors": ["W", "P"] },
+    "0418": { "macro_region": "CHA", "name": "Coteaux-Champenois (AOC)", "type": "AOC", "allowed_colors": ["R", "W", "P"] },
+    "0419": { "macro_region": "CHA", "name": "Haute-Marne (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"] },
+    "0420": { "macro_region": "CHA", "name": "Rosé des Riceys (AOC)", "type": "AOC", "allowed_colors": ["P"] },
+    "0421": { "macro_region": "CHA", "name": "Seine-et-Marne (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"] }
+
+    
   }
 }
