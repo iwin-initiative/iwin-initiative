@@ -1,98 +1,93 @@
 # IWIN: International Wine Identification Number
 ## Technical Specification & Architecture Whitepaper
+
 **Author:** IWIN Initiative  
-**Status:** Proposal / Request for Comments (RFC)  
-**Version:** 1.2.0 (November 2026)  
+**Status:** Canonical Standard Specification  
+**Version:** 1.0.0 (November 2026)  
 **Licensing:** Dual-Licensing (Open-Source GNU GPLv3 / Commercial)
 
 ---
 
 ### 1. Abstract
-The current digital wine ecosystem lacks a decentralized, human-readable, and semantic data standard. Existing methodologies, such as the Liv-ex Wine Identification Number (LWIN), rely on arbitrary sequential database keys that require constant API lookups to resolve fundamental product attributes like country, appellation, or color. This architecture creates high friction for consumer-facing cellar management software, smart appliances, and decentralized inventories.
+The digital wine ecosystem currently lacks a decentralized, human-readable, and semantic data standard. Existing identification methods rely on arbitrary sequential database keys that require constant API queries to resolve fundamental product attributes like country, appellation, vintage, or color. This architecture introduces high friction for cellar management software, smart appliances, logistics platforms, and decentralized inventories.
 
-This paper introduces the **International Wine Identification Number (IWIN)**, a fixed-width, positional, and semantic identifier. By alternating alpha and numeric blocks, IWIN embeds a wine’s strict biological and regulatory DNA (Country, Vintage, Wine Region, Appellation/DGC, Color, Producer, and Cuvée) directly into the code string. IWIN enables instant local data parsing, algorithmic sorting, and offline portability without the need for a centralized dictionary, setting a new standard for the consumer wine-tech industry.
-
-### 2. The Problem Statement: Why LWIN and GTIN Fail Consumers
-While global standards exist for trade and retail checkout, they are fundamentally unsuited for consumer application development and personal inventory tracking:
-
-* **GTIN (Global Trade Item Number / Barcodes):** Barcodes are designed for point-of-sale retail logistics. They lack structural metadata, cannot be retroactively applied to rare or back-vintage cellared wines, and do not inherently link identical liquids packaged for different regional distributors.
-* **LWIN (Liv-ex Wine Identification Number):** Designed for financial trading floors, LWIN treats wine like a stock ticker. An LWIN string contains no geographic intelligence. To filter a digital cellar by "French wines" or "Napa Valley AVAs," an application must perform heavy, costly metadata queries against a centralized server for every single bottle. If the server goes offline, the data becomes unreadable.
-* **The Manual Entry Fatigue:** Because consumer applications lack a semantic standard, users are forced to endure tedious manual data entry or suffer from high error rates in Optical Chemical Recognition (OCR) label scanning, leading to rapid user abandonment.
+The **International Wine Identification Number (IWIN)** solves this problem by providing a fixed-width, positional, and semantic identifier. By alternating alphabetical and numerical blocks, an IWIN string embeds a wine’s strict biological, regulatory, and physical DNA directly into the code. IWIN enables instant local data parsing, algorithmic sorting, and full offline portability without requiring a central API query, establishing a new open infrastructure for global wine-tech applications.
 
 ---
 
-### 3. Scope of the Project: What IWIN is NOT
-To protect our roadmap and establish clear, non-competitive partnerships across the wine-tech ecosystem, IWIN defines its boundaries strictly. **IWIN is an infrastructure protocol, not an end-user application.**
+### 2. Strategic Positioning: The ISBN of the Wine Industry
+To protect interoperability and establish clear boundaries, IWIN defines its scope strictly as an **infrastructure protocol**:
 
-* **IWIN is NOT a cellar manager:** We do not build software to log individual bottles, track drinking windows, or trigger inventory alerts. We provide the universal identification key (and QR code standard) that existing cellar managers can implement to automate their processing.
-* **IWIN is NOT a rating or review system:** We do not collect user-generated stars, expert points, or tasting notes. The standard is strictly factual, regulatory, and technical.
-* **IWIN is NOT a marketplace or e-commerce platform:** We do not sell wine, we do not compare retailer pricing, and we do not capture sales commissions.
-* **IWIN is NOT a wine encyclopedia:** We do not store narrative histories of estates, detailed soil profiles, or food pairing suggestions. Our registry validates only the legal existence of an appellation, a producer, and a packaging format.
+* **IWIN is NOT a cellar manager:** It does not track personal bottle locations, maturity windows, or tasting notes. It provides the universal key (and QR standard) that software platforms can leverage to automate processing.
+* **IWIN is NOT a rating or review system:** It records no subjective scores or commercial reviews. The standard is strictly factual, regulatory, and technical.
+* **IWIN is NOT an e-commerce platform:** It does not sell wine, monitor retail pricing, or charge transactions.
+* **IWIN is NOT a narrative encyclopedia:** It does not store estate stories or soil geology write-ups. The central registry validates only the legal existence of viticultural regions, appellations, vinifiers, and physical packaging.
 
-By positioning itself as the **ISBN of the wine world**, IWIN acts as an invisible, free, and open infrastructure designed to empower existing platforms rather than replace them.
-
-### 4. Code Architecture: Positional Alternation & Width Standards
-To optimize for both database efficiency and everyday consumer interactions (such as text input, user interface navigation, and smartphone camera OCR scanning), the IWIN standard introduces a dual-layered representation framework:
-
-1. **IWIN-Core:** The immutable identity representation of the wine liquid itself. It ends strictly at the Cuvée / Label level (22 characters in storage format).
-2. **IWIN-Extended:** The full commercial and physical product variant string, adding a 7-character logical segment to isolate specific packaging formats and high-capacity volumes (29 characters in storage format).
-
-#### 4.1 Structural Comparison: Continuous vs. Delimited
-The IWIN standard defines two official encodings for these representations:
-
-* **IWIN-Storage (Continuous):** An ultra-compact format stripped of all punctuation, optimized for database indexes, NFC/RFID tags, and barcode compilation.
-  * *IWIN-Core (22 char.):* `FR2019BOR0042R104852AA`
-  * *IWIN-Extended (29 char.):* `FR2019BOR0042R104852AA000750B`
-
-* **IWIN-Display (Delimited):** A human-centric format utilizing a hyphen (`-`) anchor between logical segments. The structural alternation between alphabetical and numerical characters lowers OCR interpretation error rates and prevents character-shifting data corruption.
-  * *IWIN-Core (28 char.):* `FR-2019-BOR-0042-R-104852-AA`
-  * *IWIN-Extended (36 char.):* `FR-2019-BOR-0042-R-104852-AA-000750B`
+By acting as an open, invisible, and universal infrastructure layer, IWIN empowers existing software tools rather than competing with them.
 
 ---
 
-### 5. Semantic Anatomy (Block-by-Block)
+### 3. Representation Formats: Core vs. Extended
+To accommodate both low-level database efficiency and human interaction (text entry, optical character recognition, mobile scanning), IWIN defines two logical levels and two structural layouts:
 
-The complete IWIN string (`IWIN-Extended-Storage`) is divided into 8 distinct block attributes spanning a fixed 29-character structure. The first 7 blocks (positions 1 to 22) isolate the liquid identity (`IWIN-Core`), while Block 8 completes the physical commercial variant.
+1. **IWIN-Core (22 characters in storage):** Represents the immutable identity of the liquid itself (Country, Vintage, Region, Appellation, Color, Producer, Cuvée).
+2. **IWIN-Extended (29 characters in storage):** Extends the Core identity by appending a 7-character physical packaging segment (Volume in ml + Container Material).
 
-| Block | Character Position | Component | Description / Allowed Values |
+#### Structural Encoding Formats
+* **IWIN-Storage (Continuous):** Compact format stripped of punctuation, optimized for database primary keys, RFID/NFC chips, and barcode payloads.
+  * *IWIN-Core Storage (22 char.):* `FR2019BOR0042R104852AA`
+  * *IWIN-Extended Storage (29 char.):* `FR2019BOR0042R104852AA000750B`
+
+* **IWIN-Display (Delimited):** Human-friendly format using a hyphen (`-`) anchor between logical blocks. Structural alternation between letters and digits reduces visual fatigue, improves scanning readability, and prevents OCR character shifting.
+  * *IWIN-Core Display (28 char.):* `FR-2019-BOR-0042-R-104852-AA`
+  * *IWIN-Extended Display (36 char.):* `FR-2019-BOR-0042-R-104852-AA-000750B`
+
+---
+
+### 4. Semantic Anatomy (Block-by-Block Specification)
+
+An `IWIN-Extended-Storage` string consists of **8 distinct positional blocks** spanning exactly 29 characters.
+
+| Block | Width & Type | Component | Description / Allowed Values |
 | :---: | :---: | :--- | :--- |
-| **1** | 1 - 2 | Country Code | ISO 3166-1 alpha-2 (e.g., `FR` for France). |
-| **2** | 3 - 6 | Vintage | 4-digit numeric year (e.g., `2019`). `0000` for Non-Vintage (NV). |
-| **3** | 7 - 9 | Region | 3-letter uppercase regional code (e.g., `BOR` for Bordeaux). |
-| **4** | 10 - 13 | Appellation | 4-digit sequential numeric registry code (`0001` to `9999`). |
-| **5** | 14 | Wine Color | 1-letter uppercase code (`R`=Red, `W`=White, `P`=Rosé, `A`=Amber/Orange). **Letter `O` is strictly forbidden**. |
-| **6** | 15 - 20 | Producer ID | 6-digit unique identifier for the winery or cooperative (e.g., `104852`). |
-| **7** | 21 - 22 | Cuvée / Label | 2-letter uppercase code representing the specific cuvée. Total flexibility from `AA` to `ZZ`. |
-| **8** | 23 - 29 | Volume & Type | 7-character composite block: **6 digits for volume** in milliliters (up to 999,999 ml) + **1 letter for packaging material**. |
+| **1** | 2 Alpha | Country Code | ISO 3166-1 alpha-2 (e.g., `FR` for France, `IT` for Italy). |
+| **2** | 4 Numeric | Vintage | 4-digit harvest year (e.g., `2019`). `0000` is reserved for Non-Vintage (NV). |
+| **3** | 3 Alpha | Macro-Region | Official 3-letter uppercase viticultural region code (e.g., `BOR` for Bordeaux, `ALS` for Alsace). |
+| **4** | 4 Numeric | Appellation / Terroir | 4-digit sequential numeric code (`0001` to `9999`) assigned to legal AOC, DGC, Grand Cru, or IGP sub-zones. `0000` is a reserved software keyword for Wines Without Geographical Indication (*Vin de France*). |
+| **5** | 1 Alpha | Wine Color | `R` (Red), `W` (White), `P` (Rosé / Pink), `A` (Amber / Skin-Contact / Orange). **The letter `O` is strictly forbidden.** |
+| **6** | 6 Numeric | Vinifier / Producer ID | Unique 6-digit global identifier (`000001` to `999999`) assigned to the vinifying entity (independent estate, merchant-vinifier, cooperative, or bottle-return grower). |
+| **7** | 2 Alpha | Cuvée / Label | 2-letter code (`AA` to `ZZ`) identifying a specific commercial label for a given vinifier and vintage (676 combinations available per vintage). |
+| **8** | 7 Composite | Volume & Packaging | Composite block of **6 digits for volume in ml** (`000001` to `999999`) + **1 letter for container material**. |
 
-#### ⚠️ Critical Ambiguity and Safety Rules
-* **The "O" Exclusion Rule:** In Block 5 (Color), the letter `O` (Orange) is completely banned to avoid visual confusion with the numeral `0`. It is replaced by **`A`** (Amber/Orange).
-* **Block 8 Packaging Material Suffixes (Position 29):** 
-  * `B` : Bottle (Traditional glass bottles)
-  * `C` : Can (Aluminum cans / Canettes)
-  * `X` : Bag-in-Box (Cubitainers / Flexible box packaging)
-  * `K` : Keg (Service kegs / KeyKegs / Industrial bulk barrels)
-  * `T` : Tube (Glass or plastic sample tubes / Vinottes)
-  * `P` : Pouch (Flexible modern pouches)
-
----
-
-### 6. Physical Field Deployment: The QR Code Standard
-To ensure seamless operations in cellar environments, inventory scanning, and retail distribution, the human-readable alphanumeric code is bound to a high-density 2D **QR Code matrix**.
-
-#### 6.1 Unified URL Routing (The Payload)
-Rather than raw data strings, the official IWIN QR code embeds a structured, resolvable cryptographic URL pointing directly to the open registry gateway:
-`https://iwincode.org[IWIN-Extended-Storage]`
-
-* *Example Payload:* `https://iwincode.orgFR2019BOR0042R104852AA000750B`
-
-#### 6.2 Operational Interception Layer
-* **Consumer Mode:** Scanning via a stock smartphone camera automatically opens the browser to `iwincode.org`, translating the code into a clean, localized technical identity sheet.
-* **Professional Mode:** Inventory applications, smart cellars, and ERP scanners intercept the incoming URL string locally, isolate the final 29 characters, and perform zero-latency database operations entirely offline.
+#### Safety & Disambiguation Rules
+* **The "O" Exclusion Rule:** The letter `O` (Orange) is banned in Block 5 to avoid visual confusion with the numeral `0`. Orange / Skin-Contact wines must use the code **`A`** (Amber).
+* **Block 8 Packaging Material Codes (Position 29):**
+  * `B` : Bottle (Glass bottle)
+  * `C` : Can (Aluminum container)
+  * `X` : Bag-in-Box (Cubitainer / Flexible boxed liquid)
+  * `K` : Keg (Service keg / KeyKeg / Bulk barrel)
+  * `T` : Tube (Glass or plastic sample tube / Vinotte)
+  * `P` : Pouch (Flexible pouch format)
 
 ---
 
-### 7. Intellectual Property, Governance & Registry Authority
-* **Open Standard Specification:** The structural mechanics of the IWIN format (positional 22-character Core and 29-character Extended layouts) are published openly to maximize global adoption in the wine-tech industry under the **GNU GPLv3** license for non-commercial software.
-* **Registry & Authority Control:** To prevent data corruption, namespace collisions, and algorithmic parsing errors, the distribution of Producer IDs (Block 6) and official Appellation Sequences (Block 4) is strictly restricted. These sequences are exclusively managed by the official IWIN Central Registry Authority.
-* **Trademark & Commercial Licensing:** While the technical nomenclature is open for public routing, commercial implementation, compliance badges, and automated API resolution services are strictly governed. Commercial operations, closed-source integrations, and certified software labels require an official agreement with the designated registry management company.
+### 5. Deployment: Physical QR Code Payload
+
+For physical integration on wine back-labels, cellar tags, and logistics cartons, the human-readable string is bound to a standard 2D QR Code.
+
+#### 5.1 Standard URI Format
+Official IWIN QR codes embed a structured cryptographic URL pointing to the universal resolver:
+`https://iwincode.org/[IWIN-Extended-Storage]`
+
+* *Example Payload:* `https://iwincode.org/FR2019BOR0042R104852AA000750B`
+
+#### 5.2 Resolution Behavior
+* **Consumer Interface:** Scanning the QR code with a standard smartphone camera navigates to `iwincode.org`, rendering an instant, localized technical passport of the wine.
+* **Professional & System Interface:** Cellar management applications, warehouse scanners, and ERP inventory engines intercept the URL locally, extract the trailing 29 characters, and process the product identity entirely offline.
+
+---
+
+### 6. Intellectual Property & Central Authority
+* **Open Standard Specification:** The IWIN format and parsing specifications are published under the **GNU GPLv3** license for non-commercial software implementations.
+* **Registry Governance:** To prevent namespace collisions and data corruption, global allocation of Appellation Codes (Block 4) and Producer IDs (Block 6) is managed exclusively by the central IWIN Registry Authority.
+* **Commercial Integration:** Commercial platforms, closed-source enterprise software, and hardware compliance integrations are governed via commercial licensing agreements with the IWIN Authority.
