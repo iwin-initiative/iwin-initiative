@@ -843,7 +843,7 @@
     "0838": {"macro_region": "SUD", "name": "Saussignac (AOC)", "type": "AOC", "allowed_colors": ["W"]},
     "0839": {"macro_region": "SUD", "name": "Tursan (AOC)", "type": "AOC", "allowed_colors": ["R", "W", "P"]},
     "0840": {"macro_region": "SUD", "name": "Vins de la Corrèze (AOC)", "type": "AOC", "allowed_colors": ["R", "W", "P"]},
-    "0841": {"macro_region": "BOR", "name": "Atlantique (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"]},
-    "0842": {"macro_region": "PRV", "name": "Méditerranée (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"]}
+    "0841": {"macro_region": ["BOR", "SUD"], "name": "Atlantique (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"]},
+    "0842": {"macro_region": ["PRV", "RHO"], "name": "Méditerranée (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"]}
   }
 }
