@@ -56,10 +56,23 @@ The parent regional appellation *Coteaux du Languedoc AOC* was officially update
 
 ---
 
-## 4. Logistics and Commercial Variant Coding (The Bloc 8 Composite Rule)
+## 4. France : Inter-regional Appellations
+
+While 99% of wine appellations in France belong strictly to a single administrative or viticultural macro-region, a few exceptional entries (such as inter-regional **IGPs** like *IGP Atlantique* or *IGP Méditerranée*) cover territories spanning across multiple regions.
+
+### 4.1 Schema & Data Representation
+* **Standard Entries:** The `macro_region` property is stored as a single `string` containing the region code (e.g., `"BOR"`, `"ALS"`).
+* **Inter-regional Entries:** The `macro_region` property is stored as an `array` of strings containing all associated region codes (e.g., `["BOR", "SUD"]` for *IGP Atlantique*, or `["PRV", "RHO"]` for *IGP Méditerranée*).
+
+### 4.2 Consumer Implementation Note
+Downstream applications, parsers, and APIs consuming this registry must implement type-checking for the `macro_region` field to safely handle both `string` and `array` data types.
+
+---
+
+## 5. Logistics and Commercial Variant Coding (The Bloc 8 Composite Rule)
 To safeguard the 22-character `IWIN-Core` as a pure liquid-identity pointer, all dimensional and structural material data is localized within the 7-character composite **Block 8**.
 
-### 4.1 Fixed-Width Volume & Material Partitioning
+### 5.1 Fixed-Width Volume & Material Partitioning
 Block 8 enforces an unyielding 7-character continuous width, split into two sub-components:
 1. **Positions 1 to 6 (Numeric Volume):** Represents the precise capacity in milliliters (ml) padded with leading zeros up to `999999` (nearly 1,000 Liters).
 2. **Position 7 (Alpha Packaging Material Suffix):** Flags the structural physics of the container.
@@ -72,6 +85,6 @@ Block 8 enforces an unyielding 7-character continuous width, split into two sub-
 
 ---
 
-## 5. Integrity and Character Alternation Enforcement
+## 6. Integrity and Character Alternation Enforcement
 To prevent character-shift bugs during OCR scans, no application, dictionary update, or database schema shall modify the width of numeric or alphabetical blocks. Delimiters (`-`) remain mandatory for all user-facing layouts (IWIN-Display) and must be stripped programmatically before cryptographic hashing, local DB caching, or QR Code URL compilation (IWIN-Storage).
 
