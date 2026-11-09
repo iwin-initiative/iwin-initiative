@@ -1,90 +1,84 @@
-# IWIN Registry Coding Conventions
-## Global Standards, Regional Frameworks & Historical Rules
-**Version:** 1.3.0 (November 2026)
+# IWIN Registry Conventions & Architecture Guidelines
+
+This document outlines the operational and architectural rules governing the central dictionaries of the **International Wine Identification Number (IWIN)** initiative.
 
 ---
 
-## 1. Core Architectural Shift: The 4-Digit Block 4 Revolution
-To eliminate data fragmentation and guarantee long-term system stability, the IWIN standard has expanded **Block 4 (Appellation)** from 3 to **4 numeric characters (0001 to 9999)**.
+## 1. Structure of Central Dictionaries
 
-### 1.1 Decoupling Terroir from Commercial Cuvées
-Historically, complex viticultural frameworks (such as Alsace Grands Crus, Burgundy DGCs, or Languedoc/Loire IGP sub-zones) were "virtualized" inside Block 7 (Cuvée / Blend) to avoid saturating Block 4.
-* **The New Standard:** With 9,999 structural codes now available per macro-region, **every legally protected geographical sub-zone, DGC, MGA/UGA, or individual Grand Cru must receive its own unique, permanent 4-digit code in Block 4.**
-* **Liberation of Block 7:** The 2-character alpha block (**Block 7**) is strictly restored to its original purpose: identifying estate-level liquid configurations (*Tradition, Prestige, Single Barrel* from `AA` to `ZZ`). It is now completely open without any structural character prohibitions.
+All IWIN dictionary data is maintained in structured JSON files within the `/registries/` directory, organized by country code (ISO 3166-1 alpha-2).
 
-### 1.2 The "0000" Dynamic Exception (VSIG / Vin de France)
-To prevent the central dictionaries from bloating with generic entries, the sequence **`0000`** in Block 4 is reserved as a global runtime keyword.
-* **Software Interception:** The `0000` identifier designates a *Vin Sans Indication Géographique* (Wine Without Geographical Indication / *Vin de France*). It is processed dynamically by client-side parsers and **must never be registered** inside physical country files like `FR_appellations.json`.
-* **Territorial Anchor Preservation:** The liquid preserves its true geographical regional footprint inside Block 3 (e.g., `FR-2022-BOR-0000-...` for a *Vin de France* crushed and fermented within the Bordeaux territorial perimeter).
+### 1.1 Viticultural Regions (Block 3)
+* File: `/registries/countries/[COUNTRY_CODE]/[COUNTRY_CODE]_regions.json`
+* **Rules:** Regions represent recognised legal viticultural areas (e.g., `BOR` for Bordeaux, `BRG` for Burgundy, `ALS` for Alsace), never administrative political borders.
 
----
-
-## 2. France: Regional Adaptations (Block 4 Structural Mapping)
-
-### 2.1 Alsace Viticultural Framework
-* **Alsace AOC & Varietals:** Generic Alsace wines receive individual codes in Block 4 depending on regulatory specifications. To handle multi-varietal vs. single-varietal labeling without core system inflation, simple app-level metadata tables handle cépage extraction.
-* **The 51 Grands Crus:** The 51 legally protected Grand Cru lieux-dits **no longer share a generic parent code**. Each individual Grand Cru vineyard is assigned its own permanent 4-digit code in Block 4 (e.g., `0002` for *AOC Alsace Grand Cru Rangen*, `0003` for *AOC Alsace Grand Cru Schlossberg*).
-
-### 2.2 Burgundy Viticultural Framework & DGC Resolution
-The extreme fragmentation of Burgundy is natively absorbed by the 4-digit layout:
-* **Bourgogne DGCs:** Regional designations that append a specific village name receive distinct, consecutive sequential codes inside Block 4.
-  * *Example:* `BRG-0001` (Bourgogne Blanc), `BRG-0002` (Bourgogne Chitry), `BRG-0003` (Bourgogne Épineuil).
-* **Mâcon Villages:** The 26 specific village designations authorized to append their name to the Mâcon template receive their own 4-digit codes (e.g., `BRG-0112` for Mâcon-Lugny, `BRG-0113` for Mâcon-Verzé).
-
-### 2.3 Languedoc & Loire IGP Sub-Zone De-duplication
-* **Departmental & Cultural IGPs:** Localized sub-descriptors and community zones are systematically granted an independent 4-digit structural code in Block 4.
-  * *Example (Pays d'Hérault):* `LGD-0208` (Pays d'Hérault - Coteaux du Salagou IGP), `LGD-0209` (Pays d'Hérault - Mont Baudile IGP).
-  * *Example (Val de Loire):* `LRE-0281` (Val de Loire - Nièvre IGP), `Val de Loire - Loire-Atlantique IGP` (`LRE-0282`).
-
-## 3. France: Chronological Resolution Rules (Historical Mergers)
-
-To prevent data inflation and avoid maintaining ghost codes for historically absorbed appellations, the IWIN standard uses a **Chronological Resolution Rule** driven by application-level interface logic based on Block 2 (Vintage).
-
-### 3.1 Bordeaux: The Néac / Lalande-de-Pomerol Case (Code `0040`)
-The appellation *Néac AOC* was legally absorbed into *Lalande-de-Pomerol AOC* in 1954. No commercial wines have been produced under the Néac name since that date.
-* **Database Encoding:** All bottles from this terroir—regardless of age—must strictly use the active 4-digit Appellation code `0040` in Block 4.
-* **UI Resolution Rule:** Applications reading an IWIN string containing `BOR-0040` must execute a temporal condition check:
-  * If **Block 2 (Vintage) < 1954**, the interface MUST display the historical designation: **"Néac AOC"**.
-  * If **Block 2 (Vintage) >= 1954**, the interface MUST display the active designation: **"Lalande-de-Pomerol AOC"**.
-
-### 3.2 Languedoc: Coteaux du Languedoc vs. Languedoc AOC (Code `0197`)
-The parent regional appellation *Coteaux du Languedoc AOC* was officially updated and modified by regulatory decree into *Languedoc AOC* in 2007.
-* **Database Encoding:** All vintages from this overarching regional footprint strictly map to the persistent numeric 4-digit code `0197`.
-* **UI Render Rule:** Applications reading an IWIN string containing `LGD-0197` must apply a temporal branch test based on Block 2 (Vintage):
-  * If **Block 2 (Vintage) < 2007**, the interface MUST display: **"Coteaux du Languedoc AOC"**.
-  * If **Block 2 (Vintage) >= 2007**, the interface MUST display: **"Languedoc AOC"**.
+### 1.2 Appellations & Terroirs (Block 4)
+* File: `/registries/countries/[COUNTRY_CODE]/[COUNTRY_CODE]_appellations.json`
+* **Format:** Fixed 4-digit sequential numeric keys (`0001` to `9999`).
+* **Sequence Law:** Once an appellation code is registered (e.g., `0424` for Ajaccio), it is **immutable**. Codes are never re-ordered, modified, or deleted.
+* **The "0000" Dynamic Reserved Keyword:** The sequence `0000` is an application-level reserved keyword for Wines Without Geographical Indication (*Vin de France* / VSIG). It is resolved dynamically by software parsers and **must never be manually entered into physical JSON registry files**.
 
 ---
 
-## 4. France : Inter-regional Appellations
+## 2. Vinifier / Producer Registry (Block 6)
 
-While 99% of wine appellations in France belong strictly to a single administrative or viticultural macro-region, a few exceptional entries (such as inter-regional **IGPs** like *IGP Atlantique* or *IGP Méditerranée*) cover territories spanning across multiple regions.
+Block 6 encodes the vinifying entity using a unique 6-digit numeric ID (`000001` to `999999`), yielding an available namespace of nearly 1,000,000 global entities.
 
-### 4.1 Schema & Data Representation
-* **Standard Entries:** The `macro_region` property is stored as a single `string` containing the region code (e.g., `"BOR"`, `"ALS"`).
-* **Inter-regional Entries:** The `macro_region` property is stored as an `array` of strings containing all associated region codes (e.g., `["BOR", "SUD"]` for *IGP Atlantique*, or `["PRV", "RHO"]` for *IGP Méditerranée*).
+### 2.1 Scope & Definition of a "Producer"
+To ensure structural consistency across diverse production models:
+* **The Vinifier Principle:** A Block 6 entity is strictly defined as the *vinifier* (independent estate, merchant-vinifier, or cooperative winery transforming grapes into finished wine). Grape growers who solely sell raw fruit to third parties do not receive a Block 6 code.
+* **The Bottle-Return Exception (*Retour de Bouteilles*):** Viticulturists who deliver grapes to a cooperative but retain legal rights to receive and market finished bottles under their own commercial label are assigned a unique Block 6 ID, as they operate as distinct commercial wine entities.
 
-### 4.2 Consumer Implementation Note
-Downstream applications, parsers, and APIs consuming this registry must implement type-checking for the `macro_region` field to safely handle both `string` and `array` data types.
+### 2.2 Global Single-Namespace & Hybrid Pivot System
+* **No Regional Sub-segmentation:** Block 6 IDs are allocated from a single global numeric sequence without regional prefixes, avoiding redundancy with Blocks 1 (Country) and 3 (Region).
+* **Allocation Modes:**
+  1. *Sequential Assignment (Default):* New applicants receive the next available incremental 6-digit number.
+  2. *Custom Preference Assignment (Optional):* Applicants may request a specific, available 6-digit number.
+* **Government Meta-Registry Pivot:** To guarantee identity verification, each IWIN producer entry maps its immutable `iwin_producer_id` to official national registers (e.g., SIRENE/CVI in France, TTB permits in the US, P.IVA in Italy).
+
+```json
+{
+  "iwin_producer_id": "104852",
+  "name": "Château Margaux",
+  "entity_type": "independent_winery",
+  "country": "FR",
+  "legal_identity": {
+    "official_register": "SIRENE (INSEE)",
+    "official_id": "38012845200018"
+  },
+  "address": {
+    "locality": "Margaux-Cantenac",
+    "macro_region": "BOR",
+    "coordinates": [45.0441, -0.6698]
+  }
+}
+```
 
 ---
 
-## 5. Logistics and Commercial Variant Coding (The Bloc 8 Composite Rule)
-To safeguard the 22-character `IWIN-Core` as a pure liquid-identity pointer, all dimensional and structural material data is localized within the 7-character composite **Block 8**.
+## 3. Cuvée / Label Recommendations (Block 7)
 
-### 5.1 Fixed-Width Volume & Material Partitioning
-Block 8 enforces an unyielding 7-character continuous width, split into two sub-components:
-1. **Positions 1 to 6 (Numeric Volume):** Represents the precise capacity in milliliters (ml) padded with leading zeros up to `999999` (nearly 1,000 Liters).
-2. **Position 7 (Alpha Packaging Material Suffix):** Flags the structural physics of the container.
-   * `B` = Bottle (Traditional glass flaconnage)
-   * `C` = Can (Aluminum cans / Canettes)
-   * `X` = Bag-in-Box (Cubitainers / Flexible multi-layer box packaging)
-   * `K` = Keg (Service kegs / KeyKegs / Industrial bulk distribution barrels)
-   * `T` = Tube (Glass or plastic sample tubes / Vinottes)
-   * `P` = Pouch (Flexible modern single-use pouches)
+Block 7 provides 2 uppercase alphabetical characters (`AA` to `ZZ`), granting **676 unique combinations** per producer and vintage to identify distinct commercial labels.
+
+### 3.1 Rules of Block 7
+1. **Strict Format:** Exactly 2 uppercase letters (`A-Z`). Numerals and special characters are forbidden.
+2. **Inter-Vintage Stability:** The 2-letter code assigned to a specific wine label must remain identical across vintages. Year distinctions are handled by Block 2.
+3. **Producer Freedom & Mnemonic Best Practices:** Winemakers are free to select their 2-letter codes. We recommend using memorable mnemonomics for cellar management:
+   * **Generic / Flagship Labels:** `GV` (*Grand Vin*), `VV` (*Vieilles Vignes*), `GM` (*Grand-Mère / Hommage*).
+   * **Parcels & Single Vineyards:** Use distinct consonantal pairs (e.g., `UN` for *Lieu-dit Untel*, `AT` for *Lieu-dit Autre*). Avoid using generic prefix letters like `L` (Lieu-dit) or `C` (Cuvée) as the primary letter.
+   * **Visual Clarity:** For barrel markings and physical cellar logging, choose high-contrast letter pairs that avoid visual ambiguity (e.g., prefer `X, V, K, T, Z` over easily misread pairs).
 
 ---
 
-## 6. Integrity and Character Alternation Enforcement
-To prevent character-shift bugs during OCR scans, no application, dictionary update, or database schema shall modify the width of numeric or alphabetical blocks. Delimiters (`-`) remain mandatory for all user-facing layouts (IWIN-Display) and must be stripped programmatically before cryptographic hashing, local DB caching, or QR Code URL compilation (IWIN-Storage).
+## 4. Packaging & Volume Registry (Block 8)
 
+Block 8 is a 7-character composite segment: **6 digits for exact volume in milliliters** (zero-padded) + **1 letter for container material**.
+
+| Material Suffix | Category | Examples |
+| :---: | :--- | :--- |
+| **B** | Bottle | Standard glass bottles (`000750B`), Magnums (`001500B`), Clavelins (`000620B`). |
+| **C** | Can | Aluminum wine cans (`000250C`). |
+| **X** | Bag-in-Box | Cubitainers & boxed wines (`003000X`, `005000X`). |
+| **K** | Keg | Stainless steel or KeyKeg barrels (`020000K`). |
+| **T** | Tube | Sample glass/plastic tubes (`000100T`). |
+| **P** | Pouch | Flexible modern liquid pouches (`001500P`). |
