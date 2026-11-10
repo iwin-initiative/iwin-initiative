@@ -52,7 +52,7 @@ An `IWIN-Extended-Storage` string consists of **8 distinct positional blocks** s
 | :---: | :---: | :--- | :--- |
 | **1** | 2 Alpha | Country Code | ISO 3166-1 alpha-2 (e.g., `FR` for France, `IT` for Italy). |
 | **2** | 4 Numeric | Vintage | 4-digit harvest year (e.g., `2019`). `0000` is reserved for Non-Vintage (NV). |
-| **3** | 3 Alpha | Macro-Region | Official 3-letter uppercase viticultural region code (e.g., `BOR` for Bordeaux, `ALS` for Alsace). |
+| **3** | 3 Alpha | Macro-Region | 3-letter uppercase viticultural region code (e.g., `BOR` for Bordeaux, `ALS` for Alsace). |
 | **4** | 4 Numeric | Appellation / Terroir | 4-digit sequential numeric code (`0001` to `9999`) assigned to legal AOC, DGC, Grand Cru, or IGP sub-zones. `0000` is a reserved software keyword for Wines Without Geographical Indication (*Vin de France*). |
 | **5** | 1 Alpha | Wine Color | `R` (Red), `W` (White), `P` (Rosé / Pink), `A` (Amber / Skin-Contact / Orange). **The letter `O` is strictly forbidden.** |
 | **6** | 6 Numeric | Vinifier / Producer ID | Unique 6-digit global identifier (`000001` to `999999`) assigned to the vinifying entity (independent estate, merchant-vinifier, cooperative, or bottle-return grower). |
