@@ -22,6 +22,18 @@ All IWIN dictionary data is maintained in structured JSON files within the `/reg
 
 * **The "0000" Dynamic Reserved Keyword:** The sequence `0000` is an application-level reserved keyword for Wines Without Geographical Indication (*Vin de France* / VSIG). It is resolved dynamically by software parsers and **must never be manually entered into physical JSON registry files**.
 
+### 1.3 Inter-Regional Appellations & Cross-Border Designations (Block 4)
+
+- **Multi-Region Array Support:** For broad geographical indications, multi-state, or regional designations that span across multiple administrative or viticultural macro-régions (e.g., cross-border or multi-regional IGPs/AVAs), the `macro_region` attribute accepts an array of strings containing two or more valid trigrammes instead of a single string.
+
+- **Ordering & Primary Region Convention:** Inter-regional entries follow the standard 4-digit sequential key allocation. As a best practice, it is recommended (though not strictly mandatory) to **list the primary or historical home region first** in the array.
+
+- **Example Syntax (France & US):**
+```json
+"0841": {"macro_region": ["BOR", "SUD"], "name": "Atlantique (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"]},
+"0156": {"macro_region": ["MID", "SET"], "name": "Ozark Mountain (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]}
+
+
 ## 2. Vinifier / Producer Registry (Block 6)
 
 Block 6 encodes the vinifying entity using a unique 6-digit numeric ID (`000001` to `999999`), yielding an available namespace of nearly 1,000,000 global entities.
