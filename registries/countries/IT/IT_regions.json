@@ -1,0 +1,26 @@
+{
+  "country_code": "IT",
+  "entity_type": "Wine Regions",
+  "mappings": {
+    "ABR": { "name_en": "Abruzzo", "name_local": "Abruzzo" },
+    "AOS": { "name_en": "Aosta Valley", "name_local": "Valle d'Aosta" },
+    "BAS": { "name_en": "Basilicata", "name_local": "Basilicata" },
+    "CAL": { "name_en": "Calabria", "name_local": "Calabria" },
+    "CAM": { "name_en": "Campania", "name_local": "Campania" },
+    "EMR": { "name_en": "Emilia-Romagna", "name_local": "Emilia-Romagna" },
+    "FVG": { "name_en": "Friuli-Venezia Giulia", "name_local": "Friuli-Venezia Giulia" },
+    "LAZ": { "name_en": "Lazio", "name_local": "Lazio" },
+    "LIG": { "name_en": "Liguria", "name_local": "Liguria" },
+    "LOM": { "name_en": "Lombardy", "name_local": "Lombardia" },
+    "MAR": { "name_en": "Marche", "name_local": "Marche" },
+    "MOL": { "name_en": "Molise", "name_local": "Molise" },
+    "PIE": { "name_en": "Piedmont", "name_local": "Piemonte" },
+    "PUG": { "name_en": "Apulia", "name_local": "Puglia" },
+    "SAR": { "name_en": "Sardinia", "name_local": "Sardegna" },
+    "SIC": { "name_en": "Sicily", "name_local": "Sicilia" },
+    "TAA": { "name_en": "Trentino-Alto Adige", "name_local": "Trentino-Alto Adige" },
+    "TOS": { "name_en": "Tuscany", "name_local": "Toscana" },
+    "UMB": { "name_en": "Umbria", "name_local": "Umbria" },
+    "VEN": { "name_en": "Veneto", "name_local": "Veneto" }
+  }
+}
