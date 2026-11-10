@@ -1,1 +1,66 @@
-
+{
+  "country_code": "BE",
+  "entity_type": "Appellations and Designations",
+  "mappings": {
+    "0001": { 
+      "name_en": "Heuvelland", 
+      "name_local": "Heuvelland (BOB)", 
+      "type": "BOB", 
+      "region": "VLA" 
+    },
+    "0002": { 
+      "name_en": "Hageland", 
+      "name_local": "Hagelandse Wijn (BOB)", 
+      "type": "BOB", 
+      "region": "VLA" 
+    },
+    "0003": { 
+      "name_en": "Maasvallei Limburg", 
+      "name_local": "Maasvallei Limburg (BOB)", 
+      "type": "BOB", 
+      "region": "VLA" 
+    },
+    "0004": { 
+      "name_en": "Haspengouw", 
+      "name_local": "Haspengouwse Wijn (BOB)", 
+      "type": "BOB", 
+      "region": "VLA" 
+    },
+    "0005": { 
+      "name_en": "Flemish Regional Wine", 
+      "name_local": "Vlaamse Landwijn (BGA)", 
+      "type": "BGA", 
+      "region": "VLA" 
+    },
+    "0006": { 
+      "name_en": "Flemish Quality Sparkling Wine", 
+      "name_local": "Vlaamse Mousserende Kwaliteitswijn (BOB)", 
+      "type": "BOB", 
+      "region": "VLA" 
+    },
+    "0007": { 
+      "name_en": "Côtes de Sambre et Meuse", 
+      "name_local": "Côtes de Sambre et Meuse (AOP)", 
+      "type": "AOP", 
+      "region": "WAL" 
+    },
+    "0008": { 
+      "name_en": "Jardins de Wallonie", 
+      "name_local": "Vin de Pays des Jardins de Wallonie (IGP)", 
+      "type": "IGP", 
+      "region": "WAL" 
+    },
+    "0009": { 
+      "name_en": "Quality Sparkling Wine of Wallonia", 
+      "name_local": "Vin Mousseux de Qualité de Wallonie (AOP)", 
+      "type": "AOP", 
+      "region": "WAL" 
+    },
+    "0010": { 
+      "name_en": "Crémant de Wallonie", 
+      "name_local": "Crémant de Wallonie (AOP)", 
+      "type": "AOP", 
+      "region": "WAL" 
+    }
+  }
+}
