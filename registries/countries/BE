@@ -1,1 +1,21 @@
-
+{
+  "country_code": "BE",
+  "entity_type": "Wine Regions",
+  "mappings": {
+    "WAL": { 
+      "name_en": "Wallonia", 
+      "name_local_fr": "Wallonie", 
+      "name_local_nl": "Wallonië" 
+    },
+    "VLA": { 
+      "name_en": "Flanders", 
+      "name_local_fr": "Flandre", 
+      "name_local_nl": "Vlaanderen" 
+    },
+    "BRU": { 
+      "name_en": "Brussels Region", 
+      "name_local_fr": "Région bruxelloise", 
+      "name_local_nl": "Brusselse Gewest" 
+    }
+  }
+}
