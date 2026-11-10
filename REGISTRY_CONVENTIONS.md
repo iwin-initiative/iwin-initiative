@@ -9,14 +9,14 @@ This document outlines the operational and architectural rules governing the cen
 All IWIN dictionary data is maintained in structured JSON files within the `/registries/` directory, organized by country code (ISO 3166-1 alpha-2).
 
 ### 1.1 Viticultural Regions (Block 3)
-* File: `/registries/countries/[COUNTRY_CODE]/[COUNTRY_CODE]_regions.json`
-* **Rules:** Regions represent recognised legal viticultural areas (e.g., `BOR` for Bordeaux, `BRG` for Burgundy, `ALS` for Alsace), never administrative political borders.
+- File: `/registries/countries/[COUNTRY_CODE]/[COUNTRY_CODE]_regions.json`
+- **Rules:** Regions represent recognised legal viticultural areas (e.g., `BOR` for Bordeaux, `BRG` for Burgundy, `ALS` for Alsace), never administrative political borders.
 
 ### 1.2 Appellations & Terroirs (Block 4)
-* File: `/registries/countries/[COUNTRY_CODE]/[COUNTRY_CODE]_appellations.json`
-* **Format:** Fixed 4-digit sequential numeric keys (`0001` to `9999`).
-* **Sequence Law:** Once an appellation code is registered (e.g., `0424` for Ajaccio), it is **immutable**. Codes are never re-ordered, modified, or deleted.
-* **The "0000" Dynamic Reserved Keyword:** The sequence `0000` is an application-level reserved keyword for Wines Without Geographical Indication (*Vin de France* / VSIG). It is resolved dynamically by software parsers and **must never be manually entered into physical JSON registry files**.
+- File: `/registries/countries/[COUNTRY_CODE]/[COUNTRY_CODE]_appellations.json`
+- **Format:** Fixed 4-digit sequential numeric keys (`0001` to `9999`).
+- **Sequence Law:** Once an appellation code is registered (e.g., `0424` for Ajaccio), it is **immutable**. Codes are never re-ordered, modified, or deleted.
+- **The "0000" Dynamic Reserved Keyword:** The sequence `0000` is an application-level reserved keyword for Wines Without Geographical Indication (*Vin de France* / VSIG). It is resolved dynamically by software parsers and **must never be manually entered into physical JSON registry files**.
 
 ---
 
@@ -26,15 +26,15 @@ Block 6 encodes the vinifying entity using a unique 6-digit numeric ID (`000001`
 
 ### 2.1 Scope & Definition of a "Producer"
 To ensure structural consistency across diverse production models:
-* **The Vinifier Principle:** A Block 6 entity is strictly defined as the *vinifier* (independent estate, merchant-vinifier, or cooperative winery transforming grapes into finished wine). Grape growers who solely sell raw fruit to third parties do not receive a Block 6 code.
-* **The Bottle-Return Exception (*Retour de Bouteilles*):** Viticulturists who deliver grapes to a cooperative but retain legal rights to receive and market finished bottles under their own commercial label are assigned a unique Block 6 ID, as they operate as distinct commercial wine entities.
+- **The Vinifier Principle:** A Block 6 entity is strictly defined as the *vinifier* (independent estate, merchant-vinifier, or cooperative winery transforming grapes into finished wine). Grape growers who solely sell raw fruit to third parties do not receive a Block 6 code.
+- **The Bottle-Return Exception (*Retour de Bouteilles*):** Viticulturists who deliver grapes to a cooperative but retain legal rights to receive and market finished bottles under their own commercial label are assigned a unique Block 6 ID, as they operate as distinct commercial wine entities.
 
 ### 2.2 Global Single-Namespace & Hybrid Pivot System
-* **No Regional Sub-segmentation:** Block 6 IDs are allocated from a single global numeric sequence without regional prefixes, avoiding redundancy with Blocks 1 (Country) and 3 (Region).
-* **Allocation Modes:**
+- **No Regional Sub-segmentation:** Block 6 IDs are allocated from a single global numeric sequence without regional prefixes, avoiding redundancy with Blocks 1 (Country) and 3 (Region).
+- **Allocation Modes:**
   1. *Sequential Assignment (Default):* New applicants receive the next available incremental 6-digit number.
   2. *Custom Preference Assignment (Optional):* Applicants may request a specific, available 6-digit number.
-* **Government Meta-Registry Pivot:** To guarantee identity verification, each IWIN producer entry maps its immutable `iwin_producer_id` to official national registers (e.g., SIRENE/CVI in France, TTB permits in the US, P.IVA in Italy).
+- **Government Meta-Registry Pivot:** To guarantee identity verification, each IWIN producer entry maps its immutable `iwin_producer_id` to official national registers (e.g., SIRENE/CVI in France, TTB permits in the US, P.IVA in Italy).
 
 ```json
 {
@@ -82,3 +82,20 @@ Block 8 is a 7-character composite segment: **6 digits for exact volume in milli
 | **K** | Keg | Stainless steel or KeyKeg barrels (`020000K`). |
 | **T** | Tube | Sample glass/plastic tubes (`000100T`). |
 | **P** | Pouch | Flexible modern liquid pouches (`001500P`). |
+
+---
+
+## 5. National Suffix Policy for Appellations (Block 4 Display Rule)
+
+To ensure maximum realism and intuitive anti-fraude verification, the naming convention for local labels (`name_local`) in appallation registries adheres to a sovereign national principle.
+
+### 5.1 Core Principle
+National registries must prioritize **the official legal and historical designations traditionally printed on physical wine labels** within each country, rather than enforcing a uniform supranational institutional acronym (such as the European AOP). 
+
+### 5.2 Rationale
+- **Field Realism:** Wine producers, cellar managers, and consumers rely on historically established and culturally anchored terms (e.g., *AOC* in France, *DOC/DOCG* in Italy, *DO/DOCa* in Spain) rather than institutional administrative phrasing.
+- **OCR & Visual Alignment:** Display formats must match what is visually scannable on the bottle for seamless human inspection and automated anti-counterfeiting checks.
+
+### 5.3 Syntax Requirement
+All local registry names (`name_local`) must strictly follow the syntax:
+`"Appellation Name - Mandatory Suffix (LOCAL_TYPE)"` (e.g., *Champagne (AOC)*, *Rioja (DOCa)*, *Côtes de Sambre et Meuse (AOP)*).
