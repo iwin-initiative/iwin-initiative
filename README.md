@@ -64,7 +64,7 @@ An `IWIN-Extended-Storage` string consists of **8 distinct positional blocks** s
 | **2** | 3 to 6 | 4 Numeric | Vintage | 4-digit harvest year (e.g., `2019`). `0000` is reserved for Non-Vintage (NV). |
 | **3** | 7 to 9 | 3 Alpha | Macro-Region | 3-letter uppercase viticultural region code (e.g., `BOR` for Bordeaux, `ALS` for Alsace), no duplicates allowed within the same country. |
 | **4** | 10 to 13 | 4 Numeric | Appellation / Terroir | 4-digit sequential numeric code (`0001` to `9999`) assigned to legal AOC, DGC, Grand Cru, or IGP sub-zones. `0000` is a reserved software keyword for Wines Without Geographical Indication (*Vin de France*), no duplicates allowed within the same country. |
-| **5** | 14 | 1 Alpha | Wine Color | `R` (Red), `W` (White), `P` (Rosé / Pink), `A` (Amber / Orange), `G` (Grey / Gris), `Y` (Yellow / Jaune). **The letter `O` is strictly forbidden.** |
+| **5** | 14 | 1 Alpha | Wine Color | `R` (Red / Rouge), `W` (White / Blanc), `P` (Rosé / Pink), `A` (Amber / Orange), `G` (Grey / Gris), `Y` (Yellow / Jaune). **The letter `O` is strictly forbidden.** |
 | **6** | 15 to 20 | 6 Numeric | Vinifier / Producer ID | Unique 6-digit worldwide identifier (`000001` to `999999`) assigned to the vinifying entity (independent estate, merchant-vinifier, cooperative, or bottle-return grower), no duplicates allowed. |
 | **7** | 21 to 22 | 2 Alpha | Cuvée / Label | 2-letter code (`AA` to `ZZ`) identifying a specific commercial label for a given vinifier and vintage (676 combinations available per vintage), no duplicates allowed within the same producer. |
 | **8** | 23 to 29 | 6 Numeric + 1 Alpha | Volume & Packaging | Composite block of **6 digits for volume in ml** (`000001` to `999999`) + **1 letter for container material**. |
