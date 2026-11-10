@@ -7,10 +7,10 @@
       "name_local": "California",
       "description": "The primary viticultural powerhouse of the United States, covering the state of California."
     },
-    "PNW": {
-      "name_en": "Pacific Northwest",
-      "name_local": "Pacific Northwest",
-      "description": "The cool-climate northern coastal basin covering Washington, Oregon, and Idaho."
+    "HAW": {
+      "name_en": "Hawaii",
+      "name_local": "Hawaii",
+      "description": "The insular viticultural region of the Hawaiian islands."
     },
     "MID": {
       "name_en": "Midwest",
@@ -22,6 +22,11 @@
       "name_local": "Northeast",
       "description": "The historical and eastern seaboard corridor centered around New York and Pennsylvania."
     },
+    "PNW": {
+      "name_en": "Pacific Northwest",
+      "name_local": "Pacific Northwest",
+      "description": "The cool-climate northern coastal basin covering Washington, Oregon, and Idaho."
+    },
     "SET": {
       "name_en": "Southeast",
       "name_local": "Southeast",
@@ -31,11 +36,6 @@
       "name_en": "Southwest",
       "name_local": "Southwest",
       "description": "The arid and semi-arid southern region anchored by Texas, New Mexico, and Arizona."
-    },
-    "HAW": {
-      "name_en": "Hawaii",
-      "name_local": "Hawaii",
-      "description": "The insular viticultural region of the Hawaiian islands."
     }
   }
 }
