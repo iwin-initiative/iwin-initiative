@@ -67,7 +67,7 @@ An `IWIN-Extended-Storage` string consists of **8 distinct positional blocks** s
 | **5** | 14 | 1 Alpha | Wine Color | `R` (Red), `W` (White), `P` (Rosé / Pink), `A` (Amber / Orange), `G` (Grey / Gris), `Y` (Yellow / Jaune). **The letter `O` is strictly forbidden.** |
 | **6** | 15 to 20 | 6 Numeric | Vinifier / Producer ID | Unique 6-digit worldwide identifier (`000001` to `999999`) assigned to the vinifying entity (independent estate, merchant-vinifier, cooperative, or bottle-return grower), no duplicates allowed. |
 | **7** | 21 to 22 | 2 Alpha | Cuvée / Label | 2-letter code (`AA` to `ZZ`) identifying a specific commercial label for a given vinifier and vintage (676 combinations available per vintage), no duplicates allowed within the same producer. |
-| **8** | 23 to 29 | 7 Composite | Volume & Packaging | Composite block of **6 digits for volume in ml** (`000001` to `999999`) + **1 letter for container material**. |
+| **8** | 23 to 29 | 6 Numeric + 1 Alpha | Volume & Packaging | Composite block of **6 digits for volume in ml** (`000001` to `999999`) + **1 letter for container material**. |
 
 #### Safety & Disambiguation Rules
 * **The "O" Exclusion Rule:** The letter `O` (Orange) is banned in Block 5 to avoid visual confusion with the numeral `0`. Orange / Skin-Contact wines must use the code **`A`** (Amber).
