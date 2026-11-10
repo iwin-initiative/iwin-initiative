@@ -265,6 +265,12 @@
     "0262": {"macro_region": "SWT", "name": "West Elks (AVA)", "type": "AVA", "allowed_colors": ["W", "R", "P"]},
     "0263": {"macro_region": "SWT", "name": "Willcox (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]},
     "0264": {"macro_region": ["MID", "SET", "SWT"], "name": "Ozark Mountain (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]},
-    "0265": {"macro_region": ["NOR", "MID", "SET"], "name": "Ohio River Valley (AVA)", "type": "AVA", "allowed_colors": ["R", "W", "P"]}
+    "0265": {"macro_region": ["NOR", "MID", "SET"], "name": "Ohio River Valley (AVA)", "type": "AVA", "allowed_colors": ["R", "W", "P"]},
+    "0266": {"macro_region": "MID", "name": "Fennville (AVA)", "type": "AVA", "allowed_colors": ["W", "R"]},
+    "0267": {"macro_region": "MID", "name": "Indiana Uplands (AVA)", "type": "AVA", "allowed_colors": ["W", "R"]},
+    "0268": {"macro_region": "MID", "name": "Lake Michigan Shore (AVA)", "type": "AVA", "allowed_colors": ["W", "R", "P"]},
+    "0269": {"macro_region": "MID", "name": "Leelanau Peninsula (AVA)", "type": "AVA", "allowed_colors": ["W", "R"]},
+    "0270": {"macro_region": "MID", "name": "Old Mission Peninsula (AVA)", "type": "AVA", "allowed_colors": ["W", "R"]},
+    "0271": {"macro_region": "MID", "name": "Tip of the Mitt (AVA)", "type": "AVA", "allowed_colors": ["W", "R"]}
    }
 }
