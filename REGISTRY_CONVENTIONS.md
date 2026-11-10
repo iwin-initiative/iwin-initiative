@@ -32,7 +32,7 @@ All IWIN dictionary data is maintained in structured JSON files within the `/reg
 ```json
 "0841": {"macro_region": ["BOR", "SUD"], "name": "Atlantique (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"]},
 "0156": {"macro_region": ["MID", "SET"], "name": "Ozark Mountain (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]}
-
+```
 
 ## 2. Vinifier / Producer Registry (Block 6)
 
