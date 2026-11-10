@@ -149,6 +149,8 @@
     "0145": {"macro_region": "CAL", "name": "Willow Creek (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]},
     "0146": {"macro_region": "CAL", "name": "York Mountain (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]},
     "0147": {"macro_region": "CAL", "name": "Yorkville Highlands (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]},
-    "0148": {"macro_region": "CAL", "name": "Yountville (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]}
+    "0148": {"macro_region": "CAL", "name": "Yountville (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]},
+    "0149": {"macro_region": "HAW", "name": "Ulupalakua (AVA)", "type": "AVA", "allowed_colors": ["W", "R", "P", "S"]},
+    
   }
 }
