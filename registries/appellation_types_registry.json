@@ -1,8 +1,8 @@
 {
   "system": "IWIN",
   "document": "Global Appellation and Terroir Types Definition",
-  "version": "1.3.0",
-  "last_updated": "2026-11-01",
+  "version": "1.0.1",
+  "last_updated": "2026-11-10",
   "categories": {
     "FR": {
       "AOC Grand Cru": {
@@ -39,6 +39,28 @@
         "short_name": "IGP",
         "full_name": "Indication Géographique Protégée - Mention de sous-zone",
         "description": "A specific delimited sub-descriptor or community zone embedded within a broader departmental or regional IGP footprint."
+      }
+    },
+    "BE": {
+      "AOP": {
+        "short_name": "AOP",
+        "full_name": "Appellation d'Origine Protégée",
+        "description": "Protected Designation of Origin for quality wines produced in specified regions of Wallonia."
+      },
+      "IGP": {
+        "short_name": "IGP",
+        "full_name": "Indication Géographique Protégée",
+        "description": "Protected Geographical Indication for regional wines originating from Wallonia."
+      },
+      "BOB": {
+        "short_name": "BOB",
+        "full_name": "Beschermde Oorsprongsbenaming",
+        "description": "Protected Designation of Origin in Dutch, applied to quality wine appellations in Flanders."
+      },
+      "BGA": {
+        "short_name": "BGA",
+        "full_name": "Beschermde Geografische Aanduiding",
+        "description": "Protected Geographical Indication in Dutch, applied to regional wine designations in Flanders."
       }
     },
     "IT": {
