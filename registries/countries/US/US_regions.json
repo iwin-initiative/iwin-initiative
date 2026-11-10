@@ -1,0 +1,41 @@
+{
+  "country_code": "US",
+  "entity_type": "Viticultural Macro-Regions (Block 3)",
+  "mappings": {
+    "CAL": {
+      "name_en": "California",
+      "name_local": "California",
+      "description": "The primary viticultural powerhouse of the United States, covering the state of California."
+    },
+    "PNW": {
+      "name_en": "Pacific Northwest",
+      "name_local": "Pacific Northwest",
+      "description": "The cool-climate northern coastal basin covering Washington, Oregon, and Idaho."
+    },
+    "MID": {
+      "name_en": "Midwest",
+      "name_local": "Midwest",
+      "description": "The continental heartland including key wine-producing states such as Missouri, Michigan, Ohio, and Illinois."
+    },
+    "NOR": {
+      "name_en": "Northeast",
+      "name_local": "Northeast",
+      "description": "The historical and eastern seaboard corridor centered around New York and Pennsylvania."
+    },
+    "SET": {
+      "name_en": "Southeast",
+      "name_local": "Southeast",
+      "description": "The southern Atlantic and inland corridor featuring Virginia and North Carolina."
+    },
+    "SWT": {
+      "name_en": "Southwest",
+      "name_local": "Southwest",
+      "description": "The arid and semi-arid southern region anchored by Texas, New Mexico, and Arizona."
+    },
+    "HAW": {
+      "name_en": "Hawaii",
+      "name_local": "Hawaii",
+      "description": "The insular viticultural region of the Hawaiian islands."
+    }
+  }
+}
