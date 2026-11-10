@@ -1,7 +1,5 @@
 {
   "country": "FR",
-  "version": "1.0.0",
-  "last_updated": "2026-11-09",
   "appellations": {
     "0001": {"macro_region": "ALS", "name": "Alsace (AOC)", "type": "AOC Regional", "allowed_colors": ["W", "R", "P"]},
     "0002": {"macro_region": "ALS", "name": "Alsace - Bergheim (DGC)", "type": "AOC Regional DGC", "allowed_colors": ["W", "R"]},
