@@ -14,25 +14,7 @@ All IWIN dictionary data is maintained in structured JSON files within the `/reg
 
 ### 1.2 Appellations & Terroirs (Block 4)
 
-* File: `/registries/countries/[COUNTRY_CODE]/[COUNTRY_CODE]_appellations.json`
-
-* **Format:** Fixed 4-digit sequential numeric keys (`0001` to `9999`).
-
-* **Sequence Law:** Once an appellation code is registered (e.g., `0424` for Ajaccio), it is **immutable**. Codes are never re-ordered, modified, or deleted.
-
-* **The "0000" Dynamic Reserved Keyword:** The sequence `0000` is an application-level reserved keyword for Wines Without Geographical Indication (*Vin de France* / VSIG). It is resolved dynamically by software parsers and **must never be manually entered into physical JSON registry files**.
-
-### 1.3 Inter-Regional Appellations & Cross-Border Designations (Block 4)
-
-- **Multi-Region Array Support:** For broad geographical indications, multi-state, or regional designations that span across multiple administrative or viticultural macro-régions (e.g., cross-border or multi-regional IGPs/AVAs), the `macro_region` attribute accepts an array of strings containing two or more valid trigrammes instead of a single string.
-
-- **Ordering & Primary Region Convention:** Inter-regional entries follow the standard 4-digit sequential key allocation. As a best practice, it is recommended (though not strictly mandatory) to **list the primary or historical home region first** in the array.
-
-- **Example Syntax (France & US):**
-```json
-"0841": {"macro_region": ["BOR", "SUD"], "name": "Atlantique (IGP)", "type": "IGP", "allowed_colors": ["R", "W", "P"]},
-"0156": {"macro_region": ["MID", "SET"], "name": "Ozark Mountain (AVA)", "type": "AVA", "allowed_colors": ["R", "W"]}
-```
+See details in dedicated md file.
 
 ## 2. Vinifier / Producer Registry (Block 6)
 
@@ -79,21 +61,7 @@ To ensure structural consistency across diverse production models:
 
 ## 3. Cuvée / Label Recommendations (Block 7)
 
-Block 7 provides 2 uppercase alphabetical characters (`AA` to `ZZ`), granting **676 unique combinations** per producer and vintage to identify distinct commercial labels.
-
-### 3.1 Rules of Block 7
-
-1. **Strict Format:** Exactly 2 uppercase letters (`A-Z`). Numerals and special characters are forbidden.
-
-2. **Inter-Vintage Stability:** The 2-letter code assigned to a specific wine label must remain identical across vintages. Year distinctions are handled by Block 2.
-
-3. **Producer Freedom & Mnemonic Best Practices:** Winemakers are free to select their 2-letter codes. We recommend using memorable mnemonomics for cellar management:
-
-   * **Generic / Flagship Labels:** `GV` (*Grand Vin*), `VV` (*Vieilles Vignes*), `GM` (*Grand-Mère / Hommage*).
-
-   * **Parcels & Single Vineyards:** Use distinct consonantal pairs (e.g., `UN` for *Lieu-dit Untel*, `AT` for *Lieu-dit Autre*). Avoid using generic prefix letters like `L` (Lieu-dit) or `C` (Cuvée) as the primary letter.
-
-   * **Visual Clarity:** For barrel markings and physical cellar logging, choose high-contrast letter pairs that avoid visual ambiguity (e.g., prefer `X, V, K, T, Z` over easily misread pairs).
+See details in dedicated md file.
 
 ## 4. Packaging & Volume Registry (Block 8)
 
@@ -108,25 +76,5 @@ Block 8 is a 7-character composite segment: **6 digits for exact volume in milli
 | **T** | Tube | Sample glass/plastic tubes (`000100T`). | 
 | **P** | Pouch | Flexible modern liquid pouches (`001500P`). | 
 
-## 5. National Suffix Policy for Appellations (Block 4 Display Rule)
 
-To ensure maximum realism and intuitive anti-fraude verification, the naming convention for local labels (`name_local`) in appellation registries adheres to a sovereign national principle.
 
-### 5.1 Core Principle
-
-National registries must prioritize **the official legal and historical designations traditionally printed on physical wine labels** within each country, rather than enforcing a uniform supranational institutional acronym (such as the European AOP). 
-
-### 5.2 Multilingual and Federal Jurisdictions
-
-In federal or multilingual states (e.g., Belgium), where legal jurisdictions and official languages vary by region, the local designation and acronym must reflect **the official language and legal terminology of the specific production zone** (e.g., *BOB/BGA* in Flanders, *AOP/IGP* in Wallonia).
-
-### 5.3 Rationale
-
-* **Field Realism:** Wine producers, cellar managers, and consumers rely on historically established and culturally anchored terms (e.g., *AOC* in France, *DOC/DOCG* in Italy, *DO/DOCa* in Spain, *BOB* in Flanders) rather than institutional administrative phrasing.
-
-* **OCR & Visual Alignment:** Display formats must match what is visually scannable on the bottle for seamless human inspection and automated anti-counterfeiting checks.
-
-### 5.4 Syntax Requirement
-
-All local registry names (`name_local`) must strictly follow the syntax:
-`"Appellation Name - Mandatory Suffix (LOCAL_TYPE)"` (e.g., *Champagne (AOC)*, *Rioja (DOCa)*, *Hagelandse Wijn (BOB)*).
