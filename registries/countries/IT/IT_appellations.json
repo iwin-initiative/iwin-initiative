@@ -28,6 +28,19 @@
     "0024": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Donnas (DOC)", "type": "DOC", "allowed_colors": ["R"]},
     "0025": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Enfer d’Arvier (DOC)", "type": "DOC", "allowed_colors": ["R"]},
     "0026": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Nus (DOC)", "type": "DOC", "allowed_colors": ["W", "R"]},
+    "0027": {"macro_region": "BAS", "name": "Aglianico del Vulture (DOC)", "type": "DOC", "allowed_colors": ["R", "P"]},
+    "0028": {"macro_region": "BAS", "name": "Aglianico del Vulture Superiore (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0029": {"macro_region": "BAS", "name": "Aglianico del Vulture Superiore Caselle (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0030": {"macro_region": "BAS", "name": "Aglianico del Vulture Superiore Carato Venusio (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0031": {"macro_region": "BAS", "name": "Aglianico del Vulture Superiore Macarico (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0032": {"macro_region": "BAS", "name": "Aglianico del Vulture Superiore Piano del Cerro (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0033": {"macro_region": "BAS", "name": "Aglianico del Vulture Superiore Serra del Prete (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0034": {"macro_region": "BAS", "name": "Aglianico del Vulture Superiore Titolo (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0035": {"macro_region": "BAS", "name": "Aglianico del Vulture Superiore Venere (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0036": {"macro_region": "BAS", "name": "Basilicata (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0037": {"macro_region": "BAS", "name": "Grottino di Roccanova (DOC)", "type": "DOC", "allowed_colors": ["W", "R", "P"]},
+    "0038": {"macro_region": "BAS", "name": "Matera (DOC)", "type": "DOC", "allowed_colors": ["W", "R", "P"]},
+    "0039": {"macro_region": "BAS", "name": "Terre dell’Alta Val d’Agri (DOC)", "type": "DOC", "allowed_colors": ["W", "R", "P"]},
     
   }
 }
