@@ -1,0 +1,22 @@
+{
+  "country_code": "IT",
+  "entity_type": "Appellations and Designations",
+  "mappings": {
+    "0001": {"macro_region": "ABR", "name": "Alto Tirino (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0002": {"macro_region": "ABR", "name": "Cerasuolo d’Abruzzo (DOC)", "type": "DOC", "allowed_colors": ["P"]},
+    "0003": {"macro_region": "ABR", "name": "Colli Aprutini (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0004": {"macro_region": "ABR", "name": "Colli del Sangro (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0005": {"macro_region": "ABR", "name": "Colline Frentane (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0006": {"macro_region": "ABR", "name": "Colline Pescaresi (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0007": {"macro_region": "ABR", "name": "Colline Teatine (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0008": {"macro_region": "ABR", "name": "Controguerra (DOC)", "type": "DOC", "allowed_colors": ["W", "R", "P"]},
+    "0009": {"macro_region": "ABR", "name": "Del Vastese / Histonium (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0010": {"macro_region": "ABR", "name": "Montepulciano d’Abruzzo (DOC)", "type": "DOC", "allowed_colors": ["R", "P"]},
+    "0011": {"macro_region": "ABR", "name": "Montepulciano d’Abruzzo Colline Teramane (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0012": {"macro_region": "ABR", "name": "Terre di Chieti (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0013": {"macro_region": "ABR", "name": "Trebbiano d’Abruzzo (DOC)", "type": "DOC", "allowed_colors": ["W"]},
+    "0014": {"macro_region": "ABR", "name": "Tullum / Tollo (DOCG / DOC)", "type": "DOCG", "allowed_colors": ["W", "R", "P"]},
+    "0015": {"macro_region": "ABR", "name": "Valle Peligna (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0016": {"macro_region": "ABR", "name": "Villamagna (DOC)", "type": "DOC", "allowed_colors": ["R"]}
+  }
+}
