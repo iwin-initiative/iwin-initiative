@@ -12,11 +12,22 @@
     "0008": {"macro_region": "ABR", "name": "Controguerra (DOC)", "type": "DOC", "allowed_colors": ["W", "R", "P"]},
     "0009": {"macro_region": "ABR", "name": "Del Vastese / Histonium (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
     "0010": {"macro_region": "ABR", "name": "Montepulciano d’Abruzzo (DOC)", "type": "DOC", "allowed_colors": ["R", "P"]},
-    "0011": {"macro_region": "ABR", "name": "Montepulciano d’Abruzzo Colline Teramane (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
-    "0012": {"macro_region": "ABR", "name": "Terre di Chieti (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
-    "0013": {"macro_region": "ABR", "name": "Trebbiano d’Abruzzo (DOC)", "type": "DOC", "allowed_colors": ["W"]},
-    "0014": {"macro_region": "ABR", "name": "Tullum / Tollo (DOCG / DOC)", "type": "DOCG", "allowed_colors": ["W", "R", "P"]},
-    "0015": {"macro_region": "ABR", "name": "Valle Peligna (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
-    "0016": {"macro_region": "ABR", "name": "Villamagna (DOC)", "type": "DOC", "allowed_colors": ["R"]}
+    "0011": {"macro_region": "ABR", "name": "Montepulciano d’Abruzzo Casauria / Terre di Casauria (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0012": {"macro_region": "ABR", "name": "Montepulciano d’Abruzzo Colline Teramane (DOCG)", "type": "DOCG", "allowed_colors": ["R"]},
+    "0013": {"macro_region": "ABR", "name": "Montepulciano d’Abruzzo Teate (DOC)", "type": "DOC", "allowed_colors": ["R"]},
+    "0014": {"macro_region": "ABR", "name": "Montepulciano d’Abruzzo Terre dei Vestini (DOC)", "type": "DOC", "allowed_colors": ["R"]},
+    "0015": {"macro_region": "ABR", "name": "Terre di Chieti (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0016": {"macro_region": "ABR", "name": "Trebbiano d’Abruzzo (DOC)", "type": "DOC", "allowed_colors": ["W"]},
+    "0017": {"macro_region": "ABR", "name": "Tullum / Tollo (DOCG / DOC)", "type": "DOCG", "allowed_colors": ["W", "R", "P"]},
+    "0018": {"macro_region": "ABR", "name": "Valle Peligna (IGT)", "type": "IGT", "allowed_colors": ["W", "R", "P"]},
+    "0019": {"macro_region": "ABR", "name": "Villamagna (DOC)", "type": "DOC", "allowed_colors": ["R"]},
+    "0020": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste (DOC)", "type": "DOC", "allowed_colors": ["W", "R", "P"]},
+    "0021": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Arnad-Montjovet (DOC)", "type": "DOC", "allowed_colors": ["R"]},
+    "0022": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Blanc de Morgex et de La Salle (DOC)", "type": "DOC", "allowed_colors": ["W"]},
+    "0023": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Chambave (DOC)", "type": "DOC", "allowed_colors": ["W", "R"]},
+    "0024": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Donnas (DOC)", "type": "DOC", "allowed_colors": ["R"]},
+    "0025": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Enfer d’Arvier (DOC)", "type": "DOC", "allowed_colors": ["R"]},
+    "0026": {"macro_region": "AOS", "name": "Valle d’Aosta / Vallée d’Aoste Nus (DOC)", "type": "DOC", "allowed_colors": ["W", "R"]},
+    
   }
 }
