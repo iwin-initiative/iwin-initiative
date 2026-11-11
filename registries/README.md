@@ -15,9 +15,9 @@ registries/
         └── FR_appellations.json        # 4-Digit incremental sequential codes (Block 4)
 ```
 
-## 🛠️ Data Standards & Continuous Integrity
+## 🛠️ Data Standards & Continuous Integrity (section under construction)
 
-All registry maintenance, dictionary updates, or pull requests must comply with the structural boundaries defined in `README.md` and `REGISTRY_CONVENTIONS.md` at the root of the repository:
+All registry maintenance, dictionary updates, or pull requests must comply with the structural boundaries defined in `README.md`, `REGISTRY_CONVENTIONS_APPELLATIONS_AND_CUVEES.md` and `REGISTRY_CONVENTIONS_OTHERS.md` at the root of the repository:
 
 1. **Fixed-Width Mapping:** Ensure that any additions to `FR_appellations.json` feature strict 4-digit zero-padded keys (`0001` to `9999`).
 2. **Dynamic Keyword Protection:** Do not attempt to log the code `0000` inside country databases. This is an application-only keyword reserved for Wines Without Geographical Indication (VSIG / Vin de France).
