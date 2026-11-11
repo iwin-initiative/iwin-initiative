@@ -1,6 +1,6 @@
 # IWIN Reference Examples
 
-This document provides official reference encodings for the **International Wine Identification Number (IWIN)** across both **IWIN-Storage** (compact) and **IWIN-Display** (delimited) formats.
+This document provides non-official reference encodings for the **International Wine Identification Number (IWIN)** across both **IWIN-Storage** (compact) and **IWIN-Display** (delimited) formats. These examples were compiled at the very start of the project therefore the Appellation and Producer blocks do not display actual ids.
 
 ---
 
